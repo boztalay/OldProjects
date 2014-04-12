@@ -1,0 +1,47 @@
+xst -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.ise" -intstyle ise -ifn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.xst" -ofn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.syr" 
+ngdbuild -ise "Test_Project.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Test_Project.ngc Test_Project.ngd  
+map -ise "Test_Project.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Test_Project_map.ncd Test_Project.ngd Test_Project.pcf 
+par -ise "Test_Project.ise" -w -intstyle ise -ol std -t 1 Test_Project_map.ncd Test_Project.ncd Test_Project.pcf 
+trce -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml Test_Project.twx Test_Project.ncd -o Test_Project.twr Test_Project.pcf -ucf Test_Project.ucf 
+bitgen -ise "Test_Project.ise" -intstyle ise -f Test_Project.ut Test_Project.ncd 
+ngdbuild -ise "Test_Project.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Test_Project.ngc Test_Project.ngd  
+map -ise "Test_Project.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Test_Project_map.ncd Test_Project.ngd Test_Project.pcf 
+par -ise "Test_Project.ise" -w -intstyle ise -ol std -t 1 Test_Project_map.ncd Test_Project.ncd Test_Project.pcf 
+trce -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml Test_Project.twx Test_Project.ncd -o Test_Project.twr Test_Project.pcf -ucf Test_Project.ucf 
+bitgen -ise "Test_Project.ise" -intstyle ise -f Test_Project.ut Test_Project.ncd 
+xst -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.ise" -intstyle ise -ifn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.xst" -ofn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.syr" 
+ngdbuild -ise "Test_Project.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Test_Project.ngc Test_Project.ngd  
+map -ise "Test_Project.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Test_Project_map.ncd Test_Project.ngd Test_Project.pcf 
+bitgen -ise "Test_Project.ise" -intstyle ise -f Test_Project.ut Test_Project.ncd 
+par -ise "Test_Project.ise" -w -intstyle ise -ol std -t 1 Test_Project_map.ncd Test_Project.ncd Test_Project.pcf 
+trce -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml Test_Project.twx Test_Project.ncd -o Test_Project.twr Test_Project.pcf -ucf Test_Project.ucf 
+bitgen -ise "Test_Project.ise" -intstyle ise -f Test_Project.ut Test_Project.ncd 
+xst -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.ise" -intstyle ise -ifn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.xst" -ofn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.syr" 
+xst -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.ise" -intstyle ise -ifn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.xst" -ofn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.syr" 
+ngdbuild -ise "Test_Project.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Test_Project.ngc Test_Project.ngd  
+xst -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.ise" -intstyle ise -ifn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.xst" -ofn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.syr" 
+ngdbuild -ise "Test_Project.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Test_Project.ngc Test_Project.ngd  
+map -ise "Test_Project.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Test_Project_map.ncd Test_Project.ngd Test_Project.pcf 
+par -ise "Test_Project.ise" -w -intstyle ise -ol std -t 1 Test_Project_map.ncd Test_Project.ncd Test_Project.pcf 
+trce -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml Test_Project.twx Test_Project.ncd -o Test_Project.twr Test_Project.pcf -ucf Test_Project.ucf 
+bitgen -ise "Test_Project.ise" -intstyle ise -f Test_Project.ut Test_Project.ncd 
+xst -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.ise" -intstyle ise -ifn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.xst" -ofn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.syr" 
+ngdbuild -ise "Test_Project.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Test_Project.ngc Test_Project.ngd  
+map -ise "Test_Project.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Test_Project_map.ncd Test_Project.ngd Test_Project.pcf 
+par -ise "Test_Project.ise" -w -intstyle ise -ol std -t 1 Test_Project_map.ncd Test_Project.ncd Test_Project.pcf 
+trce -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml Test_Project.twx Test_Project.ncd -o Test_Project.twr Test_Project.pcf -ucf Test_Project.ucf 
+bitgen -ise "Test_Project.ise" -intstyle ise -f Test_Project.ut Test_Project.ncd 
+xst -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.ise" -intstyle ise -ifn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.xst" -ofn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.syr" 
+xst -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.ise" -intstyle ise -ifn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.xst" -ofn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.syr" 
+xst -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.ise" -intstyle ise -ifn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.xst" -ofn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.syr" 
+ngdbuild -ise "Test_Project.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Test_Project.ngc Test_Project.ngd  
+map -ise "Test_Project.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Test_Project_map.ncd Test_Project.ngd Test_Project.pcf 
+par -ise "Test_Project.ise" -w -intstyle ise -ol std -t 1 Test_Project_map.ncd Test_Project.ncd Test_Project.pcf 
+trce -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml Test_Project.twx Test_Project.ncd -o Test_Project.twr Test_Project.pcf -ucf Test_Project.ucf 
+bitgen -ise "Test_Project.ise" -intstyle ise -f Test_Project.ut Test_Project.ncd 
+xst -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.ise" -intstyle ise -ifn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.xst" -ofn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.syr" 
+ngdbuild -ise "Test_Project.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Test_Project.ngc Test_Project.ngd  
+map -ise "Test_Project.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Test_Project_map.ncd Test_Project.ngd Test_Project.pcf 
+par -ise "Test_Project.ise" -w -intstyle ise -ol std -t 1 Test_Project_map.ncd Test_Project.ncd Test_Project.pcf 
+trce -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Test_Project/Test_Project.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml Test_Project.twx Test_Project.ncd -o Test_Project.twr Test_Project.pcf -ucf Test_Project.ucf 
+bitgen -ise "Test_Project.ise" -intstyle ise -f Test_Project.ut Test_Project.ncd 

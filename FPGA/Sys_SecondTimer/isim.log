@@ -1,0 +1,34 @@
+Command line:
+   ./Sys_SecondTimer_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  50769
+
+Thu Jul 30 23:11:52 2009
+
+Total Line Count : 70
+
+ Elaboration Time: 0.0156 sec
+
+ Current Memory Usage: 298.217 Meg
+
+ Total Signals          : 89
+ Total Nets             : 73
+ Total Signal Drivers   : 22
+ Total Blocks           : 22
+ Total Primitive Blocks : 17
+ Total Processes        : 22
+ Total Traceable Variables  : 10
+ Total Scalar Nets and Variables : 451
+ntrace select -o on -m / -l this 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+
+ Total Simulation Time: 0.0936 sec
+
+ Current Memory Usage: 309.555 Meg
+
+Thu Jul 30 23:13:16 2009
+

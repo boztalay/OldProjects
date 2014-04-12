@@ -1,0 +1,28 @@
+NET "KeyCLK"  LOC = "R12";
+NET "KeyData" LOC = "P11";
+NET "MainCLK" LOC =  "B8";
+
+NET "Anodes<0>"   LOC = "F17";
+NET "Anodes<1>"   LOC = "H17";
+NET "Anodes<2>"   LOC = "C18";
+NET "Anodes<3>"   LOC = "F15";
+
+NET "Segments<0>" LOC = "L18";
+NET "Segments<1>" LOC = "F18";
+NET "Segments<2>" LOC = "D17";
+NET "Segments<3>" LOC = "D16";
+NET "Segments<4>" LOC = "G14";
+NET "Segments<5>" LOC = "J17";
+NET "Segments<6>" LOC = "H14";
+
+NET "Lights<0>"   LOC = "J14";
+NET "Lights<1>"   LOC = "J15";
+NET "Lights<2>"   LOC = "K15";
+NET "Lights<3>"   LOC = "K14";
+NET "Lights<4>"   LOC = "E17";
+NET "Lights<5>"   LOC = "P15";
+NET "Lights<6>"   LOC =  "F4";
+NET "Lights<7>"   LOC =  "R4";
+
+NET "KeyData" CLOCK_DEDICATED_ROUTE = FALSE;
+NET "KeyCLK" CLOCK_DEDICATED_ROUTE = FALSE;

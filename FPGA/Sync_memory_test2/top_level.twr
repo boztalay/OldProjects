@@ -1,0 +1,310 @@
+--------------------------------------------------------------------------------
+Release 11.1 Trace  (nt)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\11.1\ISE\bin\nt\unwrapped\trce.exe -ise
+C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_memory_test2/Sync_memory_test2.ise
+-intstyle ise -v 3 -s 4 -fastpaths -xml top_level.twx top_level.ncd -o
+top_level.twr top_level.pcf
+
+Design file:              top_level.ncd
+Physical constraint file: top_level.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2009-03-03)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+================================================================================
+Timing constraint: NET "RAM_clk" PERIOD = 12 ns HIGH 50%;
+
+ 0 paths analyzed, 0 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 component switching limit errors)
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: NET "mclk_BUFGP/IBUFG" PERIOD = 20 ns HIGH 50%;
+
+ 1 path analyzed, 1 endpoint analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is   1.744ns.
+--------------------------------------------------------------------------------
+Slack (setup path):     18.256ns (requirement - (data path - clock path skew + uncertainty))
+  Source:               count_0_0 (FF)
+  Destination:          count_0_0 (FF)
+  Requirement:          20.000ns
+  Data Path Delay:      1.744ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         mclk_BUFGP rising at 0.000ns
+  Destination Clock:    mclk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Maximum Data Path: count_0_0 to count_0_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X33Y83.YQ      Tcko                  0.587   count_0_0
+                                                       count_0_0
+    SLICE_X33Y83.BY      net (fanout=2)        0.796   count_0_0
+    SLICE_X33Y83.CLK     Tdick                 0.361   count_0_0
+                                                       count_0_0
+    -------------------------------------------------  ---------------------------
+    Total                                      1.744ns (0.948ns logic, 0.796ns route)
+                                                       (54.4% logic, 45.6% route)
+
+--------------------------------------------------------------------------------
+
+Hold Paths: NET "mclk_BUFGP/IBUFG" PERIOD = 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack (hold path):      1.242ns (requirement - (clock path skew + uncertainty - data path))
+  Source:               count_0_0 (FF)
+  Destination:          count_0_0 (FF)
+  Requirement:          0.000ns
+  Data Path Delay:      1.242ns (Levels of Logic = 0)
+  Clock Path Skew:      0.000ns
+  Source Clock:         mclk_BUFGP rising at 20.000ns
+  Destination Clock:    mclk_BUFGP rising at 20.000ns
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: count_0_0 to count_0_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X33Y83.YQ      Tcko                  0.470   count_0_0
+                                                       count_0_0
+    SLICE_X33Y83.BY      net (fanout=2)        0.637   count_0_0
+    SLICE_X33Y83.CLK     Tckdi       (-Th)    -0.135   count_0_0
+                                                       count_0_0
+    -------------------------------------------------  ---------------------------
+    Total                                      1.242ns (0.605ns logic, 0.637ns route)
+                                                       (48.7% logic, 51.3% route)
+
+--------------------------------------------------------------------------------
+
+Component Switching Limit Checks: NET "mclk_BUFGP/IBUFG" PERIOD = 20 ns HIGH 50%;
+--------------------------------------------------------------------------------
+Slack: 18.404ns (period - (min low pulse limit / (low pulse / period)))
+  Period: 20.000ns
+  Low pulse: 10.000ns
+  Low pulse limit: 0.798ns (Tcl)
+  Physical resource: count_0_0/CLK
+  Logical resource: count_0_0/CK
+  Location pin: SLICE_X33Y83.CLK
+  Clock network: mclk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 18.404ns (period - (min high pulse limit / (high pulse / period)))
+  Period: 20.000ns
+  High pulse: 10.000ns
+  High pulse limit: 0.798ns (Tch)
+  Physical resource: count_0_0/CLK
+  Logical resource: count_0_0/CK
+  Location pin: SLICE_X33Y83.CLK
+  Clock network: mclk_BUFGP
+--------------------------------------------------------------------------------
+Slack: 18.404ns (period - min period limit)
+  Period: 20.000ns
+  Min period limit: 1.596ns (626.566MHz) (Tcp)
+  Physical resource: count_0_0/CLK
+  Logical resource: count_0_0/CK
+  Location pin: SLICE_X33Y83.CLK
+  Clock network: mclk_BUFGP
+--------------------------------------------------------------------------------
+
+================================================================================
+Timing constraint: TS1 = MAXDELAY TO TIMEGRP "TGclk80" 12 ns;
+
+ 40 paths analyzed, 38 endpoints analyzed, 0 failing endpoints
+ 0 timing errors detected. (0 setup errors, 0 hold errors)
+ Maximum delay is   7.189ns.
+--------------------------------------------------------------------------------
+Slack (slowest paths):  4.811ns (requirement - data path)
+  Source:               RAM_addr_0 (FF)
+  Destination:          RAM_addr<19> (PAD)
+  Requirement:          12.000ns
+  Data Path Delay:      7.189ns (Levels of Logic = 1)
+  Source Clock:         RAM_clk_OBUF falling
+
+  Maximum Data Path: RAM_addr_0 to RAM_addr<19>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y52.XQ      Tcko                  0.592   RAM_addr_0
+                                                       RAM_addr_0
+    D2.O1                net (fanout=10)       3.349   RAM_addr_0
+    D2.PAD               Tioop                 3.248   RAM_addr<19>
+                                                       RAM_addr_19_OBUF
+                                                       RAM_addr<19>
+    -------------------------------------------------  ---------------------------
+    Total                                      7.189ns (3.840ns logic, 3.349ns route)
+                                                       (53.4% logic, 46.6% route)
+
+--------------------------------------------------------------------------------
+Slack (slowest paths):  5.260ns (requirement - data path)
+  Source:               RAM_oe_reg (FF)
+  Destination:          RAM_data<6> (PAD)
+  Requirement:          12.000ns
+  Data Path Delay:      6.740ns (Levels of Logic = 1)
+  Source Clock:         RAM_clk_OBUF falling
+
+  Maximum Data Path: RAM_oe_reg to RAM_data<6>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y55.XQ      Tcko                  0.592   RAM_oe_reg
+                                                       RAM_oe_reg
+    P2.T1                net (fanout=17)       2.900   RAM_oe_reg
+    P2.PAD               Tiotp                 3.248   RAM_data<6>
+                                                       RAM_data_6_OBUFT
+                                                       RAM_data<6>
+    -------------------------------------------------  ---------------------------
+    Total                                      6.740ns (3.840ns logic, 2.900ns route)
+                                                       (57.0% logic, 43.0% route)
+
+--------------------------------------------------------------------------------
+Slack (slowest paths):  5.288ns (requirement - data path)
+  Source:               RAM_oe_reg (FF)
+  Destination:          RAM_data<5> (PAD)
+  Requirement:          12.000ns
+  Data Path Delay:      6.712ns (Levels of Logic = 1)
+  Source Clock:         RAM_clk_OBUF falling
+
+  Maximum Data Path: RAM_oe_reg to RAM_data<5>
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X16Y55.XQ      Tcko                  0.592   RAM_oe_reg
+                                                       RAM_oe_reg
+    P1.T1                net (fanout=17)       2.872   RAM_oe_reg
+    P1.PAD               Tiotp                 3.248   RAM_data<5>
+                                                       RAM_data_5_OBUFT
+                                                       RAM_data<5>
+    -------------------------------------------------  ---------------------------
+    Total                                      6.712ns (3.840ns logic, 2.872ns route)
+                                                       (57.2% logic, 42.8% route)
+
+--------------------------------------------------------------------------------
+
+Fastest Paths: TS1 = MAXDELAY TO TIMEGRP "TGclk80" 12 ns;
+--------------------------------------------------------------------------------
+Delay (hold path):      1.527ns (data path)
+  Source:               RAM_data<14> (PAD)
+  Destination:          MainMem/data_in_reg_14 (FF)
+  Data Path Delay:      1.527ns (Levels of Logic = 1)
+
+  Minimum Data Path: RAM_data<14> to MainMem/data_in_reg_14
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    R3.I                 Tiopi                 1.040   RAM_data<14>
+                                                       RAM_data<14>
+                                                       RAM_data_14_IOBUF/IBUF
+    SLICE_X0Y6.BY        net (fanout=1)        0.335   N3
+    SLICE_X0Y6.CLK       Tckdi       (-Th)    -0.152   MainMem/data_in_reg<15>
+                                                       MainMem/data_in_reg_14
+    -------------------------------------------------  ---------------------------
+    Total                                      1.527ns (1.192ns logic, 0.335ns route)
+                                                       (78.1% logic, 21.9% route)
+
+--------------------------------------------------------------------------------
+Delay (hold path):      1.763ns (data path - clock path skew + uncertainty)
+  Source:               MainMem/state_2 (FF)
+  Destination:          RAM_addr_0 (FF)
+  Data Path Delay:      1.762ns (Levels of Logic = 1)
+  Clock Path Skew:      -0.001ns (0.066 - 0.067)
+  Source Clock:         RAM_clk_OBUF rising
+  Destination Clock:    RAM_clk_OBUF falling
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: MainMem/state_2 to RAM_addr_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X20Y55.YQ      Tcko                  0.522   MainMem/state<3>
+                                                       MainMem/state_2
+    SLICE_X16Y52.F1      net (fanout=5)        0.680   MainMem/state<2>
+    SLICE_X16Y52.CLK     Tckf        (-Th)    -0.560   RAM_addr_0
+                                                       MainMem/RAM_addr<0>1
+                                                       RAM_addr_0
+    -------------------------------------------------  ---------------------------
+    Total                                      1.762ns (1.082ns logic, 0.680ns route)
+                                                       (61.4% logic, 38.6% route)
+
+--------------------------------------------------------------------------------
+Delay (hold path):      1.614ns (data path - clock path skew + uncertainty)
+  Source:               MainMem/state_1 (FF)
+  Destination:          RAM_addr_0 (FF)
+  Data Path Delay:      1.615ns (Levels of Logic = 1)
+  Clock Path Skew:      0.001ns (0.066 - 0.065)
+  Source Clock:         RAM_clk_OBUF rising
+  Destination Clock:    RAM_clk_OBUF falling
+  Clock Uncertainty:    0.000ns
+
+  Minimum Data Path: MainMem/state_1 to RAM_addr_0
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X19Y52.YQ      Tcko                  0.470   MainMem/state<0>
+                                                       MainMem/state_1
+    SLICE_X16Y52.F3      net (fanout=8)        0.585   MainMem/state<1>
+    SLICE_X16Y52.CLK     Tckf        (-Th)    -0.560   RAM_addr_0
+                                                       MainMem/RAM_addr<0>1
+                                                       RAM_addr_0
+    -------------------------------------------------  ---------------------------
+    Total                                      1.615ns (1.030ns logic, 0.585ns route)
+                                                       (63.8% logic, 36.2% route)
+
+--------------------------------------------------------------------------------
+
+
+All constraints were met.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock to Setup on destination clock mclk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+mclk           |    1.744|         |         |         |
+---------------+---------+---------+---------+---------+
+
+
+Timing summary:
+---------------
+
+Timing errors: 0  Score: 0  (Setup/Max: 0, Hold: 0)
+
+Constraints cover 41 paths, 0 nets, and 53 connections
+
+Design statistics:
+   Minimum period:   2.395ns{1}   (Maximum frequency: 417.537MHz)
+   Maximum path delay from/to any node:   7.189ns
+
+
+------------------------------------Footnotes-----------------------------------
+1)  The minimum period statistic assumes all single cycle delays.
+
+Analysis completed Wed Jul 21 17:14:16 2010 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 140 MB
+
+
+

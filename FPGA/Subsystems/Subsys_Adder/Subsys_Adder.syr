@@ -1,0 +1,478 @@
+Release 10.1 - xst K.31 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_Adder/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_Adder/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: Subsys_Adder.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Subsys_Adder.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Subsys_Adder"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : Subsys_Adder
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : Subsys_Adder.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Inv/Gate_Inv.vhd" in Library work.
+Architecture behavioral of Entity gate_inv is up to date.
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Nand/Gate_Nand.vhd" in Library work.
+Architecture behavioral of Entity gate_nand is up to date.
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Buf/Gate_Buf.vhd" in Library work.
+Architecture behavioral of Entity gate_buf is up to date.
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Xor/Gate_Xor.vhd" in Library work.
+Architecture behavioral of Entity gate_xor is up to date.
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_And/Gate_And.vhd" in Library work.
+Architecture behavioral of Entity gate_and is up to date.
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Or/Gate_Or.vhd" in Library work.
+Architecture behavioral of Entity gate_or is up to date.
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_Dflipflop/Comp_Dflipflop.vhd" in Library work.
+Architecture behavioral of Entity comp_dflipflop is up to date.
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_4bitRegister/Comp_4bitRegister.vhd" in Library work.
+Architecture behavioral of Entity comp_4bitregister is up to date.
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_FullAdder/Comp_FullAdder.vhd" in Library work.
+Architecture behavioral of Entity comp_fulladder is up to date.
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_7segDecoder/Comp_7segDecoder.vhd" in Library work.
+Architecture behavioral of Entity comp_7segdecoder is up to date.
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_Adder/Subsys_Adder.vhd" in Library work.
+Entity <subsys_adder> compiled.
+Entity <subsys_adder> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Subsys_Adder> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Comp_4bitRegister> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Comp_FullAdder> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Comp_7segDecoder> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Comp_Dflipflop> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Gate_Xor> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Gate_And> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Gate_Or> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Gate_Inv> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Gate_Nand> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Gate_Buf> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Subsys_Adder> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_Adder/Subsys_Adder.vhd" line 93: Unconnected output port 'Q4' of component 'Comp_4bitRegister'.
+WARNING:Xst:753 - "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_Adder/Subsys_Adder.vhd" line 94: Unconnected output port 'Q4' of component 'Comp_4bitRegister'.
+Entity <Subsys_Adder> analyzed. Unit <Subsys_Adder> generated.
+
+Analyzing Entity <Comp_4bitRegister> in library <work> (Architecture <behavioral>).
+WARNING:Xst:753 - "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_4bitRegister/Comp_4bitRegister.vhd" line 53: Unconnected output port 'NQ' of component 'Comp_Dflipflop'.
+WARNING:Xst:753 - "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_4bitRegister/Comp_4bitRegister.vhd" line 54: Unconnected output port 'NQ' of component 'Comp_Dflipflop'.
+WARNING:Xst:753 - "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_4bitRegister/Comp_4bitRegister.vhd" line 55: Unconnected output port 'NQ' of component 'Comp_Dflipflop'.
+WARNING:Xst:753 - "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_4bitRegister/Comp_4bitRegister.vhd" line 56: Unconnected output port 'NQ' of component 'Comp_Dflipflop'.
+Entity <Comp_4bitRegister> analyzed. Unit <Comp_4bitRegister> generated.
+
+Analyzing Entity <Comp_Dflipflop> in library <work> (Architecture <behavioral>).
+Entity <Comp_Dflipflop> analyzed. Unit <Comp_Dflipflop> generated.
+
+Analyzing Entity <Gate_Inv> in library <work> (Architecture <behavioral>).
+Entity <Gate_Inv> analyzed. Unit <Gate_Inv> generated.
+
+Analyzing Entity <Gate_Nand> in library <work> (Architecture <behavioral>).
+Entity <Gate_Nand> analyzed. Unit <Gate_Nand> generated.
+
+Analyzing Entity <Gate_Buf> in library <work> (Architecture <behavioral>).
+Entity <Gate_Buf> analyzed. Unit <Gate_Buf> generated.
+
+Analyzing Entity <Comp_FullAdder> in library <work> (Architecture <behavioral>).
+Entity <Comp_FullAdder> analyzed. Unit <Comp_FullAdder> generated.
+
+Analyzing Entity <Gate_Xor> in library <work> (Architecture <behavioral>).
+Entity <Gate_Xor> analyzed. Unit <Gate_Xor> generated.
+
+Analyzing Entity <Gate_And> in library <work> (Architecture <behavioral>).
+Entity <Gate_And> analyzed. Unit <Gate_And> generated.
+
+Analyzing Entity <Gate_Or> in library <work> (Architecture <behavioral>).
+Entity <Gate_Or> analyzed. Unit <Gate_Or> generated.
+
+Analyzing Entity <Comp_7segDecoder> in library <work> (Architecture <behavioral>).
+Entity <Comp_7segDecoder> analyzed. Unit <Comp_7segDecoder> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Comp_7segDecoder>.
+    Related source file is "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_7segDecoder/Comp_7segDecoder.vhd".
+    Found 16x7-bit ROM for signal <seg>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <Comp_7segDecoder> synthesized.
+
+
+Synthesizing Unit <Gate_Inv>.
+    Related source file is "C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Inv/Gate_Inv.vhd".
+Unit <Gate_Inv> synthesized.
+
+
+Synthesizing Unit <Gate_Nand>.
+    Related source file is "C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Nand/Gate_Nand.vhd".
+Unit <Gate_Nand> synthesized.
+
+
+Synthesizing Unit <Gate_Buf>.
+    Related source file is "C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Buf/Gate_Buf.vhd".
+Unit <Gate_Buf> synthesized.
+
+
+Synthesizing Unit <Gate_Xor>.
+    Related source file is "C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Xor/Gate_Xor.vhd".
+    Found 1-bit xor2 for signal <Q>.
+Unit <Gate_Xor> synthesized.
+
+
+Synthesizing Unit <Gate_And>.
+    Related source file is "C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_And/Gate_And.vhd".
+Unit <Gate_And> synthesized.
+
+
+Synthesizing Unit <Gate_Or>.
+    Related source file is "C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Or/Gate_Or.vhd".
+Unit <Gate_Or> synthesized.
+
+
+Synthesizing Unit <Comp_FullAdder>.
+    Related source file is "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_FullAdder/Comp_FullAdder.vhd".
+Unit <Comp_FullAdder> synthesized.
+
+
+Synthesizing Unit <Comp_Dflipflop>.
+    Related source file is "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_Dflipflop/Comp_Dflipflop.vhd".
+Unit <Comp_Dflipflop> synthesized.
+
+
+Synthesizing Unit <Comp_4bitRegister>.
+    Related source file is "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_4bitRegister/Comp_4bitRegister.vhd".
+Unit <Comp_4bitRegister> synthesized.
+
+
+Synthesizing Unit <Subsys_Adder>.
+    Related source file is "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_Adder/Subsys_Adder.vhd".
+Unit <Subsys_Adder> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Xors                                                 : 6
+ 1-bit xor2                                            : 6
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Loading device for application Rf_Device from file '3s500e.nph' in environment C:\Xilinx\10.1\ISE.
+WARNING:Xst:1290 - Hierarchical block <G11> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G11> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G11> is unconnected in block <G3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G4> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G11> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G11> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G11> is unconnected in block <G3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G4> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G11> is unconnected in block <G1>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G11> is unconnected in block <G2>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G11> is unconnected in block <G3>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G11> is unconnected in block <G4>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <G3> is unconnected in block <G3>.
+   It will be removed from the design.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Xors                                                 : 6
+ 1-bit xor2                                            : 6
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:2170 - Unit Subsys_Adder : the following signal(s) form a combinatorial loop: G1/G2/S3.
+WARNING:Xst:2170 - Unit Subsys_Adder : the following signal(s) form a combinatorial loop: S14.
+WARNING:Xst:2170 - Unit Subsys_Adder : the following signal(s) form a combinatorial loop: G6/G2/S3.
+WARNING:Xst:2170 - Unit Subsys_Adder : the following signal(s) form a combinatorial loop: G6/G4/S3.
+WARNING:Xst:2170 - Unit Subsys_Adder : the following signal(s) form a combinatorial loop: G6/G3/S3.
+WARNING:Xst:2170 - Unit Subsys_Adder : the following signal(s) form a combinatorial loop: S15.
+WARNING:Xst:2170 - Unit Subsys_Adder : the following signal(s) form a combinatorial loop: S16.
+WARNING:Xst:2170 - Unit Subsys_Adder : the following signal(s) form a combinatorial loop: S17.
+WARNING:Xst:2170 - Unit Subsys_Adder : the following signal(s) form a combinatorial loop: G2/G1/S3.
+WARNING:Xst:2170 - Unit Subsys_Adder : the following signal(s) form a combinatorial loop: S1.
+WARNING:Xst:2170 - Unit Subsys_Adder : the following signal(s) form a combinatorial loop: G1/G1/S3.
+WARNING:Xst:2170 - Unit Subsys_Adder : the following signal(s) form a combinatorial loop: S2.
+WARNING:Xst:2170 - Unit Subsys_Adder : the following signal(s) form a combinatorial loop: S3.
+WARNING:Xst:2170 - Unit Subsys_Adder : the following signal(s) form a combinatorial loop: G2/G2/S3.
+WARNING:Xst:2170 - Unit Subsys_Adder : the following signal(s) form a combinatorial loop: S4.
+WARNING:Xst:2170 - Unit Subsys_Adder : the following signal(s) form a combinatorial loop: S5.
+WARNING:Xst:2170 - Unit Subsys_Adder : the following signal(s) form a combinatorial loop: S6.
+WARNING:Xst:2170 - Unit Subsys_Adder : the following signal(s) form a combinatorial loop: G1/G3/S3.
+WARNING:Xst:2170 - Unit Subsys_Adder : the following signal(s) form a combinatorial loop: G2/G3/S3.
+WARNING:Xst:2170 - Unit Subsys_Adder : the following signal(s) form a combinatorial loop: G6/G1/S3.
+
+Optimizing unit <Subsys_Adder> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Subsys_Adder, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Subsys_Adder.ngr
+Top Level Output File Name         : Subsys_Adder
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 21
+
+Cell Usage :
+# BELS                             : 35
+#      GND                         : 1
+#      LUT3                        : 16
+#      LUT4                        : 14
+#      MUXF5                       : 3
+#      VCC                         : 1
+# IO Buffers                       : 19
+#      IBUF                        : 8
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       17  out of   4656     0%  
+ Number of 4 input LUTs:                 30  out of   9312     0%  
+ Number of IOs:                          21
+ Number of bonded IOBs:                  19  out of    232     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 13.438ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 532 / 7
+-------------------------------------------------------------------------
+Delay:               13.438ns (Levels of Logic = 8)
+  Source:            CLK1 (PAD)
+  Destination:       seg<4> (PAD)
+
+  Data Path: CLK1 to seg<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   1.218   1.136  CLK1_IBUF (CLK1_IBUF)
+     LUT3:I0->O            2   0.704   0.482  G1/G2/G4/Q1 (G1/G2/S3)
+     LUT3:I2->O            3   0.704   0.706  G1/G2/G7/Q1 (S2)
+     LUT4:I0->O            2   0.704   0.447  G4/G5/Q1 (S8)
+     MUXF5:S->O            3   0.739   0.566  G6/G4/G4/Q_f5 (G6/G4/S3)
+     LUT3:I2->O            8   0.704   0.932  G6/G4/G7/Q1 (S17)
+     LUT4:I0->O            1   0.704   0.420  G7/Mrom_seg41 (G7/Mrom_seg4)
+     OBUF:I->O                 3.272          seg_4_OBUF (seg<4>)
+    ----------------------------------------
+    Total                     13.438ns (8.749ns logic, 4.689ns route)
+                                       (65.1% logic, 34.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.20 secs
+ 
+--> 
+
+Total memory usage is 196108 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   39 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

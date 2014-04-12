@@ -1,0 +1,8 @@
+NET "CLK" LOC = "H13";
+NET "E"   LOC = "G18";
+NET "R"   LOC = "H18";
+
+NET "Q1"  LOC = "J14";
+NET "Q2"  LOC = "J15";
+NET "Q3"  LOC = "K15";
+NET "Q4"  LOC = "K14";

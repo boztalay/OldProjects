@@ -1,0 +1,24 @@
+CommandLine-Map
+
+s
+CommandLine-Ngdbuild
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\ngdbuild.exe -ise C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_7segDecoder/Comp_7segDecoder.ise -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Comp_7segDecoder.ngc Comp_7segDecoder.ngd
+s
+CommandLine-Par
+
+s
+CommandLine-Xst
+
+s
+Previous-NGD
+Comp_7segDecoder_prev_built.ngd
+s
+Previous-NGM
+
+s
+Previous-Packed-NCD
+
+s
+Previous-Routed-NCD
+
+s

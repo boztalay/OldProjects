@@ -1,0 +1,5 @@
+NET "D"   LOC = "G18";
+NET "CLK" LOC = "B18";
+
+NET "Q"   LOC = "J14";
+NET "NQ"  LOC = "J15";

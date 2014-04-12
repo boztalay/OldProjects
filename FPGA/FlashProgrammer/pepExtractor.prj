@@ -1,0 +1,11 @@
+work	../TestCPU1/TestCPU1.vhd
+work	../TestCPU1/TestCPU1_ALU.vhd
+work	../TestCPU1/TestCPU1_Cntl.vhd
+work	../TestCPU1/TestCPU1_OutPins.vhd
+work	../TestCPU1/TestCPU1_RegFile.vhd
+work	../TestCPU1/TestCPU1_iRAM.vhd
+work	FlashProgrammer.vhd
+work	GenCounter.vhd
+work	GenReg.vhd
+work	Offset.vhd
+work	dataROM.vhd

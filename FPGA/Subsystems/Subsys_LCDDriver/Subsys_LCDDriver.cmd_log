@@ -1,0 +1,1 @@
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_LCDDriver/Subsys_LCDDriver.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_LCDDriver/Subsys_LCDDriver.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_LCDDriver/Subsys_LCDDriver.syr"

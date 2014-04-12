@@ -1,0 +1,107 @@
+--------------------------------------------------------------------------------
+Release 11.1 Trace  (nt)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\11.1\ISE\bin\nt\unwrapped\trce.exe -ise
+E:/FPGA/Projects/Current Projects/Systems/LCD_Control/TestCPU1.ise -intstyle
+ise -v 3 -s 4 -fastpaths -xml TestCPU1_SynthBench.twx TestCPU1_SynthBench.ncd
+-o TestCPU1_SynthBench.twr TestCPU1_SynthBench.pcf -ucf TestCPU1_SynthBench.ucf
+
+Design file:              TestCPU1_SynthBench.ncd
+Physical constraint file: TestCPU1_SynthBench.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2009-03-03)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock board_clk to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+LCD_DB<0>   |   13.507(F)|CPU_clk_OBUF      |   0.000|
+LCD_DB<1>   |   13.793(F)|CPU_clk_OBUF      |   0.000|
+LCD_DB<2>   |   13.653(F)|CPU_clk_OBUF      |   0.000|
+LCD_DB<3>   |   14.949(F)|CPU_clk_OBUF      |   0.000|
+LCD_DB<4>   |   13.718(F)|CPU_clk_OBUF      |   0.000|
+LCD_DB<5>   |   14.135(F)|CPU_clk_OBUF      |   0.000|
+LCD_DB<6>   |   14.974(F)|CPU_clk_OBUF      |   0.000|
+out_pins<0> |   11.751(F)|CPU_clk_OBUF      |   0.000|
+out_pins<1> |   11.604(F)|CPU_clk_OBUF      |   0.000|
+out_pins<2> |   11.812(F)|CPU_clk_OBUF      |   0.000|
+out_pins<3> |   11.057(F)|CPU_clk_OBUF      |   0.000|
+out_pins<4> |   11.341(F)|CPU_clk_OBUF      |   0.000|
+out_pins<5> |   12.203(F)|CPU_clk_OBUF      |   0.000|
+out_pins<6> |   11.880(F)|CPU_clk_OBUF      |   0.000|
+out_pins<7> |   11.054(F)|CPU_clk_OBUF      |   0.000|
+out_pins<8> |   11.255(F)|CPU_clk_OBUF      |   0.000|
+out_pins<9> |   12.073(F)|CPU_clk_OBUF      |   0.000|
+out_pins<10>|   11.590(F)|CPU_clk_OBUF      |   0.000|
+out_pins<11>|   11.174(F)|CPU_clk_OBUF      |   0.000|
+out_pins<12>|   10.703(F)|CPU_clk_OBUF      |   0.000|
+out_pins<13>|   11.885(F)|CPU_clk_OBUF      |   0.000|
+out_pins<14>|   10.710(F)|CPU_clk_OBUF      |   0.000|
+out_pins<15>|   10.646(F)|CPU_clk_OBUF      |   0.000|
+out_pins<16>|   11.036(F)|CPU_clk_OBUF      |   0.000|
+out_pins<17>|   11.261(F)|CPU_clk_OBUF      |   0.000|
+out_pins<18>|   11.375(F)|CPU_clk_OBUF      |   0.000|
+out_pins<19>|   11.784(F)|CPU_clk_OBUF      |   0.000|
+out_pins<20>|   10.637(F)|CPU_clk_OBUF      |   0.000|
+out_pins<21>|   10.921(F)|CPU_clk_OBUF      |   0.000|
+out_pins<22>|   10.968(F)|CPU_clk_OBUF      |   0.000|
+out_pins<23>|   10.647(F)|CPU_clk_OBUF      |   0.000|
+out_pins<24>|   10.910(F)|CPU_clk_OBUF      |   0.000|
+out_pins<25>|   11.052(F)|CPU_clk_OBUF      |   0.000|
+out_pins<26>|   11.169(F)|CPU_clk_OBUF      |   0.000|
+out_pins<27>|   10.991(F)|CPU_clk_OBUF      |   0.000|
+out_pins<28>|   11.248(F)|CPU_clk_OBUF      |   0.000|
+out_pins<29>|   10.655(F)|CPU_clk_OBUF      |   0.000|
+out_pins<30>|   11.517(F)|CPU_clk_OBUF      |   0.000|
+out_pins<31>|   10.660(F)|CPU_clk_OBUF      |   0.000|
+------------+------------+------------------+--------+
+
+Clock to Setup on destination clock board_clk
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+board_clk      |   21.583|   14.470|   19.164|   13.751|
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+board_clk      |CPU_clk        |   13.047|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Nov 23 16:19:42 2009 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 127 MB
+
+
+

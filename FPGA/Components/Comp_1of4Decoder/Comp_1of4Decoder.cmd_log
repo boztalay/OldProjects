@@ -1,0 +1,6 @@
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_1of4Decoder/Comp_1of4Decoder.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_1of4Decoder/Comp_1of4Decoder.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_1of4Decoder/Comp_1of4Decoder.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_1of4Decoder/Comp_1of4Decoder.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Comp_1of4Decoder.ngc" Comp_1of4Decoder.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_1of4Decoder/Comp_1of4Decoder.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Comp_1of4Decoder_map.ncd Comp_1of4Decoder.ngd Comp_1of4Decoder.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_1of4Decoder/Comp_1of4Decoder.ise" -w -intstyle ise -ol std -t 1 Comp_1of4Decoder_map.ncd Comp_1of4Decoder.ncd Comp_1of4Decoder.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_1of4Decoder/Comp_1of4Decoder.ise" -intstyle ise -e 3 -s 4 -xml Comp_1of4Decoder Comp_1of4Decoder.ncd -o Comp_1of4Decoder.twr Comp_1of4Decoder.pcf -ucf Comp_1of4Decoder.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_1of4Decoder/Comp_1of4Decoder.ise" -intstyle ise -f Comp_1of4Decoder.ut Comp_1of4Decoder.ncd

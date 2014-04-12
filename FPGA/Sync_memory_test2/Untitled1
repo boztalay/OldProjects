@@ -1,0 +1,159 @@
+library IEEE;
+use IEEE.STD_LOGIC_1164.ALL;
+use IEEE.STD_LOGIC_ARITH.ALL;
+use IEEE.STD_LOGIC_UNSIGNED.ALL;
+
+entity top_level is
+	Port (			  
+	    mclk : in std_logic;
+--	    clk25 : out std_logic;
+--		pclk25 : in std_logic;
+		rst : in std_logic;
+		RAM_addr : inout std_logic_vector(22 downto 0);
+		RAM_data : inout std_logic_vector(15 downto 0);
+		RAM_oe : out std_logic;
+		RAM_we : out std_logic;
+		RAM_adv : out std_logic;
+		RAM_clk : out std_logic;
+		RAM_ub : out std_logic;
+		RAM_lb : out std_logic;
+		RAM_ce : out std_logic;
+		RAM_cre : out std_logic;
+		RAM_wait : in std_logic;
+		LEDs : out std_logic_vector(7 downto 0)
+	);
+end top_level;
+
+architecture Behavioral of top_level is
+
+--component DCM_80 is
+--   port ( CLKIN_IN        : in    std_logic; 
+--          RST_IN          : in    std_logic; 
+--          CLKFX_OUT       : out   std_logic; 
+--          CLKIN_IBUFG_OUT : out   std_logic; 
+--          CLK0_OUT        : out   std_logic);
+--end component;
+
+component DCMi_80 is
+   port ( CLKIN_IN  : in    std_logic; 
+          CLKFX_OUT : out   std_logic; 
+          CLK0_OUT  : out   std_logic);
+end component;
+
+--component BUFGP
+--   port (O : out STD_ULOGIC;
+--         I : in STD_ULOGIC);
+--end component;
+
+component memory_interface is
+	Port (
+		clk80 : in std_logic; 
+		rst : in std_logic;
+		RAM_addr : out std_logic_vector(22 downto 0);
+		RAM_data_out : out std_logic_vector(15 downto 0);
+		RAM_data_in : in std_logic_vector(15 downto 0);
+		RAM_oe : out std_logic;
+		RAM_we : out std_logic;
+		RAM_adv : out std_logic;
+		RAM_clk_en : out std_logic;
+		RAM_ub : out std_logic;
+		RAM_lb : out std_logic;
+		RAM_ce : out std_logic;
+		RAM_cre : out std_logic;
+		RAM_wait : in std_logic;
+		led : out std_logic_vector(7 downto 0)
+	);
+end component;
+
+signal clk80, dcm_clk_25, RAM_clk_en : std_logic;
+signal count : std_logic_vector(0 downto 0);
+
+signal RAM_addr_s : std_logic_vector(22 downto 0);
+signal RAM_data_in, RAM_data_out, RAM_data_reg : std_logic_vector(15 downto 0);
+signal RAM_oe_s, RAM_oe_reg, RAM_we_s, RAM_adv_s, RAM_ub_s, RAM_lb_s, RAM_ce_s, RAM_cre_s : std_logic;
+
+signal pclk25, clk25:std_logic;
+
+begin
+	
+	clk25 <= count(0);		   
+	pclk25 <= clk25;					
+	RAM_clk <= clk80; --when RAM_clk_en='1' else 'Z';
+--50 MHz clock divider	
+mclk_proc:  process(mclk, rst)
+begin	  
+	if rst = '1' then
+		count <= (others => '0');
+	elsif mclk'event and mclk = '1' then
+		count <= count + 1;
+	end if;				   
+end process;
+
+--DCM for multiplying input pclk25 from 25 MHz to 80 MHz for memory operations	
+--DCM1: DCM_80 port map ( 
+--		  CLKIN_IN => pclk25,
+--          RST_IN => rst,
+--          CLKFX_OUT => clk80,
+--          CLKIN_IBUFG_OUT => open,
+--          CLK0_OUT => dcm_clk_25
+--		  );
+
+DCM1: DCMi_80 port map ( 
+		  CLKIN_IN => pclk25,
+          CLKFX_OUT => clk80, 
+          CLK0_OUT => dcm_clk_25
+		  );
+
+--RamClkBUFG : BUFGP
+--      port map (O => RAM_clk,
+--                I => RAM_clk_s);
+  
+		  
+MainMem: memory_interface Port map (
+		clk80 => clk80,
+		rst => rst,
+		RAM_addr  => RAM_addr_s,
+		RAM_data_out  => RAM_data_out,
+		RAM_data_in  => RAM_data_in,
+		RAM_oe  => RAM_oe_s,
+		RAM_we  => RAM_we_s,
+		RAM_adv  => RAM_adv_s,
+		RAM_clk_en  => RAM_clk_en,
+		RAM_ub  => RAM_ub_s,
+		RAM_lb  => RAM_lb_s,
+		RAM_ce  => RAM_ce_s,
+		RAM_cre => RAM_cre_s,
+		RAM_wait => RAM_wait,
+		led => LEDs
+	);
+	
+OutputRegs: process(clk80, rst)
+begin							   
+	if rst='1' then
+		RAM_addr <= (others=>'0'); 
+		RAM_data_reg <= (others=>'0'); 
+		RAM_oe_reg <= '1';
+		RAM_we <= '1'; 
+		RAM_adv <= '1'; 
+		RAM_ub <= '1';
+		RAM_lb <= '1'; 
+		RAM_ce <= '1'; 
+		RAM_cre <= '0';		
+	elsif clk80'event and clk80='0' then
+		RAM_addr <= RAM_addr_s;
+		RAM_data_reg <= RAM_data_out;
+		RAM_oe_reg <= RAM_oe_s;
+		RAM_we <= RAM_we_s;
+		RAM_adv <= RAM_adv_s;
+		RAM_ub <= RAM_ub_s;
+		RAM_lb <= RAM_lb_s;
+		RAM_ce <= RAM_ce_s;
+		RAM_cre <= RAM_cre_s;
+	end if;	
+end process;		
+
+RAM_oe <= RAM_oe_reg;
+RAM_data <= RAM_data_reg when RAM_oe_reg='1' else (others=>'Z');
+RAM_data_in <= RAM_data;
+
+end Behavioral;

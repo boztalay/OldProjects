@@ -1,0 +1,6 @@
+set -tmpdir "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/TestCPU1/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/TestCPU1/xst"
+elaborate
+-lso TestCPU1_iRAM.lso
+-ifn TestCPU1_iRAM.prj
+-ifmt mixed

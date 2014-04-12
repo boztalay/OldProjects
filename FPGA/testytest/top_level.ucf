@@ -1,0 +1,124 @@
+NET "mclk" LOC = "B8";
+NET "rst" LOC = "B18";
+#NET "pixel_clock" LOC = "B9"; #U9
+#NET "addr_clock" LOC = "D18";
+
+#NET "hsync_in" LOC = "A4";
+#NET "vsync_in" LOC = "C3";
+
+#NET "test1" LOC = "A16";
+#NET "test2" LOC = "B16";
+
+#NET "camera_data_bus<0>" LOC = "C4";
+#NET "camera_data_bus<1>" LOC = "B6";
+#NET "camera_data_bus<2>" LOC = "D5";
+#NET "camera_data_bus<3>" LOC = "C5";
+#NET "camera_data_bus<4>" LOC = "F7";
+#NET "camera_data_bus<5>" LOC = "E7";
+#NET "camera_data_bus<6>" LOC = "A6";
+#NET "camera_data_bus<7>" LOC = "C7";
+
+NET "decoder_out<6>"  LOC = "L18";
+NET "decoder_out<5>"  LOC = "F18";
+NET "decoder_out<4>"  LOC = "D17";
+NET "decoder_out<3>"  LOC = "D16";
+NET "decoder_out<2>"  LOC = "G14";
+NET "decoder_out<1>"  LOC = "J17";
+NET "decoder_out<0>"  LOC = "H14";
+
+NET "anodes<0>" LOC = "F17";
+NET "anodes<1>" LOC = "H17";
+NET "anodes<2>" LOC = "C18";
+NET "anodes<3>" LOC = "F15";
+
+NET "CQ_write_en" LOC = "H13";
+NET "VQ_read_en" LOC = "E18";
+
+#NET "switches<0>" LOC = "G18";
+#NET "switches<1>" LOC = "H18";
+#NET "switches<2>" LOC = "K18";
+#NET "switches<3>" LOC = "K17";
+#NET "switches<4>" LOC = "L14";
+#NET "switches<5>" LOC = "L13";
+#NET "switches<6>" LOC = "N17";
+#NET "switches<7>" LOC = "R17";
+
+NET "LEDs<0>" LOC = "J14";
+NET "LEDs<1>" LOC = "J15";
+NET "LEDs<2>" LOC = "K15";
+NET "LEDs<3>" LOC = "K14";
+NET "LEDs<4>" LOC = "E17";
+NET "LEDs<5>" LOC = "P15";
+NET "LEDs<6>" LOC = "F4";
+NET "LEDs<7>" LOC = "R4";
+
+#NET "main_clock" LOC = "D9";
+#NET "reset_out" LOC = "B4";
+#
+#NET "hsync_out" LOC = "T4";
+#NET "vsync_out" LOC = "U3";
+#
+#NET "red<0>" LOC = "R9";
+#NET "red<1>" LOC = "T8";
+#NET "red<2>" LOC = "R8";
+#
+#NET "green<0>" LOC = "N8";
+#NET "green<1>" LOC = "P8";
+#NET "green<2>" LOC = "P6";
+#
+#NET "blue<0>" LOC = "U5";
+#NET "blue<1>" LOC = "U4";
+
+NET "RAM_ce" LOC = "R6";
+NET "RAM_lb" LOC = "K5";
+NET "RAM_ub" LOC = "K4";
+NET "RAM_adv" LOC = "J4";
+NET "RAM_cre" LOC = "P7";
+NET "RAM_clk" LOC = "H5";
+NET "RAM_wait" LOC = "F5";
+
+#NET "flash_ce" LOC = "R5";
+
+NET "RAM_oe" LOC = "T2";
+NET "RAM_we" LOC = "N7";
+
+NET "memory_address_bus<0>" LOC = "J1";
+NET "memory_address_bus<1>" LOC = "J2";
+NET "memory_address_bus<2>" LOC = "H4";
+NET "memory_address_bus<3>" LOC = "H1";
+NET "memory_address_bus<4>" LOC = "H2";
+NET "memory_address_bus<5>" LOC = "J5";
+NET "memory_address_bus<6>" LOC = "H3";
+NET "memory_address_bus<7>" LOC = "H6";
+NET "memory_address_bus<8>" LOC = "F1";
+NET "memory_address_bus<9>" LOC = "G3";
+NET "memory_address_bus<10>" LOC = "G6";
+NET "memory_address_bus<11>" LOC = "G5";
+NET "memory_address_bus<12>" LOC = "G4";
+NET "memory_address_bus<13>" LOC = "F2";
+NET "memory_address_bus<14>" LOC = "E1";
+NET "memory_address_bus<15>" LOC = "M5";
+NET "memory_address_bus<16>" LOC = "E2";
+NET "memory_address_bus<17>" LOC = "C2";
+NET "memory_address_bus<18>" LOC = "C1";
+NET "memory_address_bus<19>" LOC = "D2";
+NET "memory_address_bus<20>" LOC = "K3";
+NET "memory_address_bus<21>" LOC = "D1";
+NET "memory_address_bus<22>" LOC = "K6";
+
+NET "memory_data_bus<0>" LOC = "L1";
+NET "memory_data_bus<1>" LOC = "L4";
+NET "memory_data_bus<2>" LOC = "L6";
+NET "memory_data_bus<3>" LOC = "M4";
+NET "memory_data_bus<4>" LOC = "N5";
+NET "memory_data_bus<5>" LOC = "P1";
+NET "memory_data_bus<6>" LOC = "P2";
+NET "memory_data_bus<7>" LOC = "R2";
+NET "memory_data_bus<8>" LOC = "L3";
+NET "memory_data_bus<9>" LOC = "L5";
+NET "memory_data_bus<10>" LOC = "M3";
+NET "memory_data_bus<11>" LOC = "M6";
+NET "memory_data_bus<12>" LOC = "L2";
+NET "memory_data_bus<13>" LOC = "N4";
+NET "memory_data_bus<14>" LOC = "R3";
+NET "memory_data_bus<15>" LOC = "T1";

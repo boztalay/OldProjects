@@ -1,0 +1,8 @@
+EN gate_or NULL C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Or/Gate_Or.vhd sub00/vhpl04 1239346333
+AR gate_or behavioral C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Or/Gate_Or.vhd sub00/vhpl05 1239346334
+AR comp_fulladder behavioral C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_FullAdder/Comp_FullAdder.vhd sub00/vhpl07 1239346336
+AR gate_xor behavioral C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Xor/Gate_Xor.vhd sub00/vhpl01 1239346330
+EN gate_and NULL C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_And/Gate_And.vhd sub00/vhpl02 1239346331
+EN gate_xor NULL C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Xor/Gate_Xor.vhd sub00/vhpl00 1239346329
+EN comp_fulladder NULL C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_FullAdder/Comp_FullAdder.vhd sub00/vhpl06 1239346335
+AR gate_and behavioral C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_And/Gate_And.vhd sub00/vhpl03 1239346332

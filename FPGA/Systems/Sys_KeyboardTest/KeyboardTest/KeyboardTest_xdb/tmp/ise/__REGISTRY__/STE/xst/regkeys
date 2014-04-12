@@ -1,0 +1,6 @@
+CommandLine
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\xst.exe -ise C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_KeyboardTest/KeyboardTest/KeyboardTest.ise -intstyle ise -ifn C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_KeyboardTest/KeyboardTest/Sys_KeyboardTest.xst -ofn C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_KeyboardTest/KeyboardTest/Sys_KeyboardTest.syr -finalclean 1
+s
+FormatString
+xst [-ifn <InputFile>] [-ofn <OutputFile>] [-ise <iseProjectFile>] [--quiet] [-intstyle <Style>] [--deb <DebugLevel>] [--finalclean <Clean>] [--PcubeFlow] [--globOptFlow] [--XstNtrc]
+s

@@ -1,0 +1,5 @@
+work	../OZ-3_System/four_dig_7seg.vhd
+work	DCMi_80.vhd
+work	fifo.vhd
+work	memory.vhd
+work	top_level.vhd

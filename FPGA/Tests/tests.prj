@@ -1,0 +1,4 @@
+vhdl work "ipcore_dir/FIFO.vhd"
+vhdl work "../OZ-3_System/four_dig_7seg.vhd"
+vhdl work "../OZ-3_System/Debouncer.vhd"
+vhdl work "tests.vhd"

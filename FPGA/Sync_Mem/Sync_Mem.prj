@@ -1,0 +1,2 @@
+vhdl work "four_dig_7seg.vhd"
+vhdl work "Sync_Mem.vhd"

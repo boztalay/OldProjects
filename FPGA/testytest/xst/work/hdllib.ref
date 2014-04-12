@@ -1,0 +1,10 @@
+AR top_level behavioral "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/testytest/top_level.vhd" sub00/vhpl09 1281983324
+AR dcmi_80 behavioral "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/testytest/DCMi_80.vhd" sub00/vhpl03 1281983318
+EN four_dig_7seg NULL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/OZ-3_System/four_dig_7seg.vhd" sub00/vhpl04 1281983319
+EN memory NULL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/testytest/memory.vhd" sub00/vhpl06 1281983321
+AR four_dig_7seg behavioral "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/OZ-3_System/four_dig_7seg.vhd" sub00/vhpl05 1281983320
+AR memory behavioral "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/testytest/memory.vhd" sub00/vhpl07 1281983322
+AR fifo fifo_arch "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/testytest/fifo.vhd" sub00/vhpl01 1281983316
+EN dcmi_80 NULL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/testytest/DCMi_80.vhd" sub00/vhpl02 1281983317
+EN fifo NULL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/testytest/fifo.vhd" sub00/vhpl00 1281983315
+EN top_level NULL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/testytest/top_level.vhd" sub00/vhpl08 1281983323

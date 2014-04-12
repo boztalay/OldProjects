@@ -1,0 +1,10 @@
+AR comp_dflipflop behavioral C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_Dflipflop/Comp_Dflipflop.vhd sub00/vhpl07 1239345344
+AR gate_nand behavioral C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Nand/Gate_Nand.vhd sub00/vhpl01 1239345340
+AR gate_inv behavioral C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Inv/Gate_Inv.vhd sub00/vhpl03 1239345338
+EN comp_dflipflop NULL C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_Dflipflop/Comp_Dflipflop.vhd sub00/vhpl06 1239345343
+EN gate_nand NULL C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Nand/Gate_Nand.vhd sub00/vhpl00 1239345339
+EN gate_inv NULL C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Inv/Gate_Inv.vhd sub00/vhpl02 1239345337
+AR gate_buf behavioral C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Buf/Gate_Buf.vhd sub00/vhpl05 1239345342
+EN gate_buf NULL C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Buf/Gate_Buf.vhd sub00/vhpl04 1239345341
+EN comp_4bitregister NULL C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_4bitRegister/Comp_4bitRegister.vhd sub00/vhpl08 1239345345
+AR comp_4bitregister behavioral C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_4bitRegister/Comp_4bitRegister.vhd sub00/vhpl09 1239345346

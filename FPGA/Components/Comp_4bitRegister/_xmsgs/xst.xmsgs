@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="753" delta="unknown" >&quot;<arg fmt="%s" index="1">C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_4bitRegister/Comp_4bitRegister.vhd</arg>&quot; line <arg fmt="%d" index="2">53</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">NQ</arg>&apos; of component &apos;<arg fmt="%s" index="4">Comp_Dflipflop</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="unknown" >&quot;<arg fmt="%s" index="1">C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_4bitRegister/Comp_4bitRegister.vhd</arg>&quot; line <arg fmt="%d" index="2">54</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">NQ</arg>&apos; of component &apos;<arg fmt="%s" index="4">Comp_Dflipflop</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="unknown" >&quot;<arg fmt="%s" index="1">C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_4bitRegister/Comp_4bitRegister.vhd</arg>&quot; line <arg fmt="%d" index="2">55</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">NQ</arg>&apos; of component &apos;<arg fmt="%s" index="4">Comp_Dflipflop</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="unknown" >&quot;<arg fmt="%s" index="1">C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_4bitRegister/Comp_4bitRegister.vhd</arg>&quot; line <arg fmt="%d" index="2">56</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">NQ</arg>&apos; of component &apos;<arg fmt="%s" index="4">Comp_Dflipflop</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="unknown" >Hierarchical block &lt;<arg fmt="%s" index="1">G11</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">G1</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="unknown" >Hierarchical block &lt;<arg fmt="%s" index="1">G11</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">G2</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="unknown" >Hierarchical block &lt;<arg fmt="%s" index="1">G11</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">G3</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="1290" delta="unknown" >Hierarchical block &lt;<arg fmt="%s" index="1">G11</arg>&gt; is unconnected in block &lt;<arg fmt="%s" index="2">G4</arg>&gt;.
+It will be removed from the design.
+</msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">Comp_4bitRegister</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">Comp_4bitRegister</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">Comp_4bitRegister</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">Comp_4bitRegister</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">Comp_4bitRegister</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">Comp_4bitRegister</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">Comp_4bitRegister</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+<msg type="warning" file="Xst" num="2170" delta="unknown" >Unit <arg fmt="%s" index="1">Comp_4bitRegister</arg> : the following signal(s) form a combinatorial loop: </msg>
+
+</messages>
+

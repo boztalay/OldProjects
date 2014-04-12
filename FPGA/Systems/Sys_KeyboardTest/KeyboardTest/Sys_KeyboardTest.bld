@@ -1,0 +1,44 @@
+Release 10.1 ngdbuild K.31 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+Command Line: C:\Xilinx\10.1\ISE\bin\nt\unwrapped\ngdbuild.exe -ise
+C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_KeyboardTest/KeyboardTest/Keyboard
+Test.ise -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4
+Sys_KeyboardTest.ngc Sys_KeyboardTest.ngd
+
+Reading NGO file
+"C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_KeyboardTest/KeyboardTest/Sys_Key
+boardTest.ngc" ...
+Reading in constraint information from 'Sys_KeyboardTest.ucf'...
+Gathering constraint information from source properties...
+Done.
+
+Resolving constraint associations...
+Checking Constraint Associations...
+Done...
+Checking Partitions ...
+
+Checking expanded design ...
+WARNING:NgdBuild:478 - clock net Buf_KeyData with clock driver BUFG_BufKeyData
+   drives no clock pins
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   1
+
+Total memory usage is 110164 kilobytes
+
+Writing NGD file "Sys_KeyboardTest.ngd" ...
+ERROR:HierarchicalDesignC:46 - Can't open client storage area "HDProject" in
+   project file
+   "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_KeyboardTest/KeyboardTest/Keyb
+   oardTest.ise".
+
+Writing NGDBUILD log file "Sys_KeyboardTest.bld"...

@@ -1,0 +1,4 @@
+vhdl work "../../Gates/Gate_Xor/Gate_Xor.vhd"
+vhdl work "../../Gates/Gate_Or/Gate_Or.vhd"
+vhdl work "../../Gates/Gate_And/Gate_And.vhd"
+vhdl work "Comp_FullAdder.vhd"

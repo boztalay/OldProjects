@@ -1,0 +1,10 @@
+AR fifo fifo_a "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Tests/ipcore_dir/FIFO.vhd" sub00/vhpl01 1278606758
+EN four_dig_7seg NULL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/OZ-3_System/four_dig_7seg.vhd" sub00/vhpl04 1278606761
+AR sm_mem_init_test behavioral "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Tests/SM_mem_init_test.vhd" sub00/vhpl09 1278696295
+AR four_dig_7seg behavioral "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/OZ-3_System/four_dig_7seg.vhd" sub00/vhpl05 1278606762
+EN tests NULL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Tests/tests.vhd" sub00/vhpl06 1278606763
+AR debouncer behavioral "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/OZ-3_System/Debouncer.vhd" sub00/vhpl03 1278606760
+EN debouncer NULL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/OZ-3_System/Debouncer.vhd" sub00/vhpl02 1278606759
+AR tests behavioral "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Tests/tests.vhd" sub00/vhpl07 1278606764
+EN fifo NULL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Tests/ipcore_dir/FIFO.vhd" sub00/vhpl00 1278606757
+EN sm_mem_init_test NULL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Tests/SM_mem_init_test.vhd" sub00/vhpl08 1278696294

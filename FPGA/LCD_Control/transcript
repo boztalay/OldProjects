@@ -1,0 +1,128 @@
+# Reading C:/Modeltech_xe_starter/tcl/vsim/pref.tcl 
+# do {TestCPU1_SynthBench_TB.fdo} 
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim XE III vcom 6.4b Compiler 2008.11 Nov 15 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity testcpu1_regfile
+# -- Compiling architecture behavioral of testcpu1_regfile
+# Model Technology ModelSim XE III vcom 6.4b Compiler 2008.11 Nov 15 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity testcpu1_outpins
+# -- Compiling architecture behavioral of testcpu1_outpins
+# Model Technology ModelSim XE III vcom 6.4b Compiler 2008.11 Nov 15 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity testcpu1_irom
+# -- Compiling architecture behavioral of testcpu1_irom
+# Model Technology ModelSim XE III vcom 6.4b Compiler 2008.11 Nov 15 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity testcpu1_dram
+# -- Compiling architecture behavioral of testcpu1_dram
+# Model Technology ModelSim XE III vcom 6.4b Compiler 2008.11 Nov 15 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity testcpu1_cntl
+# -- Compiling architecture behavioral of testcpu1_cntl
+# Model Technology ModelSim XE III vcom 6.4b Compiler 2008.11 Nov 15 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity testcpu1_alu
+# -- Compiling architecture behavioral of testcpu1_alu
+# Model Technology ModelSim XE III vcom 6.4b Compiler 2008.11 Nov 15 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity testcpu1
+# -- Compiling architecture structural of testcpu1
+# Model Technology ModelSim XE III vcom 6.4b Compiler 2008.11 Nov 15 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Compiling entity mrom
+# -- Compiling architecture behavioral of mrom
+# Model Technology ModelSim XE III vcom 6.4b Compiler 2008.11 Nov 15 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package vcomponents
+# -- Compiling entity testcpu1_synthbench
+# -- Compiling architecture behavioral of testcpu1_synthbench
+# Model Technology ModelSim XE III vcom 6.4b Compiler 2008.11 Nov 15 2008
+# -- Loading package standard
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package std_logic_unsigned
+# -- Loading package numeric_std
+# -- Compiling entity testcpu1_synthbench_tb
+# -- Compiling architecture behavior of testcpu1_synthbench_tb
+# vsim -lib work -t 1ps TestCPU1_SynthBench_TB 
+# Loading std.standard
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading work.testcpu1_synthbench_tb(behavior)
+# Loading unisim.vcomponents
+# Loading work.testcpu1_synthbench(behavioral)
+# Loading unisim.ibufg(ibufg_v)
+# Loading unisim.bufg(bufg_v)
+# Loading std.textio(body)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading unisim.vpkg(body)
+# Loading unisim.dcm(dcm_v)
+# Loading unisim.dcm_clock_divide_by_2(dcm_clock_divide_by_2_v)
+# Loading unisim.dcm_maximum_period_check(dcm_maximum_period_check_v)
+# Loading unisim.dcm_clock_lost(dcm_clock_lost_v)
+# Loading work.testcpu1(structural)
+# Loading work.testcpu1_cntl(behavioral)
+# Loading work.testcpu1_alu(behavioral)
+# Loading work.testcpu1_regfile(behavioral)
+# Loading work.testcpu1_dram(behavioral)
+# Loading work.testcpu1_outpins(behavioral)
+# Loading work.testcpu1_irom(behavioral)
+# Loading work.mrom(behavioral)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Ben  Hostname: AWESOME  ProcessID: 6480
+#           Attempting to use alternate WLF file "./wlfteayt1k".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfteayt1k
+# .main_pane.mdi.interior.cs.vm.paneset.cli_0.wf.clip.cs.pw.wf
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testcpu1_synthbench_tb/uut/messagerom
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /testcpu1_synthbench_tb/uut/messagerom
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testcpu1_synthbench_tb/uut/cpu/irom
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /testcpu1_synthbench_tb/uut/cpu/irom
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testcpu1_synthbench_tb/uut/cpu/dram
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /testcpu1_synthbench_tb/uut/cpu/dram
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testcpu1_synthbench_tb/uut/cpu/regfile
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /testcpu1_synthbench_tb/uut/cpu/regfile
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 0 ps  Iteration: 0  Instance: /testcpu1_synthbench_tb/uut/cpu/regfile
+# ** Warning: CONV_INTEGER: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, and it has been converted to 0.
+#    Time: 0 ps  Iteration: 0  Instance: /testcpu1_synthbench_tb/uut/cpu/regfile

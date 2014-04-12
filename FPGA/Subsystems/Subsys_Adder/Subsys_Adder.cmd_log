@@ -1,0 +1,19 @@
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_Adder/Subsys_Adder.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_Adder/Subsys_Adder.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_Adder/Subsys_Adder.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_Adder/Subsys_Adder.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Subsys_Adder.ngc" Subsys_Adder.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_Adder/Subsys_Adder.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Subsys_Adder_map.ncd Subsys_Adder.ngd Subsys_Adder.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_Adder/Subsys_Adder.ise" -w -intstyle ise -ol std -t 1 Subsys_Adder_map.ncd Subsys_Adder.ncd Subsys_Adder.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_Adder/Subsys_Adder.ise" -intstyle ise -e 3 -s 4 -xml Subsys_Adder Subsys_Adder.ncd -o Subsys_Adder.twr Subsys_Adder.pcf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_Adder/Subsys_Adder.ise" -intstyle ise -f Subsys_Adder.ut Subsys_Adder.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_Adder/Subsys_Adder.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_Adder/Subsys_Adder.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_Adder/Subsys_Adder.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_Adder/Subsys_Adder.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Subsys_Adder.ngc" Subsys_Adder.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_Adder/Subsys_Adder.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Subsys_Adder_map.ncd Subsys_Adder.ngd Subsys_Adder.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_Adder/Subsys_Adder.ise" -w -intstyle ise -ol std -t 1 Subsys_Adder_map.ncd Subsys_Adder.ncd Subsys_Adder.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_Adder/Subsys_Adder.ise" -intstyle ise -e 3 -s 4 -xml Subsys_Adder Subsys_Adder.ncd -o Subsys_Adder.twr Subsys_Adder.pcf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_Adder/Subsys_Adder.ise" -intstyle ise -f Subsys_Adder.ut Subsys_Adder.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_Adder/Subsys_Adder.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_Adder/Subsys_Adder.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_Adder/Subsys_Adder.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_Adder/Subsys_Adder.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Subsys_Adder.ngc" Subsys_Adder.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_Adder/Subsys_Adder.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Subsys_Adder_map.ncd Subsys_Adder.ngd Subsys_Adder.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_Adder/Subsys_Adder.ise" -w -intstyle ise -ol std -t 1 Subsys_Adder_map.ncd Subsys_Adder.ncd Subsys_Adder.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_Adder/Subsys_Adder.ise" -intstyle ise -e 3 -s 4 -xml Subsys_Adder Subsys_Adder.ncd -o Subsys_Adder.twr Subsys_Adder.pcf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_Adder/Subsys_Adder.ise" -intstyle ise -f Subsys_Adder.ut Subsys_Adder.ncd
+netgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_Adder/Subsys_Adder.ise" -intstyle ise -ar Structure -tm Subsys_Adder -w -dir netgen/synthesis -ofmt vhdl -sim Subsys_Adder.ngc Subsys_Adder_synthesis.vhd

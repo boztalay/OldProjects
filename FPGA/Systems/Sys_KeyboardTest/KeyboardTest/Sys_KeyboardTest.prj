@@ -1,0 +1,3 @@
+vhdl work "../../../Components/Comp_FrequencyDivider/Comp_FrequencyDivider.vhd"
+vhdl work "../../../Components/Comp_7segDecoder/Comp_7segDecoder.vhd"
+vhdl work "Sys_KeyboardTest.vhd"

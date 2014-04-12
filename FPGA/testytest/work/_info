@@ -1,0 +1,192 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\georgecuris\Desktop\Folders\FPGA\Projects\Current Projects\Systems\testytest
+Edcmi_80
+Z1 w1279746808
+Z2 DPx6 unisim 11 vcomponents 0 22 6Bno5d?=9BlFAj[lAHJHA1
+Z3 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+Z4 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z5 8DCMi_80.vhd
+Z6 FDCMi_80.vhd
+l0
+L30
+V?cnd5A_fEXMoO^1a<77XY0
+Z7 OX;C;6.4b;39
+31
+Z8 o-explicit -93 -O0
+Z9 tExplicit 1
+!s100 R`^G^h4^B9oi8QV9aWf^h2
+Abehavioral
+R2
+R3
+R4
+DEx4 work 7 dcmi_80 0 22 ?cnd5A_fEXMoO^1a<77XY0
+l41
+L36
+V^Tkz;d>5kXfT00XQ[0bW63
+R7
+31
+Z10 Mx3 4 ieee 14 std_logic_1164
+Mx2 4 ieee 11 numeric_std
+Mx1 6 unisim 11 vcomponents
+R8
+R9
+!s100 U3bB975CT:mgId=Q:ojHA3
+Efifo
+Z11 w1281820082
+R4
+Z12 8fifo.vhd
+Z13 Ffifo.vhd
+l0
+L30
+V_7@XG21dj6MBaaYePUnH83
+R7
+31
+R8
+R9
+!s100 :k;b?gk9RhZl3MLWUZl210
+Afifo_arch
+DEx4 work 4 fifo 0 22 _7@XG21dj6MBaaYePUnH83
+Z14 DPx4 ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
+R4
+Z15 DPx4 ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
+l56
+L48
+Vg91MMF0=n>gWOjaC2<C3R3
+R7
+31
+Z16 Mx3 4 ieee 18 std_logic_unsigned
+Z17 Mx2 4 ieee 14 std_logic_1164
+Z18 Mx1 4 ieee 15 std_logic_arith
+R8
+R9
+!s100 VezVR]n=hTS=_GDi0486e1
+Efour_dig_7seg
+Z19 w1274046189
+R15
+R14
+R4
+Z20 8../OZ-3_System/four_dig_7seg.vhd
+Z21 F../OZ-3_System/four_dig_7seg.vhd
+l0
+L22
+VjJ8Q`bb<OF5YX2kY`lXoD3
+R7
+31
+R8
+R9
+!s100 oV6@zjcj`E>0BbUf=YNgI2
+Abehavioral
+R15
+R14
+R4
+DEx4 work 13 four_dig_7seg 0 22 jJ8Q`bb<OF5YX2kY`lXoD3
+l37
+L29
+Vk];dRdk6KB1_DdVb>cFN^0
+R7
+31
+R10
+Z22 Mx2 4 ieee 15 std_logic_arith
+Z23 Mx1 4 ieee 18 std_logic_unsigned
+R8
+R9
+!s100 TBmF7bcD7eTFAfan>6Og62
+Ememory
+Z24 w1281981273
+R15
+R14
+R4
+Z25 8memory.vhd
+Z26 Fmemory.vhd
+l0
+L6
+Vjfe]E:L[zjZhN_3DCa_jg1
+R7
+31
+R8
+R9
+!s100 LB?RU[b4<4SzUE=];0neU3
+Abehavioral
+R15
+R14
+R4
+DEx4 work 6 memory 0 22 jfe]E:L[zjZhN_3DCa_jg1
+l107
+L41
+Va5Lo9GRQNmWn8HhXmm;Lh3
+R7
+31
+R10
+R22
+R23
+R8
+R9
+!s100 A;DLOOld5<^E084ZCAI@e3
+Etop_level
+Z27 w1281981315
+R15
+R14
+R4
+Z28 8top_level.vhd
+Z29 Ftop_level.vhd
+l0
+L6
+VA=T7Oa3Z0JEM3zV0lS:KB0
+R7
+31
+R8
+R9
+!s100 ?X[RPIImUkJ47:cSJ5eJ81
+Abehavioral
+R15
+R14
+R4
+DEx4 work 9 top_level 0 22 A=T7Oa3Z0JEM3zV0lS:KB0
+l98
+L30
+VK8>VXeCX0UGhcc6elAWC32
+!s100 f;il]Nh5Qe_>n=hzA:DQ50
+R7
+31
+R10
+R22
+R23
+R8
+R9
+Etop_level_tb
+Z30 w1281990722
+R3
+R14
+R15
+R4
+Z31 8top_level_TB.vhd
+Z32 Ftop_level_TB.vhd
+l0
+L33
+VJ658X:GdjA8UnA2eGNDf72
+!s100 b>FLeQBL:V@YFoR3E?h]<3
+R7
+31
+R8
+R9
+Abehavior
+R3
+R14
+R15
+R4
+Z33 DEx4 work 12 top_level_tb 0 22 J658X:GdjA8UnA2eGNDf72
+l91
+L36
+VGcQWfGgQ6X:CTa;5m?gHU1
+!s100 VnzX2O6aZCXoaQVf;UYKO2
+R7
+31
+Z34 Mx4 4 ieee 14 std_logic_1164
+R16
+R22
+Z35 Mx1 4 ieee 11 numeric_std
+R8
+R9

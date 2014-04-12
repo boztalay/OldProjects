@@ -1,0 +1,8 @@
+work	TestCPU1.vhd
+work	TestCPU1_ALU.vhd
+work	TestCPU1_Cntl.vhd
+work	TestCPU1_OutPins.vhd
+work	TestCPU1_RegFile.vhd
+work	TestCPU1_SynthBench.vhd
+work	TestCPU1_dRAM.vhd
+work	TestCPU1_iRAM.vhd

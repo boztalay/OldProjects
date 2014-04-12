@@ -1,0 +1,580 @@
+Release 11.1 - xst L.33 (nt)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Reading design: TestCPU1_SynthBench.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "TestCPU1_SynthBench.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "TestCPU1_SynthBench"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : TestCPU1_SynthBench
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : TestCPU1_SynthBench.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "E:/FPGA/Projects/Current Projects/Systems/LCD_Control/TestCPU1_Cntl.vhd" in Library work.
+Architecture behavioral of Entity testcpu1_cntl is up to date.
+Compiling vhdl file "E:/FPGA/Projects/Current Projects/Systems/LCD_Control/TestCPU1_ALU.vhd" in Library work.
+Architecture behavioral of Entity testcpu1_alu is up to date.
+Compiling vhdl file "E:/FPGA/Projects/Current Projects/Systems/LCD_Control/TestCPU1_RegFile.vhd" in Library work.
+Architecture behavioral of Entity testcpu1_regfile is up to date.
+Compiling vhdl file "E:/FPGA/Projects/Current Projects/Systems/LCD_Control/TestCPU1_OutPins.vhd" in Library work.
+Architecture behavioral of Entity testcpu1_outpins is up to date.
+Compiling vhdl file "E:/FPGA/Projects/Current Projects/Systems/LCD_Control/TestCPU1_iRAM.vhd" in Library work.
+Entity <testcpu1_irom> compiled.
+Entity <testcpu1_irom> (Architecture <behavioral>) compiled.
+Compiling vhdl file "E:/FPGA/Projects/Current Projects/Systems/LCD_Control/TestCPU1.vhd" in Library work.
+Architecture structural of Entity testcpu1 is up to date.
+Compiling vhdl file "E:/FPGA/Projects/Current Projects/Systems/LCD_Control/mROM.vhd" in Library work.
+Architecture behavioral of Entity mrom is up to date.
+Compiling vhdl file "E:/FPGA/Projects/Current Projects/Systems/LCD_Control/TestCPU1_SynthBench.vhd" in Library work.
+Architecture behavioral of Entity testcpu1_synthbench is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <TestCPU1_SynthBench> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <TestCPU1> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <mROM> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <TestCPU1_Cntl> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <TestCPU1_ALU> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <TestCPU1_RegFile> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <TestCPU1_OutPins> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <TestCPU1_iROM> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <TestCPU1_SynthBench> in library <work> (Architecture <behavioral>).
+    Set user-defined property "CAPACITANCE =  DONT_CARE" for instance <IBUFG_inst> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "IBUF_DELAY_VALUE =  0" for instance <IBUFG_inst> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "IBUF_LOW_PWR =  FALSE" for instance <IBUFG_inst> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "IOSTANDARD =  DEFAULT" for instance <IBUFG_inst> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <DCM_main_clk> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "CLKFX_DIVIDE =  20" for instance <DCM_main_clk> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "CLKFX_MULTIPLY =  2" for instance <DCM_main_clk> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <DCM_main_clk> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "CLKIN_PERIOD =  20.0000000000000000" for instance <DCM_main_clk> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <DCM_main_clk> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "CLK_FEEDBACK =  NONE" for instance <DCM_main_clk> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <DCM_main_clk> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <DCM_main_clk> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <DCM_main_clk> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <DCM_main_clk> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM_main_clk> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "FACTORY_JF =  C080" for instance <DCM_main_clk> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <DCM_main_clk> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "SIM_MODE =  SAFE" for instance <DCM_main_clk> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_main_clk> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <DCM_smaller_clk> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "CLKFX_DIVIDE =  10" for instance <DCM_smaller_clk> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "CLKFX_MULTIPLY =  2" for instance <DCM_smaller_clk> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <DCM_smaller_clk> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "CLKIN_PERIOD =  50.0000000000000000" for instance <DCM_smaller_clk> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <DCM_smaller_clk> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "CLK_FEEDBACK =  NONE" for instance <DCM_smaller_clk> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <DCM_smaller_clk> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <DCM_smaller_clk> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <DCM_smaller_clk> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <DCM_smaller_clk> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM_smaller_clk> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "FACTORY_JF =  C080" for instance <DCM_smaller_clk> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <DCM_smaller_clk> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "SIM_MODE =  SAFE" for instance <DCM_smaller_clk> in unit <TestCPU1_SynthBench>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_smaller_clk> in unit <TestCPU1_SynthBench>.
+Entity <TestCPU1_SynthBench> analyzed. Unit <TestCPU1_SynthBench> generated.
+
+Analyzing Entity <TestCPU1> in library <work> (Architecture <structural>).
+Entity <TestCPU1> analyzed. Unit <TestCPU1> generated.
+
+Analyzing Entity <TestCPU1_Cntl> in library <work> (Architecture <behavioral>).
+Entity <TestCPU1_Cntl> analyzed. Unit <TestCPU1_Cntl> generated.
+
+Analyzing Entity <TestCPU1_ALU> in library <work> (Architecture <behavioral>).
+Entity <TestCPU1_ALU> analyzed. Unit <TestCPU1_ALU> generated.
+
+Analyzing Entity <TestCPU1_RegFile> in library <work> (Architecture <behavioral>).
+Entity <TestCPU1_RegFile> analyzed. Unit <TestCPU1_RegFile> generated.
+
+Analyzing Entity <TestCPU1_OutPins> in library <work> (Architecture <behavioral>).
+Entity <TestCPU1_OutPins> analyzed. Unit <TestCPU1_OutPins> generated.
+
+Analyzing Entity <TestCPU1_iROM> in library <work> (Architecture <behavioral>).
+Entity <TestCPU1_iROM> analyzed. Unit <TestCPU1_iROM> generated.
+
+Analyzing Entity <mROM> in library <work> (Architecture <behavioral>).
+Entity <mROM> analyzed. Unit <mROM> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <mROM>.
+    Related source file is "E:/FPGA/Projects/Current Projects/Systems/LCD_Control/mROM.vhd".
+WARNING:Xst:647 - Input <enable> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1781 - Signal <mROM> is used but never assigned. Tied to default value.
+    Found 32x8-bit ROM for signal <data_out>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <mROM> synthesized.
+
+
+Synthesizing Unit <TestCPU1_Cntl>.
+    Related source file is "E:/FPGA/Projects/Current Projects/Systems/LCD_Control/TestCPU1_Cntl.vhd".
+    Found 11-bit up counter for signal <PC_reg>.
+    Found 1-bit register for signal <z_reg>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+Unit <TestCPU1_Cntl> synthesized.
+
+
+Synthesizing Unit <TestCPU1_ALU>.
+    Related source file is "E:/FPGA/Projects/Current Projects/Systems/LCD_Control/TestCPU1_ALU.vhd".
+WARNING:Xst:647 - Input <reset> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:647 - Input <clock> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:1780 - Signal <z> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 16-bit addsub for signal <result$addsub0000>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <TestCPU1_ALU> synthesized.
+
+
+Synthesizing Unit <TestCPU1_RegFile>.
+    Related source file is "E:/FPGA/Projects/Current Projects/Systems/LCD_Control/TestCPU1_RegFile.vhd".
+    Found 16-bit 8-to-1 multiplexer for signal <to_ALUA_out>.
+    Found 128-bit register for signal <reg_file>.
+    Summary:
+	inferred 128 D-type flip-flop(s).
+	inferred  16 Multiplexer(s).
+Unit <TestCPU1_RegFile> synthesized.
+
+
+Synthesizing Unit <TestCPU1_OutPins>.
+    Related source file is "E:/FPGA/Projects/Current Projects/Systems/LCD_Control/TestCPU1_OutPins.vhd".
+WARNING:Xst:647 - Input <data<15:6>> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+    Found 32-bit register for signal <output_pins>.
+    Found 32-bit register for signal <opin_reg>.
+    Summary:
+	inferred  64 D-type flip-flop(s).
+Unit <TestCPU1_OutPins> synthesized.
+
+
+Synthesizing Unit <TestCPU1_iROM>.
+    Related source file is "E:/FPGA/Projects/Current Projects/Systems/LCD_Control/TestCPU1_iRAM.vhd".
+WARNING:Xst:1781 - Signal <iROM> is used but never assigned. Tied to default value.
+    Found 2048x16-bit ROM for signal <data_out>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <TestCPU1_iROM> synthesized.
+
+
+Synthesizing Unit <TestCPU1>.
+    Related source file is "E:/FPGA/Projects/Current Projects/Systems/LCD_Control/TestCPU1.vhd".
+WARNING:Xst:1305 - Output <reg_2> is never assigned. Tied to value 0000000000000000.
+WARNING:Xst:1305 - Output <reg_5> is never assigned. Tied to value 0000000000000000.
+Unit <TestCPU1> synthesized.
+
+
+Synthesizing Unit <TestCPU1_SynthBench>.
+    Related source file is "E:/FPGA/Projects/Current Projects/Systems/LCD_Control/TestCPU1_SynthBench.vhd".
+WARNING:Xst:1780 - Signal <mROM_e> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <mROM_addr<15:5>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <buf_clock> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <TestCPU1_SynthBench> synthesized.
+
+INFO:Xst:1767 - HDL ADVISOR - Resource sharing has identified that some arithmetic operations in this design can share the same physical resources for reduced device utilization. For improved clock frequency you may try to disable resource sharing.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 2048x16-bit ROM                                       : 1
+ 32x8-bit ROM                                          : 1
+# Adders/Subtractors                                   : 1
+ 16-bit addsub                                         : 1
+# Counters                                             : 1
+ 11-bit up counter                                     : 1
+# Registers                                            : 42
+ 1-bit register                                        : 33
+ 16-bit register                                       : 8
+ 32-bit register                                       : 1
+# Multiplexers                                         : 1
+ 16-bit 8-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1293 - FF/Latch <reg_file_0_0> has a constant value of 0 in block <RegFile>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <reg_file_0_1> has a constant value of 0 in block <RegFile>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <reg_file_0_2> has a constant value of 0 in block <RegFile>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <reg_file_0_3> has a constant value of 0 in block <RegFile>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <reg_file_0_4> has a constant value of 0 in block <RegFile>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <reg_file_0_5> has a constant value of 0 in block <RegFile>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <reg_file_0_6> has a constant value of 0 in block <RegFile>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <reg_file_0_7> has a constant value of 0 in block <RegFile>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <reg_file_0_8> has a constant value of 0 in block <RegFile>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <reg_file_0_9> has a constant value of 0 in block <RegFile>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <reg_file_0_10> has a constant value of 0 in block <RegFile>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <reg_file_0_11> has a constant value of 0 in block <RegFile>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <reg_file_0_12> has a constant value of 0 in block <RegFile>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <reg_file_0_13> has a constant value of 0 in block <RegFile>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <reg_file_0_14> has a constant value of 0 in block <RegFile>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <reg_file_0_15> has a constant value of 0 in block <RegFile>. This FF/Latch will be trimmed during the optimization process.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 2048x16-bit ROM                                       : 1
+ 32x8-bit ROM                                          : 1
+# Adders/Subtractors                                   : 1
+ 16-bit addsub                                         : 1
+# Counters                                             : 1
+ 11-bit up counter                                     : 1
+# Registers                                            : 193
+ Flip-Flops                                            : 193
+# Multiplexers                                         : 16
+ 1-bit 8-to-1 multiplexer                              : 16
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1293 - FF/Latch <reg_file_0_0> has a constant value of 0 in block <TestCPU1_RegFile>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reg_file_0_1> has a constant value of 0 in block <TestCPU1_RegFile>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reg_file_0_2> has a constant value of 0 in block <TestCPU1_RegFile>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reg_file_0_3> has a constant value of 0 in block <TestCPU1_RegFile>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reg_file_0_4> has a constant value of 0 in block <TestCPU1_RegFile>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reg_file_0_5> has a constant value of 0 in block <TestCPU1_RegFile>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reg_file_0_6> has a constant value of 0 in block <TestCPU1_RegFile>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reg_file_0_7> has a constant value of 0 in block <TestCPU1_RegFile>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reg_file_0_8> has a constant value of 0 in block <TestCPU1_RegFile>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reg_file_0_9> has a constant value of 0 in block <TestCPU1_RegFile>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reg_file_0_10> has a constant value of 0 in block <TestCPU1_RegFile>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reg_file_0_11> has a constant value of 0 in block <TestCPU1_RegFile>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reg_file_0_12> has a constant value of 0 in block <TestCPU1_RegFile>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reg_file_0_13> has a constant value of 0 in block <TestCPU1_RegFile>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reg_file_0_14> has a constant value of 0 in block <TestCPU1_RegFile>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1896 - Due to other FF/Latch trimming, FF/Latch <reg_file_0_15> has a constant value of 0 in block <TestCPU1_RegFile>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:1901 - Instance DCM_main_clk in unit TestCPU1_SynthBench of type DCM has been replaced by DCM_SP
+INFO:Xst:1901 - Instance DCM_smaller_clk in unit TestCPU1_SynthBench of type DCM has been replaced by DCM_SP
+
+Optimizing unit <TestCPU1_SynthBench> ...
+
+Optimizing unit <TestCPU1_Cntl> ...
+
+Optimizing unit <TestCPU1_ALU> ...
+
+Optimizing unit <TestCPU1_RegFile> ...
+
+Optimizing unit <TestCPU1_OutPins> ...
+
+Optimizing unit <TestCPU1> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block TestCPU1_SynthBench, actual ratio is 5.
+FlipFlop CPU/Cntl/PC_reg_1 has been replicated 1 time(s)
+FlipFlop CPU/Cntl/PC_reg_2 has been replicated 1 time(s)
+FlipFlop CPU/Cntl/PC_reg_3 has been replicated 1 time(s)
+FlipFlop CPU/Cntl/PC_reg_4 has been replicated 1 time(s)
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 192
+ Flip-Flops                                            : 192
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : TestCPU1_SynthBench.ngr
+Top Level Output File Name         : TestCPU1_SynthBench
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 78
+
+Cell Usage :
+# BELS                             : 601
+#      GND                         : 1
+#      LUT2                        : 36
+#      LUT2_D                      : 4
+#      LUT2_L                      : 2
+#      LUT3                        : 91
+#      LUT3_D                      : 6
+#      LUT3_L                      : 14
+#      LUT4                        : 267
+#      LUT4_D                      : 29
+#      LUT4_L                      : 15
+#      MUXCY                       : 25
+#      MUXF5                       : 67
+#      MUXF6                       : 16
+#      VCC                         : 1
+#      XORCY                       : 27
+# FlipFlops/Latches                : 192
+#      FD                          : 15
+#      FD_1                        : 32
+#      FDE_1                       : 144
+#      FDR                         : 1
+# Clock Buffers                    : 1
+#      BUFG                        : 1
+# IO Buffers                       : 78
+#      IBUFG                       : 1
+#      OBUF                        : 77
+# DCMs                             : 2
+#      DCM_SP                      : 2
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      254  out of   4656     5%  
+ Number of Slice Flip Flops:            192  out of   9312     2%  
+ Number of 4 input LUTs:                464  out of   9312     4%  
+ Number of IOs:                          78
+ Number of bonded IOBs:                  78  out of    232    33%  
+ Number of GCLKs:                         1  out of     24     4%  
+ Number of DCMs:                          2  out of      4    50%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-----------------------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)                   | Load  |
+-----------------------------------+-----------------------------------------+-------+
+board_clk                          | DCM_main_clk:CLKFX+DCM_smaller_clk:CLKFX| 192   |
+-----------------------------------+-----------------------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 0.725ns (Maximum Frequency: 1379.747MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 6.303ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'board_clk'
+  Clock period: 0.725ns (frequency: 1379.747MHz)
+  Total number of paths / destination ports: 8565123 / 336
+-------------------------------------------------------------------------
+Delay:               18.119ns (Levels of Logic = 14)
+  Source:            CPU/Cntl/PC_reg_8 (FF)
+  Destination:       CPU/Opins/opin_reg_22 (FF)
+  Source Clock:      board_clk rising 0.0X
+  Destination Clock: board_clk falling 0.0X
+
+  Data Path: CPU/Cntl/PC_reg_8 to CPU/Opins/opin_reg_22
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               3   0.591   0.706  CPU/Cntl/PC_reg_8 (CPU/Cntl/PC_reg_8)
+     LUT4_D:I0->LO         1   0.704   0.179  CPU/iRAM_addr<10>1821 (N570)
+     LUT2:I1->O           22   0.704   1.339  CPU/iRAM_addr<10>171 (CPU/N19)
+     LUT4:I0->O            1   0.704   0.000  CPU/iRAM_addr<10>131_F (N492)
+     MUXF5:I0->O           5   0.321   0.808  CPU/iRAM_addr<10>131 (CPU/instruction_bus<12>)
+     LUT4:I0->O            6   0.704   0.673  CPU/Cntl/RFile_src1_addr_or000011 (CPU/Cntl/N21)
+     LUT4_D:I3->O         67   0.704   1.308  CPU/Cntl/RFile_dest_addr<0>11 (CPU/Cntl/N6)
+     LUT4:I2->O            1   0.704   0.000  CPU/RegFile/mux_51 (CPU/RegFile/mux_51)
+     MUXF5:I1->O           1   0.321   0.000  CPU/RegFile/mux_4_f5 (CPU/RegFile/mux_4_f5)
+     MUXF6:I0->O           1   0.521   0.595  CPU/RegFile/mux_2_f6 (CPU/ALUA_bus<0>)
+     LUT4:I0->O            1   0.704   0.000  CPU/ALU/Maddsub_result_addsub0000_lut<0> (CPU/ALU/Maddsub_result_addsub0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  CPU/ALU/Maddsub_result_addsub0000_cy<0> (CPU/ALU/Maddsub_result_addsub0000_cy<0>)
+     XORCY:CI->O          25   0.804   1.435  CPU/ALU/Maddsub_result_addsub0000_xor<1> (CPU/ALU/result_addsub0000<1>)
+     LUT4_D:I0->O          7   0.704   0.743  CPU/Opins/opin_reg_6_not00011_SW0 (N295)
+     LUT4:I2->O            1   0.704   0.420  CPU/Opins/opin_reg_26_not00011 (CPU/Opins/opin_reg_26_not0001)
+     FDE_1:CE                  0.555          CPU/Opins/opin_reg_26
+    ----------------------------------------
+    Total                     18.119ns (9.913ns logic, 8.206ns route)
+                                       (54.7% logic, 45.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'board_clk'
+  Total number of paths / destination ports: 67 / 39
+-------------------------------------------------------------------------
+Offset:              6.303ns (Levels of Logic = 3)
+  Source:            CPU/RegFile/reg_file_1_2 (FF)
+  Destination:       LCD_DB<6> (PAD)
+  Source Clock:      board_clk falling 0.0X
+
+  Data Path: CPU/RegFile/reg_file_1_2 to LCD_DB<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            9   0.591   0.995  CPU/RegFile/reg_file_1_2 (CPU/RegFile/reg_file_1_2)
+     LUT4:I0->O            1   0.704   0.000  MessageROM/Mrom_data_out61 (MessageROM/Mrom_data_out6)
+     MUXF5:I0->O           1   0.321   0.420  MessageROM/Mrom_data_out6_f5 (LCD_DB_6_OBUF)
+     OBUF:I->O                 3.272          LCD_DB_6_OBUF (LCD_DB<6>)
+    ----------------------------------------
+    Total                      6.303ns (4.888ns logic, 1.415ns route)
+                                       (77.6% logic, 22.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 18.00 secs
+Total CPU time to Xst completion: 18.86 secs
+ 
+--> 
+
+Total memory usage is 189376 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   44 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

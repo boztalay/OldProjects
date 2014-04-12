@@ -1,0 +1,35 @@
+Release 10.1 - xst K.31 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to ./xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.13 secs
+ 
+--> 
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Inv/Gate_Inv.vhd" in Library work.
+Architecture behavioral of Entity gate_inv is up to date.
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_And/Gate_And.vhd" in Library work.
+Architecture behavioral of Entity gate_and is up to date.
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_1of4Decoder/Comp_1of4Decoder.vhd" in Library work.
+Architecture behavioral of Entity comp_1of4decoder is up to date.
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Or/Gate_Or.vhd" in Library work.
+Architecture behavioral of Entity gate_or is up to date.
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_4x4Multiplexer/Comp_4x4Multiplexer.vhd" in Library work.
+Architecture behavioral of Entity comp_4x4multiplexer is up to date.
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.34 secs
+ 
+--> 
+
+Total memory usage is 157292 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

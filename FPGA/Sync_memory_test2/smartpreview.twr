@@ -1,0 +1,23 @@
+Number of Timing Constraints that were not applied: 1
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  TS1 = MAXDELAY TO TIMEGRP "TGclk80" 12 ns | MAXDELAY    |     4.811ns|     7.189ns|       0|           0
+------------------------------------------------------------------------------------------------------
+  NET "mclk_BUFGP/IBUFG" PERIOD = 20 ns HIG | SETUP       |    18.256ns|     1.744ns|       0|           0
+  H 50%                                     | HOLD        |     1.242ns|            |       0|           0
+------------------------------------------------------------------------------------------------------
+  NET "RAM_clk" PERIOD = 12 ns HIGH 50%     | N/A         |         N/A|         N/A|     N/A|         N/A
+------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the 
+   constraint does not cover any paths or that it has no requested value.
+
+

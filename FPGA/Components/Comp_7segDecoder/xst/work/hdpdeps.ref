@@ -1,0 +1,9 @@
+V3 3
+FL C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_7segDecoder/Comp_7segDecoder.vhd 2009/04/10.03:25:58 K.31
+EN work/Comp_7segDecoder 1239348361 \
+      FL C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_7segDecoder/Comp_7segDecoder.vhd \
+      PB ieee/std_logic_1164 1200023565 PB ieee/std_logic_arith 1200023566 \
+      PB ieee/STD_LOGIC_UNSIGNED 1200023567
+AR work/Comp_7segDecoder/Behavioral 1239348362 \
+      FL C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_7segDecoder/Comp_7segDecoder.vhd \
+      EN work/Comp_7segDecoder 1239348361

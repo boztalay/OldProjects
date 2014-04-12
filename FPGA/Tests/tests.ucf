@@ -1,0 +1,33 @@
+NET "clock" LOC = "B8";
+NET "reset" LOC = "B18";
+
+NET "test_led1" LOC = "K15";
+NET "test_led2" LOC = "K14";
+
+NET "decoder_out<6>"  LOC = "L18";
+NET "decoder_out<5>"  LOC = "F18";
+NET "decoder_out<4>"  LOC = "D17";
+NET "decoder_out<3>"  LOC = "D16";
+NET "decoder_out<2>"  LOC = "G14";
+NET "decoder_out<1>"  LOC = "J17";
+NET "decoder_out<0>"  LOC = "H14";
+
+NET "anodes<0>" LOC = "F17";
+NET "anodes<1>" LOC = "H17";
+NET "anodes<2>" LOC = "C18";
+NET "anodes<3>" LOC = "F15";
+
+NET "switches<0>" LOC = "G18";
+NET "switches<1>" LOC = "H18";
+NET "switches<2>" LOC = "K18";
+NET "switches<3>" LOC = "K17";
+NET "switches<4>" LOC = "L14";
+NET "switches<5>" LOC = "L13";
+NET "switches<6>" LOC = "N17";
+NET "switches<7>" LOC = "R17";
+
+NET "read_enable" LOC = "D18";
+NET "write_enable" LOC = "E18";
+
+NET "empty" LOC = "J14";
+NET "full" LOC = "J15";

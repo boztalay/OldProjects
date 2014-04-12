@@ -1,0 +1,7 @@
+vhdl work "C:\Users\Ben\Desktop\FPGAprojects\Gates\Gate_Nand\Gate_Nand.vhd"
+vhdl work "C:\Users\Ben\Desktop\FPGAprojects\Gates\Gate_Inv\Gate_Inv.vhd"
+vhdl work "C:\Users\Ben\Desktop\FPGAprojects\Gates\Gate_Buf\Gate_Buf.vhd"
+vhdl work "C:\Users\Ben\Desktop\FPGAprojects\Gates\Gate_Or\Gate_Or.vhd"
+vhdl work "C:\Users\Ben\Desktop\FPGAprojects\Gates\Gate_And\Gate_And.vhd"
+vhdl work "C:\Users\Ben\Desktop\FPGAprojects\Components\Comp_Dflipflop\Comp_Dflipflop.vhd"
+vhdl work "C:\Users\Ben\Desktop\FPGAprojects\Components\Comp_4bitDecadeCounter\Comp_4bitDecadeCounter.vhd"

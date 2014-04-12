@@ -1,0 +1,11 @@
+NET "clock" LOC = "B8";
+NET "output" LOC = "B4";
+
+#NET "switches<0>" LOC = "G18";
+#NET "switches<1>" LOC = "H18";
+#NET "switches<2>" LOC = "K18";
+#NET "switches<3>" LOC = "K17";
+#NET "switches<4>" LOC = "L14";
+#NET "switches<5>" LOC = "L13";
+#NET "switches<6>" LOC = "N17";
+#NET "switches<7>" LOC = "R17";

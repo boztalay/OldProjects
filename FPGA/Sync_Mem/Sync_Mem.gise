@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+<generated_project xmlns="http://www.xilinx.com/XMLSchema" xmlns:xil_pn="http://www.xilinx.com/XMLSchema">
+
+  <!--                                                          -->
+
+  <!--             For tool use only. Do not edit.              -->
+
+  <!--                                                          -->
+
+  <!-- ProjectNavigator created generated project file.         -->
+
+  <!-- For use in tracking generated file and other information -->
+
+  <!-- allowing preservation of process status.                 -->
+
+  <!--                                                          -->
+
+  <!-- Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved. -->
+
+  <version xmlns="http://www.xilinx.com/XMLSchema">11.1</version>
+
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_LSO" xil_pn:name=".lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="Sync_Mem.bld"/>
+    <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="Sync_Mem.cmd_log"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="Sync_Mem.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Sync_Mem.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="Sync_Mem.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="Sync_Mem.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="Sync_Mem.ngr"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="Sync_Mem.ntrc_log"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="Sync_Mem.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="Sync_Mem.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="Sync_Mem.pcf" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Sync_Mem.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="Sync_Mem.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="Sync_Mem.stx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="Sync_Mem.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="Sync_Mem.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="Sync_Mem.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="Sync_Mem.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="Sync_Mem.ut"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="Sync_Mem.xpi"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="Sync_Mem.xst"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_CMD" xil_pn:name="Sync_Mem_TB.fdo"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="Sync_Mem_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Sync_Mem_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="Sync_Mem_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="Sync_Mem_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="Sync_Mem_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Sync_Mem_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Sync_Mem_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="Sync_Mem_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="Sync_Mem_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Sync_Mem_par.xrpt"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="Sync_Mem_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="Sync_Mem_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="Sync_Mem_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="Sync_Mem_vhdl.prj"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BCD" xil_pn:name="Sync_Mem_xdb/cst.xbcd"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="Sync_Mem_xst.xrpt"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="smartpreview.twr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="sync_mem.bgn"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="sync_mem.bit"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="sync_mem.drc"/>
+    <file xil_pn:branch="BehavioralSim" xil_pn:fileType="FILE_MODELSIM_LOG" xil_pn:name="vsim.wlf"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="work"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
+  </files>
+
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1278120958" xil_pn:name="TRAN_copyInitialToAbstractSimulation" xil_pn:start_ts="1278120958">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1278121422" xil_pn:in_ck="-6376569324904901045" xil_pn:name="TRAN_copyAbstractToPostAbstractSimulation" xil_pn:start_ts="1278121422">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Sync_Mem.vhd"/>
+      <outfile xil_pn:name="Sync_Mem_TB.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1278120696" xil_pn:name="TRAN_xawsToSimhdl" xil_pn:prop_ck="-9044832904953873877" xil_pn:start_ts="1278120696">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1278120696" xil_pn:name="TRAN_schematicsToHdlSim" xil_pn:prop_ck="3418866178078708973" xil_pn:start_ts="1278120696">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1278120696" xil_pn:name="TRAN_regenerateCoresSim" xil_pn:prop_ck="6834503620298301459" xil_pn:start_ts="1278120696">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1278121423" xil_pn:in_ck="-6376569324904901045" xil_pn:name="TRAN_copyPostAbstractToPreSimulation" xil_pn:start_ts="1278121422">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Sync_Mem.vhd"/>
+      <outfile xil_pn:name="Sync_Mem_TB.vhd"/>
+    </transform>
+    <transform xil_pn:end_ts="1278121424" xil_pn:in_ck="-6376569324904901045" xil_pn:name="TRAN_MSimulateBehavioralModel" xil_pn:prop_ck="9075215600142066479" xil_pn:start_ts="1278121423">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Sync_Mem_TB.fdo"/>
+      <outfile xil_pn:name="vsim.wlf"/>
+      <outfile xil_pn:name="work"/>
+    </transform>
+    <transform xil_pn:end_ts="1278123085" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1278123085">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1278123085" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="3418866178078708973" xil_pn:start_ts="1278123085">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1278123085" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="6834503620298301459" xil_pn:start_ts="1278123085">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1278123085" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1278123085">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1278123085" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="-9044832904953873877" xil_pn:start_ts="1278123085">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1278123085" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:start_ts="1278123085">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1278123085" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-2416775198504632944" xil_pn:start_ts="1278123085">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1278125532" xil_pn:in_ck="-5217053818752029217" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="3561583632930906263" xil_pn:start_ts="1278125522">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Sync_Mem.cmd_log"/>
+      <outfile xil_pn:name="Sync_Mem.lso"/>
+      <outfile xil_pn:name="Sync_Mem.ngc"/>
+      <outfile xil_pn:name="Sync_Mem.ngr"/>
+      <outfile xil_pn:name="Sync_Mem.ntrc_log"/>
+      <outfile xil_pn:name="Sync_Mem.prj"/>
+      <outfile xil_pn:name="Sync_Mem.stx"/>
+      <outfile xil_pn:name="Sync_Mem.syr"/>
+      <outfile xil_pn:name="Sync_Mem.xst"/>
+      <outfile xil_pn:name="Sync_Mem_summary.html"/>
+      <outfile xil_pn:name="Sync_Mem_vhdl.prj"/>
+      <outfile xil_pn:name="Sync_Mem_xst.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1278123096" xil_pn:in_ck="4385564547872585223" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="4346522834223489395" xil_pn:start_ts="1278123095">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Sync_Mem_xdb/cst.xbcd"/>
+    </transform>
+    <transform xil_pn:end_ts="1278125538" xil_pn:in_ck="1899911992494651464" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-9171021517284809163" xil_pn:start_ts="1278125532">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Sync_Mem.bld"/>
+      <outfile xil_pn:name="Sync_Mem.cmd_log"/>
+      <outfile xil_pn:name="Sync_Mem.ngd"/>
+      <outfile xil_pn:name="Sync_Mem_ngdbuild.xrpt"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1278125544" xil_pn:in_ck="3567801507447636425" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-5849673150125579957" xil_pn:start_ts="1278125538">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
+      <outfile xil_pn:name="Sync_Mem.pcf"/>
+      <outfile xil_pn:name="Sync_Mem_map.map"/>
+      <outfile xil_pn:name="Sync_Mem_map.mrp"/>
+      <outfile xil_pn:name="Sync_Mem_map.ncd"/>
+      <outfile xil_pn:name="Sync_Mem_map.ngm"/>
+      <outfile xil_pn:name="Sync_Mem_map.xrpt"/>
+      <outfile xil_pn:name="Sync_Mem_summary.xml"/>
+      <outfile xil_pn:name="Sync_Mem_usage.xml"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+    </transform>
+    <transform xil_pn:end_ts="1278125564" xil_pn:in_ck="4092709238664879330" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-6749389678153680302" xil_pn:start_ts="1278125544">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="Sync_Mem.ncd"/>
+      <outfile xil_pn:name="Sync_Mem.pad"/>
+      <outfile xil_pn:name="Sync_Mem.par"/>
+      <outfile xil_pn:name="Sync_Mem.ptwx"/>
+      <outfile xil_pn:name="Sync_Mem.unroutes"/>
+      <outfile xil_pn:name="Sync_Mem.xpi"/>
+      <outfile xil_pn:name="Sync_Mem_pad.csv"/>
+      <outfile xil_pn:name="Sync_Mem_pad.txt"/>
+      <outfile xil_pn:name="Sync_Mem_par.xrpt"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="smartpreview.twr"/>
+    </transform>
+    <transform xil_pn:end_ts="1278125573" xil_pn:in_ck="4385564547872577598" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="287829442711806529" xil_pn:start_ts="1278125564">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="Sync_Mem.ut"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="sync_mem.bgn"/>
+      <outfile xil_pn:name="sync_mem.bit"/>
+      <outfile xil_pn:name="sync_mem.drc"/>
+    </transform>
+    <transform xil_pn:end_ts="1278125564" xil_pn:in_ck="4767314418168240965" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="9067365325683159964" xil_pn:start_ts="1278125560">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
+      <outfile xil_pn:name="Sync_Mem.twr"/>
+      <outfile xil_pn:name="Sync_Mem.twx"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+    </transform>
+  </transforms>
+
+</generated_project>

@@ -1,0 +1,20 @@
+//! **************************************************************************
+// Written by: Map K.31 on Thu Apr 16 23:25:25 2009
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "databus<5>" LOCATE = SITE "L16" LEVEL 1;
+COMP "databus<6>" LOCATE = SITE "M14" LEVEL 1;
+COMP "databus<7>" LOCATE = SITE "M16" LEVEL 1;
+COMP "SysCLK" LOCATE = SITE "B8" LEVEL 1;
+COMP "RW" LOCATE = SITE "R16" LEVEL 1;
+COMP "E" LOCATE = SITE "T18" LEVEL 1;
+COMP "databus<0>" LOCATE = SITE "L15" LEVEL 1;
+COMP "RS" LOCATE = SITE "P17" LEVEL 1;
+COMP "databus<1>" LOCATE = SITE "K12" LEVEL 1;
+COMP "databus<2>" LOCATE = SITE "L17" LEVEL 1;
+COMP "databus<3>" LOCATE = SITE "M15" LEVEL 1;
+COMP "databus<4>" LOCATE = SITE "K13" LEVEL 1;
+NET "SysCLK_IBUFG" BEL "BUFG_BufSysCLK.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

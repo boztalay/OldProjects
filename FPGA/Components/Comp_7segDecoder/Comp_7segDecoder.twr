@@ -1,0 +1,80 @@
+--------------------------------------------------------------------------------
+Release 10.1 Trace  (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\trce.exe -ise
+C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_7segDecoder/Comp_7segDecoder.ise
+-intstyle ise -e 3 -s 4 -xml Comp_7segDecoder Comp_7segDecoder.ncd -o
+Comp_7segDecoder.twr Comp_7segDecoder.pcf -ucf Comp_7segDecoder.ucf
+
+Design file:              Comp_7segDecoder.ncd
+Physical constraint file: Comp_7segDecoder.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2008-01-09)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A<0>           |seg<0>         |    6.963|
+A<0>           |seg<1>         |    6.597|
+A<0>           |seg<2>         |    7.150|
+A<0>           |seg<3>         |    7.085|
+A<0>           |seg<4>         |    6.772|
+A<0>           |seg<5>         |    6.826|
+A<0>           |seg<6>         |    6.030|
+A<1>           |seg<0>         |    7.459|
+A<1>           |seg<1>         |    7.158|
+A<1>           |seg<2>         |    7.692|
+A<1>           |seg<3>         |    7.596|
+A<1>           |seg<4>         |    7.314|
+A<1>           |seg<5>         |    7.337|
+A<1>           |seg<6>         |    6.379|
+A<2>           |seg<0>         |    7.911|
+A<2>           |seg<1>         |    7.603|
+A<2>           |seg<2>         |    7.925|
+A<2>           |seg<3>         |    7.822|
+A<2>           |seg<4>         |    7.547|
+A<2>           |seg<5>         |    7.563|
+A<2>           |seg<6>         |    7.323|
+A<3>           |seg<0>         |    7.561|
+A<3>           |seg<1>         |    7.222|
+A<3>           |seg<2>         |    8.774|
+A<3>           |seg<3>         |    8.736|
+A<3>           |seg<4>         |    8.396|
+A<3>           |seg<5>         |    8.477|
+A<3>           |seg<6>         |    7.189|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Apr 10 03:26:19 2009 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 129 MB
+
+
+

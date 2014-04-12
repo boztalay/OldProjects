@@ -1,0 +1,17 @@
+V3 9
+FL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_Mem/four_dig_7seg.vhd" 2010/05/16.17:43:09 L.33
+EN work/four_dig_7seg 1278125525 \
+      FL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_Mem/four_dig_7seg.vhd" \
+      PB ieee/std_logic_1164 1236108447 PB ieee/std_logic_arith 1236108448 \
+      PB ieee/STD_LOGIC_UNSIGNED 1236108449
+AR work/four_dig_7seg/Behavioral 1278125526 \
+      FL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_Mem/four_dig_7seg.vhd" \
+      EN work/four_dig_7seg 1278125525
+FL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_Mem/Sync_Mem.vhd" 2010/07/02.22:52:01 L.33
+EN work/Sync_Mem 1278125527 \
+      FL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_Mem/Sync_Mem.vhd" \
+      PB ieee/std_logic_1164 1236108447 PB ieee/std_logic_arith 1236108448 \
+      PB ieee/STD_LOGIC_UNSIGNED 1236108449 LB UNISIM PH unisim/VCOMPONENTS 1236108447
+AR work/Sync_Mem/Behavioral 1278125528 \
+      FL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_Mem/Sync_Mem.vhd" \
+      EN work/Sync_Mem 1278125527 CP DCM CP four_dig_7seg

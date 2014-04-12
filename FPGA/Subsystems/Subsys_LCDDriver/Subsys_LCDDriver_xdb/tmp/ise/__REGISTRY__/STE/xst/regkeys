@@ -1,0 +1,6 @@
+CommandLine
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\xst.exe -ise C:/Users/Ben/Desktop/FPGAprojects/Subsystems/Subsys_LCDDriver/Subsys_LCDDriver.ise -intstyle ise -ifn Subsys_LCDDriver.xst -ofn Subsys_LCDDriver.stx -finalclean 1
+s
+FormatString
+xst [-ifn <InputFile>] [-ofn <OutputFile>] [-ise <iseProjectFile>] [--quiet] [-intstyle <Style>] [--deb <DebugLevel>] [--finalclean <Clean>] [--PcubeFlow] [--globOptFlow] [--XstNtrc]
+s

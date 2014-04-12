@@ -1,0 +1,5 @@
+vhdl work "fifo.vhd"
+vhdl work "memory.vhd"
+vhdl work "DCMi_80.vhd"
+vhdl work "../OZ-3_System/four_dig_7seg.vhd"
+vhdl work "top_level.vhd"

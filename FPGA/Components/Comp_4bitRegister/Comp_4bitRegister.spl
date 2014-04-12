@@ -1,0 +1,12 @@
+[Inputs]
+D1
+D2
+D3
+D4
+CLK
+[Outputs]
+Q1
+Q2
+Q3
+Q4
+[BiDir]

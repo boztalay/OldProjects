@@ -1,0 +1,64 @@
+--------------------------------------------------------------------------------
+Release 10.1 Trace  (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\trce.exe -ise
+C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_4bitSyncCounter/Comp_4bitSyncCounter.ise
+-intstyle ise -e 3 -s 4 -xml Comp_4bitSyncCounter Comp_4bitSyncCounter.ncd -o
+Comp_4bitSyncCounter.twr Comp_4bitSyncCounter.pcf -ucf Comp_4bitSyncCounter.ucf
+
+Design file:              Comp_4bitSyncCounter.ncd
+Physical constraint file: Comp_4bitSyncCounter.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2008-01-09)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+CLK            |Q1             |    9.150|
+CLK            |Q2             |   11.705|
+CLK            |Q3             |   14.353|
+CLK            |Q4             |   18.050|
+E              |Q1             |    7.797|
+E              |Q2             |   10.352|
+E              |Q3             |   13.000|
+E              |Q4             |   16.697|
+R              |Q1             |    7.979|
+R              |Q2             |   10.534|
+R              |Q3             |   13.182|
+R              |Q4             |   16.879|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Apr 10 23:47:36 2009 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 129 MB
+
+
+

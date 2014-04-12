@@ -1,0 +1,24 @@
+xst -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_Mem/Sync_Mem.ise" -intstyle ise -ifn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_Mem/Sync_Mem.xst" -ofn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_Mem/Sync_Mem.syr" 
+ngdbuild -ise "Sync_Mem.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Sync_Mem.ngc Sync_Mem.ngd  
+map -ise "Sync_Mem.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Sync_Mem_map.ncd Sync_Mem.ngd Sync_Mem.pcf 
+par -ise "Sync_Mem.ise" -w -intstyle ise -ol std -t 1 Sync_Mem_map.ncd Sync_Mem.ncd Sync_Mem.pcf 
+trce -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_Mem/Sync_Mem.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml Sync_Mem.twx Sync_Mem.ncd -o Sync_Mem.twr Sync_Mem.pcf -ucf Sync_Mem.ucf 
+bitgen -ise "Sync_Mem.ise" -intstyle ise -f Sync_Mem.ut Sync_Mem.ncd 
+xst -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_Mem/Sync_Mem.ise" -intstyle ise -ifn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_Mem/Sync_Mem.xst" -ofn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_Mem/Sync_Mem.syr" 
+ngdbuild -ise "Sync_Mem.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Sync_Mem.ngc Sync_Mem.ngd  
+map -ise "Sync_Mem.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Sync_Mem_map.ncd Sync_Mem.ngd Sync_Mem.pcf 
+par -ise "Sync_Mem.ise" -w -intstyle ise -ol std -t 1 Sync_Mem_map.ncd Sync_Mem.ncd Sync_Mem.pcf 
+trce -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_Mem/Sync_Mem.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml Sync_Mem.twx Sync_Mem.ncd -o Sync_Mem.twr Sync_Mem.pcf -ucf Sync_Mem.ucf 
+bitgen -ise "Sync_Mem.ise" -intstyle ise -f Sync_Mem.ut Sync_Mem.ncd 
+xst -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_Mem/Sync_Mem.ise" -intstyle ise -ifn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_Mem/Sync_Mem.xst" -ofn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_Mem/Sync_Mem.syr" 
+ngdbuild -ise "Sync_Mem.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Sync_Mem.ngc Sync_Mem.ngd  
+map -ise "Sync_Mem.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Sync_Mem_map.ncd Sync_Mem.ngd Sync_Mem.pcf 
+par -ise "Sync_Mem.ise" -w -intstyle ise -ol std -t 1 Sync_Mem_map.ncd Sync_Mem.ncd Sync_Mem.pcf 
+trce -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_Mem/Sync_Mem.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml Sync_Mem.twx Sync_Mem.ncd -o Sync_Mem.twr Sync_Mem.pcf -ucf Sync_Mem.ucf 
+bitgen -ise "Sync_Mem.ise" -intstyle ise -f Sync_Mem.ut Sync_Mem.ncd 
+xst -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_Mem/Sync_Mem.ise" -intstyle ise -ifn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_Mem/Sync_Mem.xst" -ofn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_Mem/Sync_Mem.syr" 
+ngdbuild -ise "Sync_Mem.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Sync_Mem.ngc Sync_Mem.ngd  
+map -ise "Sync_Mem.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Sync_Mem_map.ncd Sync_Mem.ngd Sync_Mem.pcf 
+par -ise "Sync_Mem.ise" -w -intstyle ise -ol std -t 1 Sync_Mem_map.ncd Sync_Mem.ncd Sync_Mem.pcf 
+trce -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_Mem/Sync_Mem.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml Sync_Mem.twx Sync_Mem.ncd -o Sync_Mem.twr Sync_Mem.pcf -ucf Sync_Mem.ucf 
+bitgen -ise "Sync_Mem.ise" -intstyle ise -f Sync_Mem.ut Sync_Mem.ncd 

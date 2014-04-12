@@ -1,0 +1,9 @@
+V3 5
+FL C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_16bitShiftReg/Comp_16bitShiftReg/Comp_16bitShiftReg.vhd 2009/06/08.15:23:00 K.31
+EN work/Comp_16bitShiftReg 1244488983 \
+      FL C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_16bitShiftReg/Comp_16bitShiftReg/Comp_16bitShiftReg.vhd \
+      PB ieee/std_logic_1164 1200023565 PB ieee/std_logic_arith 1200023566 \
+      PB ieee/STD_LOGIC_UNSIGNED 1200023567 LB UNISIM PH unisim/VCOMPONENTS 1200023571
+AR work/Comp_16bitShiftReg/Behavioral 1244488984 \
+      FL C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_16bitShiftReg/Comp_16bitShiftReg/Comp_16bitShiftReg.vhd \
+      EN work/Comp_16bitShiftReg 1244488983 CP BUFG

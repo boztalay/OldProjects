@@ -1,0 +1,14 @@
+NET "SysCLK" LOC = "B8";
+
+NET "RS" LOC = "P17";
+NET "RW" LOC = "R16";
+NET "E"  LOC = "T18";
+
+NET "databus<0>" LOC = "L15";
+NET "databus<1>" LOC = "K12";
+NET "databus<2>" LOC = "L17";
+NET "databus<3>" LOC = "M15";
+NET "databus<4>" LOC = "K13";
+NET "databus<5>" LOC = "L16";
+NET "databus<6>" LOC = "M14";
+NET "databus<7>" LOC = "M16";

@@ -1,0 +1,33 @@
+SET_FLAG DEBUG FALSE
+SET_FLAG MODE INTERACTIVE
+SET_FLAG STANDALONE_MODE FALSE
+SET_COMMAND_CONTEXT STRING webbrowserpath C:\Program Files (x86)\Internet Explorer\IEXPLORE.EXE
+SET_COMMAND_CONTEXT STRING pdfviewerpath "C:\Program Files (x86)\Adobe\Reader 9.0\Reader\AcroRd32.exe"
+SET_COMMAND_CONTEXT INT mainwindowxcoord 0
+SET_COMMAND_CONTEXT INT mainwindowycoord 0
+SET_COMMAND_CONTEXT INT mainwindowwidth 200
+SET_COMMAND_CONTEXT INT mainwindowheight 400
+SET_PREFERENCE flowvendor Foundation_iSE
+SET_PREFERENCE verilogsim True
+SET_PREFERENCE vhdlsim True
+SET_PREFERENCE workingdirectory C:\Users\Ben\Desktop\Folders\FPGA\Projects\Old Projects\Gates\Gate_Buf\tmp
+SET_PREFERENCE speedgrade -4
+SET_PREFERENCE simulationfiles Behavioral
+SET_PREFERENCE asysymbol True
+SET_PREFERENCE addpads False
+SET_PREFERENCE outputdirectory C:\Users\Ben\Desktop\Folders\FPGA\Projects\Old Projects\Gates\Gate_Buf\tmp\_cg\
+SET_PREFERENCE device xc3s500e
+SET_PREFERENCE implementationfiletype Ngc
+SET_PREFERENCE busformat BusFormatAngleBracketNotRipped
+SET_PREFERENCE foundationsym False
+SET_PREFERENCE package fg320
+SET_PREFERENCE createndf False
+SET_PREFERENCE designentry VHDL
+SET_PREFERENCE devicefamily spartan3e
+SET_PREFERENCE formalverification False
+SET_PREFERENCE removerpms False
+SET_PARAMETER component_name MIG
+SET_CORE_CLASS com.xilinx.ip.mig_v2_3.bin.nt.mig
+SET_CORE_PATH C:\Xilinx\10.1\ISE\coregen\ip\xilinx\other\com\xilinx\ip\mig_v2_3\
+SET_CORE_NAME MIG
+SET_CORE_VERSION 2.3

@@ -1,0 +1,60 @@
+--------------------------------------------------------------------------------
+Release 10.1 Trace  (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\10.1\ISE\bin\nt\unwrapped\trce.exe -ise
+C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_1of4Decoder/Comp_1of4Decoder.ise
+-intstyle ise -e 3 -s 4 -xml Comp_1of4Decoder Comp_1of4Decoder.ncd -o
+Comp_1of4Decoder.twr Comp_1of4Decoder.pcf -ucf Comp_1of4Decoder.ucf
+
+Design file:              Comp_1of4Decoder.ncd
+Physical constraint file: Comp_1of4Decoder.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2008-01-09)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+A0             |Q0             |    6.566|
+A0             |Q1             |    6.566|
+A0             |Q2             |    6.636|
+A0             |Q3             |    6.824|
+A1             |Q0             |    6.124|
+A1             |Q1             |    6.119|
+A1             |Q2             |    6.562|
+A1             |Q3             |    6.723|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Apr 10 18:16:34 2009 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 129 MB
+
+
+

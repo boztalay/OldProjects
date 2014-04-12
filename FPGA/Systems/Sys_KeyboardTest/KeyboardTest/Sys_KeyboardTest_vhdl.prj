@@ -1,0 +1,3 @@
+vhdl work "C:\Users\Ben\Desktop\FPGAprojects\Components\Comp_FrequencyDivider\Comp_FrequencyDivider.vhd"
+vhdl work "C:\Users\Ben\Desktop\FPGAprojects\Components\Comp_7segDecoder\Comp_7segDecoder.vhd"
+vhdl work "C:\Users\Ben\Desktop\FPGAprojects\Systems\Sys_KeyboardTest\KeyboardTest\Sys_KeyboardTest.vhd"

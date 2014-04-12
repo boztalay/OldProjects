@@ -1,0 +1,332 @@
+xst -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+xst -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+ngdbuild -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+ngdbuild -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+ngdbuild -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+xst -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+ngdbuild -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "G:/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+xst -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+xst -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben Oztalay/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+netgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ar Structure -tm Sys_LCDTest -w -dir netgen/synthesis -ofmt vhdl -sim Sys_LCDTest.ngc Sys_LCDTest_synthesis.vhd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Sys_LCDTest.ngc" Sys_LCDTest.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Sys_LCDTest_map.ncd Sys_LCDTest.ngd Sys_LCDTest.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -w -intstyle ise -ol std -t 1 Sys_LCDTest_map.ncd Sys_LCDTest.ncd Sys_LCDTest.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -e 3 -s 4 -xml Sys_LCDTest Sys_LCDTest.ncd -o Sys_LCDTest.twr Sys_LCDTest.pcf -ucf Sys_LCDTest.ucf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.ise" -intstyle ise -f Sys_LCDTest.ut Sys_LCDTest.ncd

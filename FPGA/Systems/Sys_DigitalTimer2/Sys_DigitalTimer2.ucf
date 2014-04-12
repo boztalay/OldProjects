@@ -1,0 +1,15 @@
+NET "SysCLK" LOC = "B8";
+NET "Reset" LOC = "H13";
+
+NET "segs<0>" LOC = "L18";
+NET "segs<1>" LOC = "F18";
+NET "segs<2>" LOC = "D17";
+NET "segs<3>" LOC = "D16";
+NET "segs<4>" LOC = "G14";
+NET "segs<5>" LOC = "J17";
+NET "segs<6>" LOC = "H14";
+
+NET "anodes<0>" LOC = "F17";
+NET "anodes<1>" LOC = "H17";
+NET "anodes<2>" LOC = "C18";
+NET "anodes<3>" LOC = "F15";

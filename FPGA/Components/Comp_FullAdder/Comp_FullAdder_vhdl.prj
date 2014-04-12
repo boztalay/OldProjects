@@ -1,0 +1,4 @@
+vhdl work "C:\Users\Ben\Desktop\FPGAprojects\Gates\Gate_Xor\Gate_Xor.vhd"
+vhdl work "C:\Users\Ben\Desktop\FPGAprojects\Gates\Gate_Or\Gate_Or.vhd"
+vhdl work "C:\Users\Ben\Desktop\FPGAprojects\Gates\Gate_And\Gate_And.vhd"
+vhdl work "C:\Users\Ben\Desktop\FPGAprojects\Components\Comp_FullAdder\Comp_FullAdder.vhd"

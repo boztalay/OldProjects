@@ -1,0 +1,4 @@
+set -tmpdir "./xst/projnav.tmp"
+elaborate
+-ifn Comp_ValChk10.prj
+-ifmt mixed

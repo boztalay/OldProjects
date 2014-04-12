@@ -1,0 +1,5 @@
+vhdl work "../../Gates/Gate_Inv/Gate_Inv.vhd"
+vhdl work "../../Gates/Gate_And/Gate_And.vhd"
+vhdl work "../../Gates/Gate_Or/Gate_Or.vhd"
+vhdl work "../Comp_1of4Decoder/Comp_1of4Decoder.vhd"
+vhdl work "Comp_4x4Multiplexer.vhd"

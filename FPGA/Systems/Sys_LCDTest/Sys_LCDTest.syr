@@ -1,0 +1,560 @@
+Release 10.1 - xst K.31 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: Sys_LCDTest.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Sys_LCDTest.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Sys_LCDTest"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : Sys_LCDTest
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : Sys_LCDTest.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.vhd" in Library work.
+Entity <frequencydivider> compiled.
+Entity <frequencydivider> (Architecture <behavioral>) compiled.
+Entity <sys_lcdtest> compiled.
+Entity <sys_lcdtest> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Sys_LCDTest> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <FrequencyDivider> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Sys_LCDTest> in library <work> (Architecture <behavioral>).
+INFO:Xst:2679 - Register <RW> in unit <Sys_LCDTest> has a constant value of 0 during circuit operation. The register is replaced by logic.
+Entity <Sys_LCDTest> analyzed. Unit <Sys_LCDTest> generated.
+
+Analyzing Entity <FrequencyDivider> in library <work> (Architecture <behavioral>).
+Entity <FrequencyDivider> analyzed. Unit <FrequencyDivider> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <FrequencyDivider>.
+    Related source file is "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.vhd".
+    Found 1-bit register for signal <CLK1MHz>.
+    Found 32-bit up counter for signal <cnt>.
+    Found 32-bit adder for signal <cnt$add0000> created at line 45.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <FrequencyDivider> synthesized.
+
+
+Synthesizing Unit <Sys_LCDTest>.
+    Related source file is "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_LCDTest/Sys_LCDTest.vhd".
+WARNING:Xst:1781 - Signal <message<1:2>> is used but never assigned. Tied to default value.
+WARNING:Xst:1780 - Signal <message<3:12>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+INFO:Xst:1608 - Relative priorities of control signals on register <databus> differ from those commonly found in the selected device family. This will result in additional logic around the register.
+INFO:Xst:1608 - Relative priorities of control signals on register <RS> differ from those commonly found in the selected device family. This will result in additional logic around the register.
+WARNING:Xst:737 - Found 8-bit latch for signal <databus>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <E>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 1-bit latch for signal <RS>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 128x8-bit ROM for signal <mux0000$mux0000>.
+    Found 128x8-bit ROM for signal <mux0000$mux0001>.
+WARNING:Xst:737 - Found 32-bit latch for signal <wait_time>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+INFO:Xst:2371 - HDL ADVISOR - Logic functions respectively driving the data and gate enable inputs of this latch share common terms. This situation will potentially lead to setup/hold violations and, as a result, to simulation problems. This situation may come from an incomplete case statement (all selector values are not covered). You should carefully review if it was in your intentions to describe such a latch.
+    Found 32-bit up counter for signal <count_us>.
+    Found 32-bit comparator greatequal for signal <databus$cmp_ge0000> created at line 338.
+    Found 32-bit comparator greatequal for signal <databus$or0000>.
+    Found 32-bit comparator greatequal for signal <E$or0000>.
+    Found 32-bit comparator greatequal for signal <mux0001$cmp_ge0000> created at line 360.
+    Found 32-bit comparator less for signal <RS$cmp_lt0000> created at line 371.
+    Found 32-bit comparator greatequal for signal <RS$or0001>.
+    Found 32-bit adder for signal <wait_time$addsub0000> created at line 378.
+    Found 32-bit adder for signal <wait_time$addsub0001> created at line 390.
+    Found 32-bit comparator greatequal for signal <wait_time$cmp_ge0000> created at line 383.
+    Found 32-bit 4-to-1 multiplexer for signal <wait_time$mux0004> created at line 383.
+    Summary:
+	inferred   2 ROM(s).
+	inferred   1 Counter(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   7 Comparator(s).
+	inferred  32 Multiplexer(s).
+Unit <Sys_LCDTest> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 128x8-bit ROM                                         : 2
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 3
+# Counters                                             : 2
+ 32-bit up counter                                     : 2
+# Registers                                            : 1
+ 1-bit register                                        : 1
+# Latches                                              : 4
+ 1-bit latch                                           : 2
+ 32-bit latch                                          : 1
+ 8-bit latch                                           : 1
+# Comparators                                          : 7
+ 32-bit comparator greatequal                          : 6
+ 32-bit comparator less                                : 1
+# Multiplexers                                         : 1
+ 32-bit 4-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Loading device for application Rf_Device from file '3s500e.nph' in environment C:\Xilinx\10.1\ISE.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 2
+ 128x8-bit ROM                                         : 2
+# Adders/Subtractors                                   : 3
+ 32-bit adder                                          : 3
+# Counters                                             : 2
+ 32-bit up counter                                     : 2
+# Registers                                            : 1
+ Flip-Flops                                            : 1
+# Latches                                              : 4
+ 1-bit latch                                           : 2
+ 32-bit latch                                          : 1
+ 8-bit latch                                           : 1
+# Comparators                                          : 7
+ 32-bit comparator greatequal                          : 6
+ 32-bit comparator less                                : 1
+# Multiplexers                                         : 1
+ 32-bit 4-to-1 multiplexer                             : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <databus_7> (without init value) has a constant value of 0 in block <Sys_LCDTest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <wait_time_0> of sequential type is unconnected in block <Sys_LCDTest>.
+WARNING:Xst:2677 - Node <wait_time_1> of sequential type is unconnected in block <Sys_LCDTest>.
+WARNING:Xst:2677 - Node <wait_time_2> of sequential type is unconnected in block <Sys_LCDTest>.
+WARNING:Xst:2677 - Node <wait_time_3> of sequential type is unconnected in block <Sys_LCDTest>.
+WARNING:Xst:2677 - Node <wait_time_4> of sequential type is unconnected in block <Sys_LCDTest>.
+WARNING:Xst:2677 - Node <wait_time_5> of sequential type is unconnected in block <Sys_LCDTest>.
+WARNING:Xst:2677 - Node <wait_time_6> of sequential type is unconnected in block <Sys_LCDTest>.
+WARNING:Xst:2677 - Node <wait_time_7> of sequential type is unconnected in block <Sys_LCDTest>.
+WARNING:Xst:2677 - Node <wait_time_8> of sequential type is unconnected in block <Sys_LCDTest>.
+WARNING:Xst:2677 - Node <wait_time_9> of sequential type is unconnected in block <Sys_LCDTest>.
+WARNING:Xst:2677 - Node <wait_time_10> of sequential type is unconnected in block <Sys_LCDTest>.
+WARNING:Xst:2677 - Node <wait_time_11> of sequential type is unconnected in block <Sys_LCDTest>.
+WARNING:Xst:2677 - Node <wait_time_12> of sequential type is unconnected in block <Sys_LCDTest>.
+WARNING:Xst:2677 - Node <wait_time_13> of sequential type is unconnected in block <Sys_LCDTest>.
+WARNING:Xst:2677 - Node <wait_time_14> of sequential type is unconnected in block <Sys_LCDTest>.
+WARNING:Xst:2677 - Node <wait_time_15> of sequential type is unconnected in block <Sys_LCDTest>.
+WARNING:Xst:2677 - Node <wait_time_16> of sequential type is unconnected in block <Sys_LCDTest>.
+WARNING:Xst:2677 - Node <wait_time_17> of sequential type is unconnected in block <Sys_LCDTest>.
+WARNING:Xst:2677 - Node <wait_time_18> of sequential type is unconnected in block <Sys_LCDTest>.
+WARNING:Xst:2677 - Node <wait_time_19> of sequential type is unconnected in block <Sys_LCDTest>.
+WARNING:Xst:2677 - Node <wait_time_20> of sequential type is unconnected in block <Sys_LCDTest>.
+WARNING:Xst:2677 - Node <wait_time_21> of sequential type is unconnected in block <Sys_LCDTest>.
+WARNING:Xst:2677 - Node <wait_time_22> of sequential type is unconnected in block <Sys_LCDTest>.
+WARNING:Xst:2677 - Node <wait_time_23> of sequential type is unconnected in block <Sys_LCDTest>.
+WARNING:Xst:2677 - Node <wait_time_24> of sequential type is unconnected in block <Sys_LCDTest>.
+WARNING:Xst:2677 - Node <wait_time_25> of sequential type is unconnected in block <Sys_LCDTest>.
+WARNING:Xst:2677 - Node <wait_time_26> of sequential type is unconnected in block <Sys_LCDTest>.
+WARNING:Xst:2677 - Node <wait_time_27> of sequential type is unconnected in block <Sys_LCDTest>.
+WARNING:Xst:2677 - Node <wait_time_28> of sequential type is unconnected in block <Sys_LCDTest>.
+WARNING:Xst:2677 - Node <wait_time_29> of sequential type is unconnected in block <Sys_LCDTest>.
+WARNING:Xst:2677 - Node <wait_time_30> of sequential type is unconnected in block <Sys_LCDTest>.
+WARNING:Xst:2677 - Node <wait_time_31> of sequential type is unconnected in block <Sys_LCDTest>.
+INFO:Xst:2261 - The FF/Latch <databus_4> in Unit <Sys_LCDTest> is equivalent to the following FF/Latch, which will be removed : <databus_5> 
+
+Optimizing unit <Sys_LCDTest> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Sys_LCDTest, actual ratio is 2.
+Latch databus_4 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 65
+ Flip-Flops                                            : 65
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Sys_LCDTest.ngr
+Top Level Output File Name         : Sys_LCDTest
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 12
+
+Cell Usage :
+# BELS                             : 471
+#      GND                         : 1
+#      INV                         : 18
+#      LUT1                        : 109
+#      LUT2                        : 8
+#      LUT2_L                      : 2
+#      LUT3                        : 14
+#      LUT4                        : 60
+#      MUXCY                       : 163
+#      MUXF5                       : 2
+#      VCC                         : 1
+#      XORCY                       : 93
+# FlipFlops/Latches                : 74
+#      FD                          : 32
+#      FDR                         : 32
+#      FDRE                        : 1
+#      LDCP                        : 9
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 12
+#      IBUFG                       : 1
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      110  out of   4656     2%  
+ Number of Slice Flip Flops:             65  out of   9312     0%  
+ Number of 4 input LUTs:                211  out of   9312     2%  
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of    232     5%  
+    IOB Flip Flops:                       9
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+------------------------------------------------------+------------------------+-------+
+Clock Signal                                          | Clock buffer(FF name)  | Load  |
+------------------------------------------------------+------------------------+-------+
+databus_cmp_ge0000(Mcompar_databus_cmp_ge0000_cy<9>:O)| NONE(*)(RS)            | 9     |
+SysCLK                                                | IBUFG+BUFG             | 33    |
+G1/CLK1MHz                                            | BUFG                   | 32    |
+------------------------------------------------------+------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-------------------------------------------------------+------------------------+-------+
+Control Signal                                         | Buffer(FF name)        | Load  |
+-------------------------------------------------------+------------------------+-------+
+databus_0__and0000(databus_6__and000011:O)             | NONE(databus_6)        | 2     |
+databus_0__or0000(databus_6__or000011:O)               | NONE(databus_6)        | 2     |
+databus_4__and0000(databus_4__and00001:O)              | NONE(databus_4_1)      | 2     |
+databus_4__or0000(databus_4__or000011:O)               | NONE(databus_4_1)      | 2     |
+E__and0000(E__and000011:O)                             | NONE(E)                | 1     |
+E__and0001(E__and000111:O)                             | NONE(E)                | 1     |
+RS_or0000(RS_or00001:O)                                | NONE(RS)               | 1     |
+RS_or0001(Mcompar_databus_cmp_ge0000_cy<12>:O)         | NONE(RS)               | 1     |
+databus_1__and0000(databus_1__and000011:O)             | NONE(databus_1)        | 1     |
+databus_1__or0000(databus_1__or000011:O)               | NONE(databus_1)        | 1     |
+databus_2__and0000(databus_mux0004<5>11:O)             | NONE(databus_2)        | 1     |
+databus_2__or0000(databus_2__or000011:O)               | NONE(databus_2)        | 1     |
+databus_3__and0000(Mcompar_databus_cmp_ge0000_cy<11>:O)| NONE(databus_3)        | 1     |
+databus_3__or0000(databus_3__or00001:O)                | NONE(databus_3)        | 1     |
+-------------------------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 10.241ns (Maximum Frequency: 97.651MHz)
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: 4.368ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SysCLK'
+  Clock period: 10.241ns (frequency: 97.651MHz)
+  Total number of paths / destination ports: 18480 / 66
+-------------------------------------------------------------------------
+Delay:               10.241ns (Levels of Logic = 36)
+  Source:            G1/cnt_0 (FF)
+  Destination:       G1/CLK1MHz (FF)
+  Source Clock:      SysCLK rising
+  Destination Clock: SysCLK rising
+
+  Data Path: G1/cnt_0 to G1/CLK1MHz
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              4   0.591   0.587  G1/cnt_0 (G1/cnt_0)
+     INV:I->O              1   0.704   0.000  G1/Madd_cnt_add0000_lut<0>_INV_0 (G1/Madd_cnt_add0000_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  G1/Madd_cnt_add0000_cy<0> (G1/Madd_cnt_add0000_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  G1/Madd_cnt_add0000_cy<1> (G1/Madd_cnt_add0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  G1/Madd_cnt_add0000_cy<2> (G1/Madd_cnt_add0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  G1/Madd_cnt_add0000_cy<3> (G1/Madd_cnt_add0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  G1/Madd_cnt_add0000_cy<4> (G1/Madd_cnt_add0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  G1/Madd_cnt_add0000_cy<5> (G1/Madd_cnt_add0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  G1/Madd_cnt_add0000_cy<6> (G1/Madd_cnt_add0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  G1/Madd_cnt_add0000_cy<7> (G1/Madd_cnt_add0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  G1/Madd_cnt_add0000_cy<8> (G1/Madd_cnt_add0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  G1/Madd_cnt_add0000_cy<9> (G1/Madd_cnt_add0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  G1/Madd_cnt_add0000_cy<10> (G1/Madd_cnt_add0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  G1/Madd_cnt_add0000_cy<11> (G1/Madd_cnt_add0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  G1/Madd_cnt_add0000_cy<12> (G1/Madd_cnt_add0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  G1/Madd_cnt_add0000_cy<13> (G1/Madd_cnt_add0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  G1/Madd_cnt_add0000_cy<14> (G1/Madd_cnt_add0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  G1/Madd_cnt_add0000_cy<15> (G1/Madd_cnt_add0000_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  G1/Madd_cnt_add0000_cy<16> (G1/Madd_cnt_add0000_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  G1/Madd_cnt_add0000_cy<17> (G1/Madd_cnt_add0000_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  G1/Madd_cnt_add0000_cy<18> (G1/Madd_cnt_add0000_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  G1/Madd_cnt_add0000_cy<19> (G1/Madd_cnt_add0000_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  G1/Madd_cnt_add0000_cy<20> (G1/Madd_cnt_add0000_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  G1/Madd_cnt_add0000_cy<21> (G1/Madd_cnt_add0000_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  G1/Madd_cnt_add0000_cy<22> (G1/Madd_cnt_add0000_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  G1/Madd_cnt_add0000_cy<23> (G1/Madd_cnt_add0000_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  G1/Madd_cnt_add0000_cy<24> (G1/Madd_cnt_add0000_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  G1/Madd_cnt_add0000_cy<25> (G1/Madd_cnt_add0000_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  G1/Madd_cnt_add0000_cy<26> (G1/Madd_cnt_add0000_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  G1/Madd_cnt_add0000_cy<27> (G1/Madd_cnt_add0000_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  G1/Madd_cnt_add0000_cy<28> (G1/Madd_cnt_add0000_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  G1/Madd_cnt_add0000_cy<29> (G1/Madd_cnt_add0000_cy<29>)
+     MUXCY:CI->O           0   0.059   0.000  G1/Madd_cnt_add0000_cy<30> (G1/Madd_cnt_add0000_cy<30>)
+     XORCY:CI->O           1   0.804   0.424  G1/Madd_cnt_add0000_xor<31> (G1/cnt_add0000<31>)
+     LUT4:I3->O            1   0.704   0.000  G1/CLK1MHz_cmp_eq00001_wg_lut<6> (G1/CLK1MHz_cmp_eq00001_wg_lut<6>)
+     MUXCY:S->O            2   0.864   0.451  G1/CLK1MHz_cmp_eq00001_wg_cy<6> (G1/CLK1MHz_cmp_eq00001_wg_cy<6>)
+     LUT4:I3->O           33   0.704   1.263  G1/cnt_cmp_eq0000 (G1/cnt_cmp_eq0000)
+     FDRE:R                    0.911          G1/CLK1MHz
+    ----------------------------------------
+    Total                     10.241ns (7.516ns logic, 2.725ns route)
+                                       (73.4% logic, 26.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'G1/CLK1MHz'
+  Clock period: 5.459ns (frequency: 183.184MHz)
+  Total number of paths / destination ports: 528 / 32
+-------------------------------------------------------------------------
+Delay:               5.459ns (Levels of Logic = 30)
+  Source:            count_us_3 (FF)
+  Destination:       count_us_31 (FF)
+  Source Clock:      G1/CLK1MHz rising
+  Destination Clock: G1/CLK1MHz rising
+
+  Data Path: count_us_3 to count_us_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               9   0.591   0.995  count_us_3 (count_us_3)
+     LUT1:I0->O            1   0.704   0.000  Mcount_count_us_cy<3>_rt (Mcount_count_us_cy<3>_rt)
+     MUXCY:S->O            1   0.464   0.000  Mcount_count_us_cy<3> (Mcount_count_us_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_us_cy<4> (Mcount_count_us_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_us_cy<5> (Mcount_count_us_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_us_cy<6> (Mcount_count_us_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_us_cy<7> (Mcount_count_us_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_us_cy<8> (Mcount_count_us_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_us_cy<9> (Mcount_count_us_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_us_cy<10> (Mcount_count_us_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_us_cy<11> (Mcount_count_us_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_us_cy<12> (Mcount_count_us_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_us_cy<13> (Mcount_count_us_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_us_cy<14> (Mcount_count_us_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_us_cy<15> (Mcount_count_us_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_us_cy<16> (Mcount_count_us_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_us_cy<17> (Mcount_count_us_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_us_cy<18> (Mcount_count_us_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_us_cy<19> (Mcount_count_us_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_us_cy<20> (Mcount_count_us_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_us_cy<21> (Mcount_count_us_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_us_cy<22> (Mcount_count_us_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_us_cy<23> (Mcount_count_us_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_us_cy<24> (Mcount_count_us_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_us_cy<25> (Mcount_count_us_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_us_cy<26> (Mcount_count_us_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_us_cy<27> (Mcount_count_us_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_us_cy<28> (Mcount_count_us_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  Mcount_count_us_cy<29> (Mcount_count_us_cy<29>)
+     MUXCY:CI->O           0   0.059   0.000  Mcount_count_us_cy<30> (Mcount_count_us_cy<30>)
+     XORCY:CI->O           1   0.804   0.000  Mcount_count_us_xor<31> (Result<31>)
+     FD:D                      0.308          count_us_31
+    ----------------------------------------
+    Total                      5.459ns (4.464ns logic, 0.995ns route)
+                                       (81.8% logic, 18.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'databus_cmp_ge0000'
+  Total number of paths / destination ports: 9 / 9
+-------------------------------------------------------------------------
+Offset:              4.368ns (Levels of Logic = 1)
+  Source:            E (LATCH)
+  Destination:       E (PAD)
+  Source Clock:      databus_cmp_ge0000 falling
+
+  Data Path: E to E
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCP:G->Q             1   0.676   0.420  E (E_OBUF)
+     OBUF:I->O                 3.272          E_OBUF (E)
+    ----------------------------------------
+    Total                      4.368ns (3.948ns logic, 0.420ns route)
+                                       (90.4% logic, 9.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.14 secs
+ 
+--> 
+
+Total memory usage is 207116 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   39 (   0 filtered)
+Number of infos    :    6 (   0 filtered)
+

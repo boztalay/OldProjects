@@ -1,0 +1,236 @@
+Release 11.1 par L.33 (nt)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+ACERLAPTOP::  Mon Nov 23 16:19:19 2009
+
+par -ise TestCPU1.ise -w -intstyle ise -ol std -t 1 TestCPU1_SynthBench_map.ncd
+TestCPU1_SynthBench.ncd TestCPU1_SynthBench.pcf 
+
+
+Constraints file: TestCPU1_SynthBench.pcf.
+Loading device for application Rf_Device from file '3s500e.nph' in environment C:\Xilinx\11.1\ISE.
+   "TestCPU1_SynthBench" is an NCD, version 3.2, device xc3s500e, package fg320, speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: -40.000 to 100.000 Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.320 Volts)
+
+INFO:Par:282 - No user timing constraints were detected or you have set the option to ignore timing constraints ("par
+   -x"). Place and Route will run in "Performance Evaluation Mode" to automatically improve the performance of all
+   internal clocks in this design. Because there are not defined timing requirements, a timing score will not be
+   reported in the PAR report in this mode. The PAR timing summary will list the performance achieved for each clock.
+   Note: For the fastest runtime, set the effort level to "std".  For best performance, set the effort level to "high".
+
+Device speed data version:  "PRODUCTION 1.27 2009-03-03".
+
+
+Design Summary Report:
+
+ Number of External IOBs                          78 out of 232    33%
+
+   Number of External Input IOBs                  1
+
+      Number of External Input IBUFs              1
+        Number of LOCed External Input IBUFs      1 out of 1     100%
+
+
+   Number of External Output IOBs                77
+
+      Number of External Output IOBs             77
+        Number of LOCed External Output IOBs     15 out of 77     19%
+
+
+   Number of External Bidir IOBs                  0
+
+
+   Number of BUFGMUXs                        1 out of 24      4%
+   Number of DCMs                            2 out of 4      50%
+   Number of Slices                        325 out of 4656    6%
+      Number of SLICEMs                      0 out of 2328    0%
+
+
+
+Overall effort level (-ol):   Standard 
+Placer effort level (-pl):    High 
+Placer cost table entry (-t): 1
+Router effort level (-rl):    Standard 
+
+Starting initial Timing Analysis.  REAL time: 2 secs 
+Finished initial Timing Analysis.  REAL time: 2 secs 
+
+
+Starting Placer
+Total REAL time at the beginning of Placer: 2 secs 
+Total CPU  time at the beginning of Placer: 2 secs 
+
+Phase 1.1  Initial Placement Analysis
+Phase 1.1  Initial Placement Analysis (Checksum:3660082b) REAL time: 3 secs 
+
+Phase 2.7  Design Feasibility Check
+WARNING:Place:837 - Partially locked IO Bus is found. 
+    Following components of the bus are not locked: 
+   	 Comp: out_pins<31>
+   	 Comp: out_pins<30>
+   	 Comp: out_pins<29>
+   	 Comp: out_pins<28>
+   	 Comp: out_pins<27>
+   	 Comp: out_pins<26>
+   	 Comp: out_pins<25>
+   	 Comp: out_pins<24>
+   	 Comp: out_pins<23>
+   	 Comp: out_pins<22>
+   	 Comp: out_pins<21>
+   	 Comp: out_pins<20>
+   	 Comp: out_pins<19>
+   	 Comp: out_pins<18>
+   	 Comp: out_pins<17>
+   	 Comp: out_pins<16>
+   	 Comp: out_pins<15>
+   	 Comp: out_pins<14>
+   	 Comp: out_pins<13>
+   	 Comp: out_pins<12>
+   	 Comp: out_pins<11>
+   	 Comp: out_pins<10>
+   	 Comp: out_pins<9>
+   	 Comp: out_pins<8>
+   	 Comp: out_pins<7>
+   	 Comp: out_pins<6>
+   	 Comp: out_pins<5>
+   	 Comp: out_pins<4>
+   	 Comp: out_pins<3>
+
+INFO:Place:834 - Only a subset of IOs are locked. Out of 77 IOs, 15 are locked and 62 are not locked. If you would like
+   to print the names of these IOs, please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+Phase 2.7  Design Feasibility Check (Checksum:3660082b) REAL time: 3 secs 
+
+Phase 3.31  Local Placement Optimization
+Phase 3.31  Local Placement Optimization (Checksum:3660082b) REAL time: 3 secs 
+
+Phase 4.2  Initial Clock and IO Placement
+.......
+Phase 4.2  Initial Clock and IO Placement (Checksum:b1b8bf96) REAL time: 4 secs 
+
+Phase 5.30  Global Clock Region Assignment
+Phase 5.30  Global Clock Region Assignment (Checksum:b1b8bf96) REAL time: 4 secs 
+
+Phase 6.3  Local Placement Optimization
+.......
+Phase 6.3  Local Placement Optimization (Checksum:972172a9) REAL time: 4 secs 
+
+Phase 7.5  Local Placement Optimization
+Phase 7.5  Local Placement Optimization (Checksum:972172a9) REAL time: 4 secs 
+
+Phase 8.8  Global Placement
+.......................
+.................
+.................................
+Phase 8.8  Global Placement (Checksum:f6a86131) REAL time: 7 secs 
+
+Phase 9.5  Local Placement Optimization
+Phase 9.5  Local Placement Optimization (Checksum:f6a86131) REAL time: 7 secs 
+
+Phase 10.18  Placement Optimization
+Phase 10.18  Placement Optimization (Checksum:33ef8bf5) REAL time: 9 secs 
+
+Phase 11.5  Local Placement Optimization
+Phase 11.5  Local Placement Optimization (Checksum:33ef8bf5) REAL time: 9 secs 
+
+Total REAL time to Placer completion: 9 secs 
+Total CPU  time to Placer completion: 9 secs 
+Writing design to file TestCPU1_SynthBench.ncd
+
+
+
+Starting Router
+
+
+Phase  1  : 2194 unrouted;      REAL time: 12 secs 
+
+Phase  2  : 2062 unrouted;      REAL time: 12 secs 
+
+Phase  3  : 552 unrouted;      REAL time: 13 secs 
+
+Phase  4  : 549 unrouted; (Par is working to improve performance)     REAL time: 14 secs 
+
+Phase  5  : 0 unrouted; (Par is working to improve performance)     REAL time: 14 secs 
+
+Updating file: TestCPU1_SynthBench.ncd with current fully routed design.
+
+Phase  6  : 0 unrouted; (Par is working to improve performance)     REAL time: 15 secs 
+
+Phase  7  : 0 unrouted; (Par is working to improve performance)     REAL time: 15 secs 
+
+Phase  8  : 0 unrouted; (Par is working to improve performance)     REAL time: 15 secs 
+
+Phase  9  : 0 unrouted; (Par is working to improve performance)     REAL time: 15 secs 
+
+Phase 10  : 0 unrouted; (Par is working to improve performance)     REAL time: 16 secs 
+WARNING:Route:455 - CLK Net:CPU_clk_OBUF may have excessive skew because 
+      0 CLK pins and 1 NON_CLK pins failed to route using a CLK template.
+
+Total REAL time to Router completion: 16 secs 
+Total CPU time to Router completion: 15 secs 
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Generating "PAR" statistics.
+
+**************************
+Generating Clock Report
+**************************
+
++---------------------+--------------+------+------+------------+-------------+
+|        Clock Net    |   Resource   |Locked|Fanout|Net Skew(ns)|Max Delay(ns)|
++---------------------+--------------+------+------+------------+-------------+
+|        CPU_clk_OBUF |  BUFGMUX_X1Y0| No   |  126 |  0.065     |  0.186      |
++---------------------+--------------+------+------+------------+-------------+
+
+* Net Skew is the difference between the minimum and maximum routing
+only delays for the net. Note this is different from Clock Skew which
+is reported in TRCE timing report. Clock Skew is the difference between
+the minimum and maximum path delays which includes logic delays.
+
+Timing Score: 0 (Setup: 0, Hold: 0)
+
+Asterisk (*) preceding a constraint indicates it was not met.
+   This may be due to a setup or hold violation.
+
+----------------------------------------------------------------------------------------------------------
+  Constraint                                |    Check    | Worst Case |  Best Case | Timing |   Timing   
+                                            |             |    Slack   | Achievable | Errors |    Score   
+----------------------------------------------------------------------------------------------------------
+  Autotimespec constraint for clock net CPU | SETUP       |         N/A|    38.328ns|     N/A|           0
+  _clk_OBUF                                 | HOLD        |     1.292ns|            |       0|           0
+------------------------------------------------------------------------------------------------------
+
+
+All constraints were met.
+INFO:Timing:2761 - N/A entries in the Constraints list may indicate that the 
+   constraint does not cover any paths or that it has no requested value.
+
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 17 secs 
+Total CPU time to PAR completion: 17 secs 
+
+Peak Memory Usage:  192 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 2
+Number of info messages: 2
+
+Writing design to file TestCPU1_SynthBench.ncd
+
+
+
+PAR done!

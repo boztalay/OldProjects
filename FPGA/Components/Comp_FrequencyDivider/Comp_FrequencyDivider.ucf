@@ -1,0 +1,4 @@
+NET "SysCLK" LOC = "B8";
+
+NET "out1"   LOC = "J14";
+NET "out2"   LOC = "J15";

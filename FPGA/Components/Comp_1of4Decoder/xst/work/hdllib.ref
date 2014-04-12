@@ -1,0 +1,6 @@
+AR gate_inv behavioral C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Inv/Gate_Inv.vhd sub00/vhpl03 1239401775
+EN gate_and NULL C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_And/Gate_And.vhd sub00/vhpl04 1239401776
+EN gate_inv NULL C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Inv/Gate_Inv.vhd sub00/vhpl02 1239401774
+EN comp_1of4decoder NULL C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_1of4Decoder/Comp_1of4Decoder.vhd sub00/vhpl00 1239401778
+AR gate_and behavioral C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_And/Gate_And.vhd sub00/vhpl05 1239401777
+AR comp_1of4decoder behavioral C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_1of4Decoder/Comp_1of4Decoder.vhd sub00/vhpl01 1239401779

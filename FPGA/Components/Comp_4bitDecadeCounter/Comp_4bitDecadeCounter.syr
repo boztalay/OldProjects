@@ -1,0 +1,372 @@
+Release 10.1 - xst K.31 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_4bitDecadeCounter/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_4bitDecadeCounter/xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: Comp_4bitDecadeCounter.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Comp_4bitDecadeCounter.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Comp_4bitDecadeCounter"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : Comp_4bitDecadeCounter
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : Comp_4bitDecadeCounter.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Inv/Gate_Inv.vhd" in Library work.
+Architecture behavioral of Entity gate_inv is up to date.
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Nand/Gate_Nand.vhd" in Library work.
+Architecture behavioral of Entity gate_nand is up to date.
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Buf/Gate_Buf.vhd" in Library work.
+Architecture behavioral of Entity gate_buf is up to date.
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_Dflipflop/Comp_Dflipflop.vhd" in Library work.
+Architecture behavioral of Entity comp_dflipflop is up to date.
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Or/Gate_Or.vhd" in Library work.
+Architecture behavioral of Entity gate_or is up to date.
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_And/Gate_And.vhd" in Library work.
+Architecture behavioral of Entity gate_and is up to date.
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_4bitDecadeCounter/Comp_4bitDecadeCounter.vhd" in Library work.
+Entity <comp_4bitdecadecounter> compiled.
+Entity <comp_4bitdecadecounter> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Comp_4bitDecadeCounter> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Comp_Dflipflop> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Gate_Or> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Gate_And> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Gate_Buf> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Gate_Inv> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Gate_Nand> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Comp_4bitDecadeCounter> in library <work> (Architecture <behavioral>).
+Entity <Comp_4bitDecadeCounter> analyzed. Unit <Comp_4bitDecadeCounter> generated.
+
+Analyzing Entity <Comp_Dflipflop> in library <work> (Architecture <behavioral>).
+Entity <Comp_Dflipflop> analyzed. Unit <Comp_Dflipflop> generated.
+
+Analyzing Entity <Gate_Inv> in library <work> (Architecture <behavioral>).
+Entity <Gate_Inv> analyzed. Unit <Gate_Inv> generated.
+
+Analyzing Entity <Gate_Nand> in library <work> (Architecture <behavioral>).
+Entity <Gate_Nand> analyzed. Unit <Gate_Nand> generated.
+
+Analyzing Entity <Gate_Or> in library <work> (Architecture <behavioral>).
+Entity <Gate_Or> analyzed. Unit <Gate_Or> generated.
+
+Analyzing Entity <Gate_And> in library <work> (Architecture <behavioral>).
+Entity <Gate_And> analyzed. Unit <Gate_And> generated.
+
+Analyzing Entity <Gate_Buf> in library <work> (Architecture <behavioral>).
+Entity <Gate_Buf> analyzed. Unit <Gate_Buf> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Gate_Or>.
+    Related source file is "C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Or/Gate_Or.vhd".
+Unit <Gate_Or> synthesized.
+
+
+Synthesizing Unit <Gate_And>.
+    Related source file is "C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_And/Gate_And.vhd".
+Unit <Gate_And> synthesized.
+
+
+Synthesizing Unit <Gate_Buf>.
+    Related source file is "C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Buf/Gate_Buf.vhd".
+Unit <Gate_Buf> synthesized.
+
+
+Synthesizing Unit <Gate_Inv>.
+    Related source file is "C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Inv/Gate_Inv.vhd".
+Unit <Gate_Inv> synthesized.
+
+
+Synthesizing Unit <Gate_Nand>.
+    Related source file is "C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Nand/Gate_Nand.vhd".
+Unit <Gate_Nand> synthesized.
+
+
+Synthesizing Unit <Comp_Dflipflop>.
+    Related source file is "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_Dflipflop/Comp_Dflipflop.vhd".
+Unit <Comp_Dflipflop> synthesized.
+
+
+Synthesizing Unit <Comp_4bitDecadeCounter>.
+    Related source file is "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_4bitDecadeCounter/Comp_4bitDecadeCounter.vhd".
+Unit <Comp_4bitDecadeCounter> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Loading device for application Rf_Device from file '3s500e.nph' in environment C:\Xilinx\10.1\ISE.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1989 - Unit <Comp_4bitDecadeCounter>: instances <G7>, <G10> of unit <Gate_And> are equivalent, second instance is removed
+WARNING:Xst:2170 - Unit Comp_4bitDecadeCounter : the following signal(s) form a combinatorial loop: G1/S2, G1/S6, Q1, G1/S0, S9.
+WARNING:Xst:2170 - Unit Comp_4bitDecadeCounter : the following signal(s) form a combinatorial loop: Q3, S7.
+WARNING:Xst:2170 - Unit Comp_4bitDecadeCounter : the following signal(s) form a combinatorial loop: G2/S2.
+WARNING:Xst:2170 - Unit Comp_4bitDecadeCounter : the following signal(s) form a combinatorial loop: G1/S2.
+WARNING:Xst:2170 - Unit Comp_4bitDecadeCounter : the following signal(s) form a combinatorial loop: Q2.
+WARNING:Xst:2170 - Unit Comp_4bitDecadeCounter : the following signal(s) form a combinatorial loop: Q1.
+WARNING:Xst:2170 - Unit Comp_4bitDecadeCounter : the following signal(s) form a combinatorial loop: Q4.
+WARNING:Xst:2170 - Unit Comp_4bitDecadeCounter : the following signal(s) form a combinatorial loop: G4/S2.
+WARNING:Xst:2170 - Unit Comp_4bitDecadeCounter : the following signal(s) form a combinatorial loop: G3/S2.
+
+Optimizing unit <Comp_4bitDecadeCounter> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Comp_4bitDecadeCounter, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Comp_4bitDecadeCounter.ngr
+Top Level Output File Name         : Comp_4bitDecadeCounter
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 5
+
+Cell Usage :
+# BELS                             : 9
+#      LUT2                        : 1
+#      LUT3                        : 7
+#      LUT4                        : 1
+# IO Buffers                       : 5
+#      IBUF                        : 1
+#      OBUF                        : 4
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                        5  out of   4656     0%  
+ Number of 4 input LUTs:                  9  out of   9312     0%  
+ Number of IOs:                           5
+ Number of bonded IOBs:                   5  out of    232     2%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 13.195ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 20 / 4
+-------------------------------------------------------------------------
+Delay:               13.195ns (Levels of Logic = 8)
+  Source:            CLK (PAD)
+  Destination:       Q1 (PAD)
+
+  Data Path: CLK to Q1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.218   0.932  CLK_IBUF (CLK_IBUF)
+     LUT3:I0->O            2   0.704   0.526  G2/G3/Q1 (G2/S2)
+     LUT3:I1->O            4   0.704   0.622  G2/G7/Q1 (Q2_OBUF)
+     LUT3:I2->O            2   0.704   0.526  G3/G3/Q1 (G3/S2)
+     LUT3:I1->O            4   0.704   0.762  G3/G7/Q1 (Q3_OBUF)
+     LUT4:I0->O            2   0.704   0.526  G1/G3/Q (G1/S2)
+     LUT3:I1->O            4   0.704   0.587  G1/G7/Q1 (Q1_OBUF)
+     OBUF:I->O                 3.272          Q1_OBUF (Q1)
+    ----------------------------------------
+    Total                     13.195ns (8.714ns logic, 4.481ns route)
+                                       (66.0% logic, 34.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.31 secs
+ 
+--> 
+
+Total memory usage is 195532 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   10 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

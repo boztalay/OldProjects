@@ -1,0 +1,8 @@
+EN comp_7segdecoder NULL C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_7segDecoder/Comp_7segDecoder.vhd sub00/vhpl06 1244704792
+AR comp_frequencydivider behavioral C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_FrequencyDivider/Comp_FrequencyDivider.vhd sub00/vhpl05 1244704791
+EN sys_keyboardtest NULL C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_KeyboardTest/KeyboardTest/Sys_KeyboardTest.vhd sub00/vhpl02 1244704794
+AR sys_keyboardtest behavioral C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_KeyboardTest/KeyboardTest/Sys_KeyboardTest.vhd sub00/vhpl03 1244704795
+AR comp_7segdecoder behavioral C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_7segDecoder/Comp_7segDecoder.vhd sub00/vhpl07 1244704793
+EN comp_frequencydivider NULL C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_FrequencyDivider/Comp_FrequencyDivider.vhd sub00/vhpl04 1244704790
+AR comp_16bitshiftreg behavioral C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_16bitShiftReg/Comp_16bitShiftReg/Comp_16bitShiftReg.vhd sub00/vhpl01 1244492884
+EN comp_16bitshiftreg NULL C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_16bitShiftReg/Comp_16bitShiftReg/Comp_16bitShiftReg.vhd sub00/vhpl00 1244492883

@@ -1,0 +1,14 @@
+EN comp_4bitdecadecounter NULL C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_4bitDecadeCounter/Comp_4bitDecadeCounter.vhd sub00/vhpl00 1239399771
+EN gate_or NULL C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Or/Gate_Or.vhd sub00/vhpl10 1239399767
+AR comp_dflipflop behavioral C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_Dflipflop/Comp_Dflipflop.vhd sub00/vhpl09 1239399766
+AR gate_or behavioral C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Or/Gate_Or.vhd sub00/vhpl11 1239399768
+AR gate_inv behavioral C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Inv/Gate_Inv.vhd sub00/vhpl03 1239399760
+AR gate_nand behavioral C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Nand/Gate_Nand.vhd sub00/vhpl05 1239399762
+EN gate_and NULL C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_And/Gate_And.vhd sub00/vhpl12 1239399769
+EN comp_dflipflop NULL C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_Dflipflop/Comp_Dflipflop.vhd sub00/vhpl08 1239399765
+EN gate_inv NULL C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Inv/Gate_Inv.vhd sub00/vhpl02 1239399759
+EN gate_nand NULL C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Nand/Gate_Nand.vhd sub00/vhpl04 1239399761
+AR gate_buf behavioral C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Buf/Gate_Buf.vhd sub00/vhpl07 1239399764
+EN gate_buf NULL C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Buf/Gate_Buf.vhd sub00/vhpl06 1239399763
+AR gate_and behavioral C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_And/Gate_And.vhd sub00/vhpl13 1239399770
+AR comp_4bitdecadecounter behavioral C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_4bitDecadeCounter/Comp_4bitDecadeCounter.vhd sub00/vhpl01 1239399772

@@ -1,0 +1,3 @@
+vhdl work "Sys_LCDTest.vhd"
+verilog work "LCDTest_tb.tfw"
+verilog work "C:/Xilinx/10.1/ISE/verilog/src/glbl.v"

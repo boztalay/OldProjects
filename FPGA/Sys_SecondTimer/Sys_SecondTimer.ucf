@@ -1,0 +1,15 @@
+NET "BoardClock" LOC = "B8";
+NET "Reset" LOC = "H13";
+
+NET "Segments<0>" LOC = "L18";
+NET "Segments<1>" LOC = "F18";
+NET "Segments<2>" LOC = "D17";
+NET "Segments<3>" LOC = "D16";
+NET "Segments<4>" LOC = "G14";
+NET "Segments<5>" LOC = "J17";
+NET "Segments<6>" LOC = "H14";
+
+NET "Anodes<0>" LOC = "F17";
+NET "Anodes<1>" LOC = "H17";
+NET "Anodes<2>" LOC = "C18";
+NET "Anodes<3>" LOC = "F15";

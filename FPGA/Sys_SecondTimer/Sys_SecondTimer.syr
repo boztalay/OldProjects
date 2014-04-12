@@ -1,0 +1,851 @@
+Release 10.1.03 - xst K.39 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Ben/Desktop/FPGA/Projects/Current Projects/Systems/Sys_SecondTimer/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.15 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Ben/Desktop/FPGA/Projects/Current Projects/Systems/Sys_SecondTimer/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.16 secs
+ 
+--> Reading design: Sys_SecondTimer.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Sys_SecondTimer.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Sys_SecondTimer"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : Sys_SecondTimer
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : Sys_SecondTimer.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGA/Projects/Current Projects/Systems/Sys_SecondTimer/Comp_ClockGen1Hz.vhd" in Library work.
+Architecture behavioral of Entity comp_clockgen1hz is up to date.
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGA/Projects/Current Projects/Systems/Sys_SecondTimer/Comp_ClockGen400Hz.vhd" in Library work.
+Architecture behavioral of Entity comp_clockgen400hz is up to date.
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGA/Projects/Current Projects/Systems/Sys_SecondTimer/Comp_Counter4bit.vhd" in Library work.
+Architecture behavioral of Entity comp_counter4bit is up to date.
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGA/Projects/Current Projects/Systems/Sys_SecondTimer/Comp_ValChk9.vhd" in Library work.
+Architecture behavioral of Entity comp_valchk9 is up to date.
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGA/Projects/Current Projects/Systems/Sys_SecondTimer/Comp_DataMUX4x4.vhd" in Library work.
+Architecture behavioral of Entity comp_datamux4x4 is up to date.
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGA/Projects/Current Projects/Systems/Sys_SecondTimer/Comp_Counter2bit.vhd" in Library work.
+Architecture behavioral of Entity comp_counter2bit is up to date.
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGA/Projects/Current Projects/Systems/Sys_SecondTimer/Comp_DecadeCnt4bit.vhd" in Library work.
+Architecture behavioral of Entity comp_decadecnt4bit is up to date.
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGA/Projects/Current Projects/Systems/Sys_SecondTimer/Comp_7segDecode.vhd" in Library work.
+Architecture behavioral of Entity comp_7segdecode is up to date.
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGA/Projects/Current Projects/Systems/Sys_SecondTimer/Sys_SecondTimer.vhd" in Library work.
+Entity <sys_secondtimer> compiled.
+Entity <sys_secondtimer> (Architecture <structural>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Sys_SecondTimer> in library <work> (architecture <structural>).
+
+Analyzing hierarchy for entity <Comp_ClockGen1Hz> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Comp_ClockGen400Hz> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Comp_Counter4bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Comp_ValChk9> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Comp_GateOR> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Comp_DataMUX4x4> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Comp_Counter2bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Comp_DecadeCnt4bit> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Comp_7segDecode> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Sys_SecondTimer> in library <work> (Architecture <structural>).
+Entity <Sys_SecondTimer> analyzed. Unit <Sys_SecondTimer> generated.
+
+Analyzing Entity <Comp_ClockGen1Hz> in library <work> (Architecture <behavioral>).
+Entity <Comp_ClockGen1Hz> analyzed. Unit <Comp_ClockGen1Hz> generated.
+
+Analyzing Entity <Comp_ClockGen400Hz> in library <work> (Architecture <behavioral>).
+Entity <Comp_ClockGen400Hz> analyzed. Unit <Comp_ClockGen400Hz> generated.
+
+Analyzing Entity <Comp_Counter4bit> in library <work> (Architecture <behavioral>).
+Entity <Comp_Counter4bit> analyzed. Unit <Comp_Counter4bit> generated.
+
+Analyzing Entity <Comp_ValChk9> in library <work> (Architecture <behavioral>).
+Entity <Comp_ValChk9> analyzed. Unit <Comp_ValChk9> generated.
+
+Analyzing Entity <Comp_GateOR> in library <work> (Architecture <behavioral>).
+Entity <Comp_GateOR> analyzed. Unit <Comp_GateOR> generated.
+
+Analyzing Entity <Comp_DataMUX4x4> in library <work> (Architecture <behavioral>).
+INFO:Xst:1561 - "C:/Users/Ben/Desktop/FPGA/Projects/Current Projects/Systems/Sys_SecondTimer/Comp_DataMUX4x4.vhd" line 57: Mux is complete : default of case is discarded
+Entity <Comp_DataMUX4x4> analyzed. Unit <Comp_DataMUX4x4> generated.
+
+Analyzing Entity <Comp_Counter2bit> in library <work> (Architecture <behavioral>).
+Entity <Comp_Counter2bit> analyzed. Unit <Comp_Counter2bit> generated.
+
+Analyzing Entity <Comp_DecadeCnt4bit> in library <work> (Architecture <behavioral>).
+Entity <Comp_DecadeCnt4bit> analyzed. Unit <Comp_DecadeCnt4bit> generated.
+
+Analyzing Entity <Comp_7segDecode> in library <work> (Architecture <behavioral>).
+Entity <Comp_7segDecode> analyzed. Unit <Comp_7segDecode> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Comp_ClockGen1Hz>.
+    Related source file is "C:/Users/Ben/Desktop/FPGA/Projects/Current Projects/Systems/Sys_SecondTimer/Comp_ClockGen1Hz.vhd".
+    Found 32-bit up counter for signal <count>.
+    Found 32-bit adder for signal <count$addsub0000> created at line 51.
+    Found 32-bit comparator greater for signal <count$cmp_gt0000> created at line 52.
+    Found 1-bit register for signal <output>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <Comp_ClockGen1Hz> synthesized.
+
+
+Synthesizing Unit <Comp_ClockGen400Hz>.
+    Related source file is "C:/Users/Ben/Desktop/FPGA/Projects/Current Projects/Systems/Sys_SecondTimer/Comp_ClockGen400Hz.vhd".
+    Found 32-bit up counter for signal <count>.
+    Found 32-bit adder for signal <count$addsub0000> created at line 51.
+    Found 32-bit comparator greater for signal <count$cmp_gt0000> created at line 52.
+    Found 1-bit register for signal <output>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   1 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   1 Comparator(s).
+Unit <Comp_ClockGen400Hz> synthesized.
+
+
+Synthesizing Unit <Comp_Counter4bit>.
+    Related source file is "C:/Users/Ben/Desktop/FPGA/Projects/Current Projects/Systems/Sys_SecondTimer/Comp_Counter4bit.vhd".
+    Found 4-bit up counter for signal <value>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <Comp_Counter4bit> synthesized.
+
+
+Synthesizing Unit <Comp_ValChk9>.
+    Related source file is "C:/Users/Ben/Desktop/FPGA/Projects/Current Projects/Systems/Sys_SecondTimer/Comp_ValChk9.vhd".
+Unit <Comp_ValChk9> synthesized.
+
+
+Synthesizing Unit <Comp_GateOR>.
+    Related source file is "C:/Users/Ben/Desktop/FPGA/Projects/Current Projects/Systems/Sys_SecondTimer/Comp_GateOR.vhd".
+Unit <Comp_GateOR> synthesized.
+
+
+Synthesizing Unit <Comp_DataMUX4x4>.
+    Related source file is "C:/Users/Ben/Desktop/FPGA/Projects/Current Projects/Systems/Sys_SecondTimer/Comp_DataMUX4x4.vhd".
+    Found 4-bit 4-to-1 multiplexer for signal <output>.
+    Summary:
+	inferred   4 Multiplexer(s).
+Unit <Comp_DataMUX4x4> synthesized.
+
+
+Synthesizing Unit <Comp_Counter2bit>.
+    Related source file is "C:/Users/Ben/Desktop/FPGA/Projects/Current Projects/Systems/Sys_SecondTimer/Comp_Counter2bit.vhd".
+    Found 2-bit up counter for signal <value>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <Comp_Counter2bit> synthesized.
+
+
+Synthesizing Unit <Comp_DecadeCnt4bit>.
+    Related source file is "C:/Users/Ben/Desktop/FPGA/Projects/Current Projects/Systems/Sys_SecondTimer/Comp_DecadeCnt4bit.vhd".
+    Found finite state machine <FSM_0> for signal <output_var>.
+    -----------------------------------------------------------------------
+    | States             | 4                                              |
+    | Transitions        | 4                                              |
+    | Inputs             | 0                                              |
+    | Outputs            | 4                                              |
+    | Clock              | clock (falling_edge)                           |
+    | Reset              | reset (positive)                               |
+    | Reset type         | synchronous                                    |
+    | Reset State        | 0001                                           |
+    | Power Up State     | 0001                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Summary:
+	inferred   1 Finite State Machine(s).
+Unit <Comp_DecadeCnt4bit> synthesized.
+
+
+Synthesizing Unit <Comp_7segDecode>.
+    Related source file is "C:/Users/Ben/Desktop/FPGA/Projects/Current Projects/Systems/Sys_SecondTimer/Comp_7segDecode.vhd".
+    Found 16x7-bit ROM for signal <segments>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <Comp_7segDecode> synthesized.
+
+
+Synthesizing Unit <Sys_SecondTimer>.
+    Related source file is "C:/Users/Ben/Desktop/FPGA/Projects/Current Projects/Systems/Sys_SecondTimer/Sys_SecondTimer.vhd".
+WARNING:Xst:653 - Signal <ZeroSig> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <Sys_SecondTimer> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
+# Counters                                             : 7
+ 2-bit up counter                                      : 1
+ 32-bit up counter                                     : 2
+ 4-bit up counter                                      : 4
+# Registers                                            : 2
+ 1-bit register                                        : 2
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 2
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <DecCount/output_var/FSM> on signal <output_var[1:2]> with gray encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0001  | 00
+ 0010  | 01
+ 0100  | 11
+ 1000  | 10
+-------------------
+Loading device for application Rf_Device from file '3s500e.nph' in environment C:\Xilinx\10.1\ISE.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
+# Counters                                             : 7
+ 2-bit up counter                                      : 1
+ 32-bit up counter                                     : 2
+ 4-bit up counter                                      : 4
+# Registers                                            : 4
+ Flip-Flops                                            : 4
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 2
+# Multiplexers                                         : 1
+ 4-bit 4-to-1 multiplexer                              : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Sys_SecondTimer> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Sys_SecondTimer, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 86
+ Flip-Flops                                            : 86
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Sys_SecondTimer.ngr
+Top Level Output File Name         : Sys_SecondTimer
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 13
+
+Cell Usage :
+# BELS                             : 500
+#      GND                         : 1
+#      INV                         : 24
+#      LUT1                        : 131
+#      LUT2                        : 14
+#      LUT3                        : 13
+#      LUT4                        : 28
+#      MUXCY                       : 152
+#      MUXF5                       : 8
+#      VCC                         : 1
+#      XORCY                       : 128
+# FlipFlops/Latches                : 86
+#      FDE                         : 2
+#      FDR                         : 82
+#      FDR_1                       : 2
+# Clock Buffers                    : 3
+#      BUFG                        : 3
+# IO Buffers                       : 13
+#      IBUF                        : 1
+#      IBUFG                       : 1
+#      OBUF                        : 11
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      125  out of   4656     2%  
+ Number of Slice Flip Flops:             86  out of   9312     0%  
+ Number of 4 input LUTs:                210  out of   9312     2%  
+ Number of IOs:                          13
+ Number of bonded IOBs:                  13  out of    232     5%  
+ Number of GCLKs:                         3  out of     24    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------+------------------------+-------+
+Clock Signal                           | Clock buffer(FF name)  | Load  |
+---------------------------------------+------------------------+-------+
+BoardClock                             | IBUFG+BUFG             | 66    |
+Clock2/output                          | BUFG                   | 4     |
+Dig3ValChkOut_inv(Dig3ValChkOut_inv1:O)| NONE(*)(Dig4/value_0)  | 4     |
+Dig2ValChkOut_inv(Dig2ValChkOut_inv1:O)| NONE(*)(Dig3/value_0)  | 4     |
+Dig1ValChkOut_inv(Dig1ValChkOut_inv1:O)| NONE(*)(Dig2/value_0)  | 4     |
+Clock1/output                          | BUFG                   | 4     |
+---------------------------------------+------------------------+-------+
+(*) These 3 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 10.324ns (Maximum Frequency: 96.860MHz)
+   Minimum input arrival time before clock: 4.042ns
+   Maximum output required time after clock: 8.003ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'BoardClock'
+  Clock period: 10.324ns (frequency: 96.860MHz)
+  Total number of paths / destination ports: 38018 / 132
+-------------------------------------------------------------------------
+Delay:               10.324ns (Levels of Logic = 34)
+  Source:            Clock1/count_1 (FF)
+  Destination:       Clock1/count_0 (FF)
+  Source Clock:      BoardClock rising
+  Destination Clock: BoardClock rising
+
+  Data Path: Clock1/count_1 to Clock1/count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.622  Clock1/count_1 (Clock1/count_1)
+     LUT1:I0->O            1   0.704   0.000  Clock1/Madd_count_addsub0000_cy<1>_rt (Clock1/Madd_count_addsub0000_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  Clock1/Madd_count_addsub0000_cy<1> (Clock1/Madd_count_addsub0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Clock1/Madd_count_addsub0000_cy<2> (Clock1/Madd_count_addsub0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Clock1/Madd_count_addsub0000_cy<3> (Clock1/Madd_count_addsub0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Clock1/Madd_count_addsub0000_cy<4> (Clock1/Madd_count_addsub0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Clock1/Madd_count_addsub0000_cy<5> (Clock1/Madd_count_addsub0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Clock1/Madd_count_addsub0000_cy<6> (Clock1/Madd_count_addsub0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Clock1/Madd_count_addsub0000_cy<7> (Clock1/Madd_count_addsub0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Clock1/Madd_count_addsub0000_cy<8> (Clock1/Madd_count_addsub0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Clock1/Madd_count_addsub0000_cy<9> (Clock1/Madd_count_addsub0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Clock1/Madd_count_addsub0000_cy<10> (Clock1/Madd_count_addsub0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Clock1/Madd_count_addsub0000_cy<11> (Clock1/Madd_count_addsub0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Clock1/Madd_count_addsub0000_cy<12> (Clock1/Madd_count_addsub0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Clock1/Madd_count_addsub0000_cy<13> (Clock1/Madd_count_addsub0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Clock1/Madd_count_addsub0000_cy<14> (Clock1/Madd_count_addsub0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  Clock1/Madd_count_addsub0000_cy<15> (Clock1/Madd_count_addsub0000_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  Clock1/Madd_count_addsub0000_cy<16> (Clock1/Madd_count_addsub0000_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  Clock1/Madd_count_addsub0000_cy<17> (Clock1/Madd_count_addsub0000_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  Clock1/Madd_count_addsub0000_cy<18> (Clock1/Madd_count_addsub0000_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  Clock1/Madd_count_addsub0000_cy<19> (Clock1/Madd_count_addsub0000_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  Clock1/Madd_count_addsub0000_cy<20> (Clock1/Madd_count_addsub0000_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  Clock1/Madd_count_addsub0000_cy<21> (Clock1/Madd_count_addsub0000_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  Clock1/Madd_count_addsub0000_cy<22> (Clock1/Madd_count_addsub0000_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  Clock1/Madd_count_addsub0000_cy<23> (Clock1/Madd_count_addsub0000_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  Clock1/Madd_count_addsub0000_cy<24> (Clock1/Madd_count_addsub0000_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  Clock1/Madd_count_addsub0000_cy<25> (Clock1/Madd_count_addsub0000_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  Clock1/Madd_count_addsub0000_cy<26> (Clock1/Madd_count_addsub0000_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  Clock1/Madd_count_addsub0000_cy<27> (Clock1/Madd_count_addsub0000_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  Clock1/Madd_count_addsub0000_cy<28> (Clock1/Madd_count_addsub0000_cy<28>)
+     XORCY:CI->O           1   0.804   0.595  Clock1/Madd_count_addsub0000_xor<29> (Clock1/count_addsub0000<29>)
+     LUT2:I0->O            1   0.704   0.000  Clock1/Mcompar_count_cmp_gt0000_lut<13> (Clock1/Mcompar_count_cmp_gt0000_lut<13>)
+     MUXCY:S->O            1   0.464   0.000  Clock1/Mcompar_count_cmp_gt0000_cy<13> (Clock1/Mcompar_count_cmp_gt0000_cy<13>)
+     MUXCY:CI->O           2   0.459   0.447  Clock1/Mcompar_count_cmp_gt0000_cy<14> (Clock1/Mcompar_count_cmp_gt0000_cy<14>)
+     INV:I->O             32   0.704   1.262  Clock1/Mcompar_count_cmp_gt0000_cy<14>_inv_INV_0 (Clock1/count_cmp_gt0000)
+     FDR:R                     0.911          Clock1/count_0
+    ----------------------------------------
+    Total                     10.324ns (7.398ns logic, 2.926ns route)
+                                       (71.7% logic, 28.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clock2/output'
+  Clock period: 3.761ns (frequency: 265.887MHz)
+  Total number of paths / destination ports: 9 / 6
+-------------------------------------------------------------------------
+Delay:               3.761ns (Levels of Logic = 1)
+  Source:            Count2bit/value_0 (FF)
+  Destination:       Count2bit/value_0 (FF)
+  Source Clock:      Clock2/output falling
+  Destination Clock: Clock2/output falling
+
+  Data Path: Count2bit/value_0 to Count2bit/value_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             11   0.591   1.108  Count2bit/value_0 (Count2bit/value_0)
+     LUT2:I0->O            2   0.704   0.447  Count2bit/value_or00001 (Count2bit/value_or0000)
+     FDR:R                     0.911          Count2bit/value_0
+    ----------------------------------------
+    Total                      3.761ns (2.206ns logic, 1.555ns route)
+                                       (58.7% logic, 41.3% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Dig3ValChkOut_inv'
+  Clock period: 3.876ns (frequency: 257.998MHz)
+  Total number of paths / destination ports: 26 / 8
+-------------------------------------------------------------------------
+Delay:               3.876ns (Levels of Logic = 2)
+  Source:            Dig4/value_2 (FF)
+  Destination:       Dig4/value_0 (FF)
+  Source Clock:      Dig3ValChkOut_inv rising
+  Destination Clock: Dig3ValChkOut_inv rising
+
+  Data Path: Dig4/value_2 to Dig4/value_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              4   0.591   0.762  Dig4/value_2 (Dig4/value_2)
+     LUT4:I0->O            1   0.704   0.000  Dig4/value_or00001 (Dig4/value_or00001)
+     MUXF5:I0->O           4   0.321   0.587  Dig4/value_or0000_f5 (Dig4/value_or0000)
+     FDR:R                     0.911          Dig4/value_0
+    ----------------------------------------
+    Total                      3.876ns (2.527ns logic, 1.349ns route)
+                                       (65.2% logic, 34.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Dig2ValChkOut_inv'
+  Clock period: 3.922ns (frequency: 254.972MHz)
+  Total number of paths / destination ports: 26 / 8
+-------------------------------------------------------------------------
+Delay:               3.922ns (Levels of Logic = 2)
+  Source:            Dig3/value_2 (FF)
+  Destination:       Dig3/value_0 (FF)
+  Source Clock:      Dig2ValChkOut_inv rising
+  Destination Clock: Dig2ValChkOut_inv rising
+
+  Data Path: Dig3/value_2 to Dig3/value_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              5   0.591   0.808  Dig3/value_2 (Dig3/value_2)
+     LUT4:I0->O            1   0.704   0.000  Dig3/value_or00001 (Dig3/value_or00001)
+     MUXF5:I0->O           4   0.321   0.587  Dig3/value_or0000_f5 (Dig3/value_or0000)
+     FDR:R                     0.911          Dig3/value_0
+    ----------------------------------------
+    Total                      3.922ns (2.527ns logic, 1.395ns route)
+                                       (64.4% logic, 35.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Dig1ValChkOut_inv'
+  Clock period: 3.922ns (frequency: 254.972MHz)
+  Total number of paths / destination ports: 26 / 8
+-------------------------------------------------------------------------
+Delay:               3.922ns (Levels of Logic = 2)
+  Source:            Dig2/value_2 (FF)
+  Destination:       Dig2/value_0 (FF)
+  Source Clock:      Dig1ValChkOut_inv rising
+  Destination Clock: Dig1ValChkOut_inv rising
+
+  Data Path: Dig2/value_2 to Dig2/value_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              5   0.591   0.808  Dig2/value_2 (Dig2/value_2)
+     LUT4:I0->O            1   0.704   0.000  Dig2/value_or00001 (Dig2/value_or00001)
+     MUXF5:I0->O           4   0.321   0.587  Dig2/value_or0000_f5 (Dig2/value_or0000)
+     FDR:R                     0.911          Dig2/value_0
+    ----------------------------------------
+    Total                      3.922ns (2.527ns logic, 1.395ns route)
+                                       (64.4% logic, 35.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clock1/output'
+  Clock period: 3.922ns (frequency: 254.972MHz)
+  Total number of paths / destination ports: 26 / 8
+-------------------------------------------------------------------------
+Delay:               3.922ns (Levels of Logic = 2)
+  Source:            Dig1/value_2 (FF)
+  Destination:       Dig1/value_0 (FF)
+  Source Clock:      Clock1/output falling
+  Destination Clock: Clock1/output falling
+
+  Data Path: Dig1/value_2 to Dig1/value_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              5   0.591   0.808  Dig1/value_2 (Dig1/value_2)
+     LUT4:I0->O            1   0.704   0.000  Dig1/value_or00001 (Dig1/value_or00001)
+     MUXF5:I0->O           4   0.321   0.587  Dig1/value_or0000_f5 (Dig1/value_or0000)
+     FDR:R                     0.911          Dig1/value_0
+    ----------------------------------------
+    Total                      3.922ns (2.527ns logic, 1.395ns route)
+                                       (64.4% logic, 35.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dig3ValChkOut_inv'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              4.042ns (Levels of Logic = 2)
+  Source:            Reset (PAD)
+  Destination:       Dig4/value_0 (FF)
+  Destination Clock: Dig3ValChkOut_inv rising
+
+  Data Path: Reset to Dig4/value_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.218   0.587  Reset_IBUF (Reset_IBUF)
+     MUXF5:S->O            4   0.739   0.587  Dig4/value_or0000_f5 (Dig4/value_or0000)
+     FDR:R                     0.911          Dig4/value_0
+    ----------------------------------------
+    Total                      4.042ns (2.868ns logic, 1.174ns route)
+                                       (71.0% logic, 29.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dig2ValChkOut_inv'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              4.042ns (Levels of Logic = 2)
+  Source:            Reset (PAD)
+  Destination:       Dig3/value_0 (FF)
+  Destination Clock: Dig2ValChkOut_inv rising
+
+  Data Path: Reset to Dig3/value_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.218   0.587  Reset_IBUF (Reset_IBUF)
+     MUXF5:S->O            4   0.739   0.587  Dig3/value_or0000_f5 (Dig3/value_or0000)
+     FDR:R                     0.911          Dig3/value_0
+    ----------------------------------------
+    Total                      4.042ns (2.868ns logic, 1.174ns route)
+                                       (71.0% logic, 29.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Dig1ValChkOut_inv'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              4.042ns (Levels of Logic = 2)
+  Source:            Reset (PAD)
+  Destination:       Dig2/value_0 (FF)
+  Destination Clock: Dig1ValChkOut_inv rising
+
+  Data Path: Reset to Dig2/value_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.218   0.587  Reset_IBUF (Reset_IBUF)
+     MUXF5:S->O            4   0.739   0.587  Dig2/value_or0000_f5 (Dig2/value_or0000)
+     FDR:R                     0.911          Dig2/value_0
+    ----------------------------------------
+    Total                      4.042ns (2.868ns logic, 1.174ns route)
+                                       (71.0% logic, 29.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clock1/output'
+  Total number of paths / destination ports: 4 / 4
+-------------------------------------------------------------------------
+Offset:              4.042ns (Levels of Logic = 2)
+  Source:            Reset (PAD)
+  Destination:       Dig1/value_0 (FF)
+  Destination Clock: Clock1/output falling
+
+  Data Path: Reset to Dig1/value_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.218   0.587  Reset_IBUF (Reset_IBUF)
+     MUXF5:S->O            4   0.739   0.587  Dig1/value_or0000_f5 (Dig1/value_or0000)
+     FDR:R                     0.911          Dig1/value_0
+    ----------------------------------------
+    Total                      4.042ns (2.868ns logic, 1.174ns route)
+                                       (71.0% logic, 29.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clock2/output'
+  Total number of paths / destination ports: 92 / 11
+-------------------------------------------------------------------------
+Offset:              8.003ns (Levels of Logic = 4)
+  Source:            Count2bit/value_0 (FF)
+  Destination:       Segments<6> (PAD)
+  Source Clock:      Clock2/output falling
+
+  Data Path: Count2bit/value_0 to Segments<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             11   0.591   1.108  Count2bit/value_0 (Count2bit/value_0)
+     LUT3:I0->O            1   0.704   0.000  Multiplexer/Mmux_output_3 (Multiplexer/Mmux_output_3)
+     MUXF5:I1->O           7   0.321   0.883  Multiplexer/Mmux_output_2_f5 (MultiplexerOut<0>)
+     LUT4:I0->O            1   0.704   0.420  SegDecode/Mrom_segments111 (SegDecode/Mrom_segments1)
+     OBUF:I->O                 3.272          Segments_1_OBUF (Segments<1>)
+    ----------------------------------------
+    Total                      8.003ns (5.592ns logic, 2.411ns route)
+                                       (69.9% logic, 30.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clock1/output'
+  Total number of paths / destination ports: 28 / 7
+-------------------------------------------------------------------------
+Offset:              7.682ns (Levels of Logic = 4)
+  Source:            Dig1/value_0 (FF)
+  Destination:       Segments<1> (PAD)
+  Source Clock:      Clock1/output falling
+
+  Data Path: Dig1/value_0 to Segments<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              7   0.591   0.787  Dig1/value_0 (Dig1/value_0)
+     LUT3:I1->O            1   0.704   0.000  Multiplexer/Mmux_output_4 (Multiplexer/Mmux_output_4)
+     MUXF5:I0->O           7   0.321   0.883  Multiplexer/Mmux_output_2_f5 (MultiplexerOut<0>)
+     LUT4:I0->O            1   0.704   0.420  SegDecode/Mrom_segments111 (SegDecode/Mrom_segments1)
+     OBUF:I->O                 3.272          Segments_1_OBUF (Segments<1>)
+    ----------------------------------------
+    Total                      7.682ns (5.592ns logic, 2.090ns route)
+                                       (72.8% logic, 27.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Dig1ValChkOut_inv'
+  Total number of paths / destination ports: 28 / 7
+-------------------------------------------------------------------------
+Offset:              7.638ns (Levels of Logic = 4)
+  Source:            Dig2/value_0 (FF)
+  Destination:       Segments<1> (PAD)
+  Source Clock:      Dig1ValChkOut_inv rising
+
+  Data Path: Dig2/value_0 to Segments<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              7   0.591   0.743  Dig2/value_0 (Dig2/value_0)
+     LUT3:I2->O            1   0.704   0.000  Multiplexer/Mmux_output_4 (Multiplexer/Mmux_output_4)
+     MUXF5:I0->O           7   0.321   0.883  Multiplexer/Mmux_output_2_f5 (MultiplexerOut<0>)
+     LUT4:I0->O            1   0.704   0.420  SegDecode/Mrom_segments111 (SegDecode/Mrom_segments1)
+     OBUF:I->O                 3.272          Segments_1_OBUF (Segments<1>)
+    ----------------------------------------
+    Total                      7.638ns (5.592ns logic, 2.046ns route)
+                                       (73.2% logic, 26.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Dig2ValChkOut_inv'
+  Total number of paths / destination ports: 28 / 7
+-------------------------------------------------------------------------
+Offset:              7.682ns (Levels of Logic = 4)
+  Source:            Dig3/value_0 (FF)
+  Destination:       Segments<1> (PAD)
+  Source Clock:      Dig2ValChkOut_inv rising
+
+  Data Path: Dig3/value_0 to Segments<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              7   0.591   0.787  Dig3/value_0 (Dig3/value_0)
+     LUT3:I1->O            1   0.704   0.000  Multiplexer/Mmux_output_3 (Multiplexer/Mmux_output_3)
+     MUXF5:I1->O           7   0.321   0.883  Multiplexer/Mmux_output_2_f5 (MultiplexerOut<0>)
+     LUT4:I0->O            1   0.704   0.420  SegDecode/Mrom_segments111 (SegDecode/Mrom_segments1)
+     OBUF:I->O                 3.272          Segments_1_OBUF (Segments<1>)
+    ----------------------------------------
+    Total                      7.682ns (5.592ns logic, 2.090ns route)
+                                       (72.8% logic, 27.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Dig3ValChkOut_inv'
+  Total number of paths / destination ports: 28 / 7
+-------------------------------------------------------------------------
+Offset:              7.599ns (Levels of Logic = 4)
+  Source:            Dig4/value_0 (FF)
+  Destination:       Segments<1> (PAD)
+  Source Clock:      Dig3ValChkOut_inv rising
+
+  Data Path: Dig4/value_0 to Segments<1>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              6   0.591   0.704  Dig4/value_0 (Dig4/value_0)
+     LUT3:I2->O            1   0.704   0.000  Multiplexer/Mmux_output_3 (Multiplexer/Mmux_output_3)
+     MUXF5:I1->O           7   0.321   0.883  Multiplexer/Mmux_output_2_f5 (MultiplexerOut<0>)
+     LUT4:I0->O            1   0.704   0.420  SegDecode/Mrom_segments111 (SegDecode/Mrom_segments1)
+     OBUF:I->O                 3.272          Segments_1_OBUF (Segments<1>)
+    ----------------------------------------
+    Total                      7.599ns (5.592ns logic, 2.007ns route)
+                                       (73.6% logic, 26.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 8.00 secs
+Total CPU time to Xst completion: 8.42 secs
+ 
+--> 
+
+Total memory usage is 208012 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    2 (   0 filtered)
+

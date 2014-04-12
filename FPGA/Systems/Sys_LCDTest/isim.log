@@ -1,0 +1,39 @@
+Command line:
+   ./LCDTest_tb_isim_beh.exe
+     -intstyle  ise
+     -ipchost  localhost
+     -ipcport  50197
+
+Wed Apr 15 23:07:06 2009
+
+Total Line Count : 63
+
+ Elaboration Time: 0.0156 sec
+
+ Current Memory Usage: 176.071 Meg
+
+ Total Signals          : 49
+ Total Nets             : 55
+ Total Signal Drivers   : 16
+ Total Blocks           : 11
+ Total Primitive Blocks : 5
+ Total Processes        : 17
+ Total Traceable Variables  : 31
+ Total Scalar Nets and Variables : 578
+ntrace select -o on -m / -l this 
+ntrace start 
+isimrun 1000 ns 
+Simulator is doing circuit initialization process.
+Finished circuit initialization process.
+isimrun all 
+isimstop -s 
+isimstep 
+ERROR: In process Sys_LCDTest.vhd:main 
+ Signal Unknown signal received
+
+
+INFO:Simulator:30 - Simulator is stopped.
+ERROR: In process Sys_LCDTest.vhd:main 
+ Signal Unknown signal received
+
+

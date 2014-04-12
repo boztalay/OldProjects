@@ -1,0 +1,120 @@
+--------------------------------------------------------------------------------
+Release 11.1 Trace  (nt)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\11.1\ISE\bin\nt\unwrapped\trce.exe -ise
+C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_memory_test2/Sync_memory_test2.ise
+-intstyle ise -v 3 -s 4 -fastpaths -xml SM_mem_init_test.twx
+SM_mem_init_test.ncd -o SM_mem_init_test.twr SM_mem_init_test.pcf -ucf
+SM_mem_init_test.ucf
+
+Design file:              SM_mem_init_test.ncd
+Physical constraint file: SM_mem_init_test.pcf
+Device,package,speed:     xc3s500e,fg320,-4 (PRODUCTION 1.27 2009-03-03)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock clock
+------------+------------+------------+------------------+--------+
+            |  Setup to  |  Hold to   |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+reset       |    4.139(F)|    0.903(F)|clk_100MHz        |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock clock to Pad
+----------------------+------------+------------------+--------+
+                      | clk (edge) |                  | Clock  |
+Destination           |   to PAD   |Internal Clock(s) | Phase  |
+----------------------+------------+------------------+--------+
+RAM_adv               |    8.636(F)|clk_100MHz        |   0.000|
+RAM_ce                |   10.034(F)|clk_100MHz        |   0.000|
+RAM_clk               |    9.298(F)|clk_100MHz        |   0.000|
+RAM_oe                |   10.114(F)|clk_100MHz        |   0.000|
+RAM_we                |   10.289(F)|clk_100MHz        |   0.000|
+memory_address_bus<1> |    8.704(F)|clk_100MHz        |   0.000|
+memory_address_bus<2> |    8.405(F)|clk_100MHz        |   0.000|
+memory_address_bus<3> |    8.696(F)|clk_100MHz        |   0.000|
+memory_address_bus<4> |    8.410(F)|clk_100MHz        |   0.000|
+memory_address_bus<5> |    9.067(F)|clk_100MHz        |   0.000|
+memory_address_bus<6> |    9.175(F)|clk_100MHz        |   0.000|
+memory_address_bus<7> |    9.259(F)|clk_100MHz        |   0.000|
+memory_address_bus<8> |    9.790(F)|clk_100MHz        |   0.000|
+memory_address_bus<9> |    8.946(F)|clk_100MHz        |   0.000|
+memory_address_bus<10>|    9.107(F)|clk_100MHz        |   0.000|
+memory_address_bus<11>|    9.056(F)|clk_100MHz        |   0.000|
+memory_address_bus<12>|    9.125(F)|clk_100MHz        |   0.000|
+memory_address_bus<13>|   10.007(F)|clk_100MHz        |   0.000|
+memory_address_bus<14>|    9.123(F)|clk_100MHz        |   0.000|
+memory_address_bus<15>|    9.756(F)|clk_100MHz        |   0.000|
+memory_address_bus<16>|    9.104(F)|clk_100MHz        |   0.000|
+memory_address_bus<17>|   10.632(F)|clk_100MHz        |   0.000|
+memory_address_bus<18>|    9.991(F)|clk_100MHz        |   0.000|
+memory_address_bus<19>|    9.419(F)|clk_100MHz        |   0.000|
+memory_address_bus<20>|    8.944(F)|clk_100MHz        |   0.000|
+memory_address_bus<21>|    9.783(F)|clk_100MHz        |   0.000|
+memory_address_bus<22>|    9.093(F)|clk_100MHz        |   0.000|
+memory_data_bus<0>    |   10.029(F)|clk_100MHz        |   0.000|
+memory_data_bus<1>    |   10.441(F)|clk_100MHz        |   0.000|
+memory_data_bus<2>    |   10.207(F)|clk_100MHz        |   0.000|
+memory_data_bus<3>    |   10.444(F)|clk_100MHz        |   0.000|
+memory_data_bus<4>    |   10.755(F)|clk_100MHz        |   0.000|
+memory_data_bus<5>    |   11.039(F)|clk_100MHz        |   0.000|
+memory_data_bus<6>    |   11.263(F)|clk_100MHz        |   0.000|
+memory_data_bus<7>    |   11.544(F)|clk_100MHz        |   0.000|
+memory_data_bus<8>    |   10.463(F)|clk_100MHz        |   0.000|
+memory_data_bus<9>    |   10.765(F)|clk_100MHz        |   0.000|
+memory_data_bus<10>   |   11.020(F)|clk_100MHz        |   0.000|
+memory_data_bus<11>   |   11.271(F)|clk_100MHz        |   0.000|
+memory_data_bus<12>   |   10.711(F)|clk_100MHz        |   0.000|
+memory_data_bus<13>   |   11.012(F)|clk_100MHz        |   0.000|
+memory_data_bus<14>   |   11.559(F)|clk_100MHz        |   0.000|
+memory_data_bus<15>   |   11.794(F)|clk_100MHz        |   0.000|
+----------------------+------------+------------------+--------+
+
+Clock to Setup on destination clock clock
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clock          |   13.208|         |         |    4.540|
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+clock          |RAM_clk        |    7.505|
+---------------+---------------+---------+
+
+
+Analysis completed Fri Jul 09 13:48:39 2010 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 142 MB
+
+
+

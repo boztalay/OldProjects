@@ -1,0 +1,672 @@
+Release 11.1 - xst L.33 (nt)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.17 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Reading design: top_level.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "top_level.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "top_level"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : top_level
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : top_level.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/georgecuris/Desktop/DCMi_80.vhd" in Library work.
+Entity <dcmi_80> compiled.
+Entity <dcmi_80> (Architecture <behavioral>) compiled.
+Compiling vhdl file "C:/Users/georgecuris/Desktop/memory_interface.vhd" in Library work.
+Architecture behavioral of Entity memory_interface is up to date.
+Compiling vhdl file "C:/Users/georgecuris/Desktop/top_level.vhd" in Library work.
+Architecture behavioral of Entity top_level is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <top_level> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <DCMi_80> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <memory_interface> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <top_level> in library <work> (Architecture <behavioral>).
+Entity <top_level> analyzed. Unit <top_level> generated.
+
+Analyzing Entity <DCMi_80> in library <work> (Architecture <behavioral>).
+    Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <DCM_SP_INST> in unit <DCMi_80>.
+    Set user-defined property "CLKFX_DIVIDE =  2" for instance <DCM_SP_INST> in unit <DCMi_80>.
+    Set user-defined property "CLKFX_MULTIPLY =  8" for instance <DCM_SP_INST> in unit <DCMi_80>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <DCM_SP_INST> in unit <DCMi_80>.
+    Set user-defined property "CLKIN_PERIOD =  40.0000000000000000" for instance <DCM_SP_INST> in unit <DCMi_80>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <DCM_SP_INST> in unit <DCMi_80>.
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <DCM_SP_INST> in unit <DCMi_80>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <DCM_SP_INST> in unit <DCMi_80>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <DCM_SP_INST> in unit <DCMi_80>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <DCM_SP_INST> in unit <DCMi_80>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <DCM_SP_INST> in unit <DCMi_80>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM_SP_INST> in unit <DCMi_80>.
+    Set user-defined property "FACTORY_JF =  C080" for instance <DCM_SP_INST> in unit <DCMi_80>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <DCM_SP_INST> in unit <DCMi_80>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_SP_INST> in unit <DCMi_80>.
+Entity <DCMi_80> analyzed. Unit <DCMi_80> generated.
+
+Analyzing Entity <memory_interface> in library <work> (Architecture <behavioral>).
+Entity <memory_interface> analyzed. Unit <memory_interface> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <memory_interface>.
+    Related source file is "C:/Users/georgecuris/Desktop/memory_interface.vhd".
+WARNING:Xst:646 - Signal <data_in_reg<13:0>> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Register <led<1>> equivalent to <led<0>> has been removed
+    Using one-hot encoding for signal <state>.
+INFO:Xst:2117 - HDL ADVISOR - Mux Selector <state> of Case statement line 63 was re-encoded using one-hot encoding. The case statement will be optimized (default statement optimization), but this optimization may lead to design initialization problems. To ensure the design works safely, you can:
+   	- add an 'INIT' attribute on signal <state> (optimization is then done without any risk)
+   	- use the attribute 'signal_encoding user' to avoid onehot optimization
+   	- use the attribute 'safe_implementation yes' to force XST to perform a safe (but less efficient) optimization
+    Found 6-bit register for signal <led<7:2>>.
+    Found 1-bit register for signal <led<0>>.
+    Found 16-bit register for signal <data_in_reg>.
+    Found 32-bit up counter for signal <latency_cnt>.
+    Found 22-bit comparator not equal for signal <latency_cnt$cmp_ne0000> created at line 52.
+    Found 32-bit comparator lessequal for signal <next_state$cmp_le0000> created at line 131.
+    Found 32-bit comparator less for signal <next_state$cmp_lt0000> created at line 67.
+    Found 32-bit comparator less for signal <next_state$cmp_lt0001> created at line 80.
+    Found 32-bit comparator greatequal for signal <RAM_adv$cmp_ge0000> created at line 205.
+    Found 22-bit register for signal <state>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  23 D-type flip-flop(s).
+	inferred   5 Comparator(s).
+Unit <memory_interface> synthesized.
+
+
+Synthesizing Unit <DCMi_80>.
+    Related source file is "C:/Users/georgecuris/Desktop/DCMi_80.vhd".
+Unit <DCMi_80> synthesized.
+
+
+Synthesizing Unit <top_level>.
+    Related source file is "C:/Users/georgecuris/Desktop/top_level.vhd".
+WARNING:Xst:646 - Signal <dcm_clk_25> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <RAM_clk_en> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 23-bit register for signal <RAM_addr>.
+    Found 16-bit tristate buffer for signal <RAM_data>.
+    Found 1-bit register for signal <RAM_we>.
+    Found 1-bit register for signal <RAM_adv>.
+    Found 1-bit register for signal <RAM_ub>.
+    Found 1-bit register for signal <RAM_lb>.
+    Found 1-bit register for signal <RAM_ce>.
+    Found 1-bit register for signal <RAM_cre>.
+    Found T flip-flop for signal <count<0>>.
+    Found 16-bit register for signal <RAM_data_reg>.
+    Found 1-bit register for signal <RAM_oe_reg>.
+    Summary:
+	inferred   1 T-type flip-flop(s).
+	inferred  46 D-type flip-flop(s).
+	inferred  16 Tristate(s).
+Unit <top_level> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 18
+ 1-bit register                                        : 14
+ 16-bit register                                       : 2
+ 22-bit register                                       : 1
+ 23-bit register                                       : 1
+# Toggle Registers                                     : 1
+ T flip-flop                                           : 1
+# Comparators                                          : 5
+ 22-bit comparator not equal                           : 1
+ 32-bit comparator greatequal                          : 1
+ 32-bit comparator less                                : 2
+ 32-bit comparator lessequal                           : 1
+# Tristates                                            : 1
+ 16-bit tristate buffer                                : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+WARNING:Xst:1710 - FF/Latch <RAM_addr_22> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_addr_21> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_addr_20> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_addr_18> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_addr_17> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_addr_16> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_addr_15> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_addr_14> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_addr_13> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_addr_9> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_addr_7> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_addr_6> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_addr_5> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_data_reg_13> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_data_reg_12> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_data_reg_11> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_data_reg_10> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_data_reg_9> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_data_reg_8> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_data_reg_7> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_data_reg_6> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_data_reg_5> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_data_reg_4> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_data_reg_3> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_data_reg_2> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_data_reg_1> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_data_reg_0> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <data_in_reg_0> of sequential type is unconnected in block <MainMem>.
+WARNING:Xst:2677 - Node <data_in_reg_1> of sequential type is unconnected in block <MainMem>.
+WARNING:Xst:2677 - Node <data_in_reg_2> of sequential type is unconnected in block <MainMem>.
+WARNING:Xst:2677 - Node <data_in_reg_3> of sequential type is unconnected in block <MainMem>.
+WARNING:Xst:2677 - Node <data_in_reg_4> of sequential type is unconnected in block <MainMem>.
+WARNING:Xst:2677 - Node <data_in_reg_5> of sequential type is unconnected in block <MainMem>.
+WARNING:Xst:2677 - Node <data_in_reg_6> of sequential type is unconnected in block <MainMem>.
+WARNING:Xst:2677 - Node <data_in_reg_7> of sequential type is unconnected in block <MainMem>.
+WARNING:Xst:2677 - Node <data_in_reg_8> of sequential type is unconnected in block <MainMem>.
+WARNING:Xst:2677 - Node <data_in_reg_9> of sequential type is unconnected in block <MainMem>.
+WARNING:Xst:2677 - Node <data_in_reg_10> of sequential type is unconnected in block <MainMem>.
+WARNING:Xst:2677 - Node <data_in_reg_11> of sequential type is unconnected in block <MainMem>.
+WARNING:Xst:2677 - Node <data_in_reg_12> of sequential type is unconnected in block <MainMem>.
+WARNING:Xst:2677 - Node <data_in_reg_13> of sequential type is unconnected in block <MainMem>.
+WARNING:Xst:2677 - Node <data_in_reg_0> of sequential type is unconnected in block <memory_interface>.
+WARNING:Xst:2677 - Node <data_in_reg_1> of sequential type is unconnected in block <memory_interface>.
+WARNING:Xst:2677 - Node <data_in_reg_2> of sequential type is unconnected in block <memory_interface>.
+WARNING:Xst:2677 - Node <data_in_reg_3> of sequential type is unconnected in block <memory_interface>.
+WARNING:Xst:2677 - Node <data_in_reg_4> of sequential type is unconnected in block <memory_interface>.
+WARNING:Xst:2677 - Node <data_in_reg_5> of sequential type is unconnected in block <memory_interface>.
+WARNING:Xst:2677 - Node <data_in_reg_6> of sequential type is unconnected in block <memory_interface>.
+WARNING:Xst:2677 - Node <data_in_reg_7> of sequential type is unconnected in block <memory_interface>.
+WARNING:Xst:2677 - Node <data_in_reg_8> of sequential type is unconnected in block <memory_interface>.
+WARNING:Xst:2677 - Node <data_in_reg_9> of sequential type is unconnected in block <memory_interface>.
+WARNING:Xst:2677 - Node <data_in_reg_10> of sequential type is unconnected in block <memory_interface>.
+WARNING:Xst:2677 - Node <data_in_reg_11> of sequential type is unconnected in block <memory_interface>.
+WARNING:Xst:2677 - Node <data_in_reg_12> of sequential type is unconnected in block <memory_interface>.
+WARNING:Xst:2677 - Node <data_in_reg_13> of sequential type is unconnected in block <memory_interface>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 78
+ Flip-Flops                                            : 78
+# Comparators                                          : 5
+ 22-bit comparator not equal                           : 1
+ 32-bit comparator greatequal                          : 1
+ 32-bit comparator less                                : 2
+ 32-bit comparator lessequal                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <top_level> ...
+
+Optimizing unit <memory_interface> ...
+WARNING:Xst:1710 - FF/Latch <RAM_addr_22> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_addr_21> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_addr_20> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_addr_18> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_addr_17> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_addr_16> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_addr_15> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_addr_14> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_addr_13> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_addr_9> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_addr_7> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_addr_6> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_addr_5> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_data_reg_13> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_data_reg_12> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_data_reg_11> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_data_reg_10> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_data_reg_9> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_data_reg_8> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_data_reg_7> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_data_reg_6> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_data_reg_5> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_data_reg_4> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_data_reg_3> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_data_reg_2> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_data_reg_1> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <RAM_data_reg_0> (without init value) has a constant value of 0 in block <top_level>. This FF/Latch will be trimmed during the optimization process.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+INFO:Xst:2261 - The FF/Latch <RAM_addr_0> in Unit <top_level> is equivalent to the following 9 FFs/Latches, which will be removed : <RAM_addr_1> <RAM_addr_2> <RAM_addr_3> <RAM_addr_4> <RAM_addr_8> <RAM_addr_10> <RAM_addr_11> <RAM_addr_12> <RAM_addr_19> 
+INFO:Xst:2261 - The FF/Latch <RAM_lb> in Unit <top_level> is equivalent to the following FF/Latch, which will be removed : <RAM_ub> 
+Found area constraint ratio of 100 (+ 5) on block top_level, actual ratio is 1.
+FlipFlop RAM_lb has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 74
+ Flip-Flops                                            : 74
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : top_level.ngr
+Top Level Output File Name         : top_level
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 58
+
+Cell Usage :
+# BELS                             : 229
+#      GND                         : 1
+#      INV                         : 11
+#      LUT1                        : 2
+#      LUT2                        : 9
+#      LUT3                        : 45
+#      LUT4                        : 44
+#      LUT4_D                      : 1
+#      MUXCY                       : 82
+#      MUXF5                       : 1
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 74
+#      FDC                         : 55
+#      FDC_1                       : 4
+#      FDCE                        : 1
+#      FDCE_1                      : 7
+#      FDP                         : 1
+#      FDP_1                       : 6
+# Clock Buffers                    : 3
+#      BUFG                        : 2
+#      BUFGP                       : 1
+# IO Buffers                       : 57
+#      IBUF                        : 2
+#      IOBUF                       : 2
+#      OBUF                        : 39
+#      OBUFT                       : 14
+# DCMs                             : 1
+#      DCM_SP                      : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       69  out of   4656     1%  
+ Number of Slice Flip Flops:             72  out of   9312     0%  
+ Number of 4 input LUTs:                112  out of   9312     1%  
+ Number of IOs:                          58
+ Number of bonded IOBs:                  58  out of    232    25%  
+    IOB Flip Flops:                       2
+ Number of GCLKs:                         3  out of     24    12%  
+ Number of DCMs:                          1  out of      4    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+count_0_0                          | DCM1/DCM_SP_INST:CLKFX | 73    |
+mclk                               | BUFGP                  | 1     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+rst                                | IBUF                   | 74    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 51.646ns (Maximum Frequency: 19.363MHz)
+   Minimum input arrival time before clock: 10.638ns
+   Maximum output required time after clock: 6.048ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'count_0_0'
+  Clock period: 51.646ns (frequency: 19.363MHz)
+  Total number of paths / destination ports: 166752 / 74
+-------------------------------------------------------------------------
+Delay:               12.912ns (Levels of Logic = 55)
+  Source:            MainMem/latency_cnt_0 (FF)
+  Destination:       MainMem/latency_cnt_31 (FF)
+  Source Clock:      count_0_0 rising 4.0X
+  Destination Clock: count_0_0 rising 4.0X
+
+  Data Path: MainMem/latency_cnt_0 to MainMem/latency_cnt_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.591   0.762  MainMem/latency_cnt_0 (MainMem/latency_cnt_0)
+     LUT3:I0->O            1   0.704   0.000  MainMem/Mcompar_next_state_cmp_lt0001_lut<0> (MainMem/Mcompar_next_state_cmp_lt0001_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  MainMem/Mcompar_next_state_cmp_lt0001_cy<0>_0 (MainMem/Mcompar_next_state_cmp_lt0001_cy<0>1)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcompar_next_state_cmp_lt0001_cy<1>_0 (MainMem/Mcompar_next_state_cmp_lt0001_cy<1>1)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcompar_next_state_cmp_lt0001_cy<2>_0 (MainMem/Mcompar_next_state_cmp_lt0001_cy<2>1)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcompar_next_state_cmp_lt0001_cy<3>_0 (MainMem/Mcompar_next_state_cmp_lt0001_cy<3>1)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcompar_next_state_cmp_lt0001_cy<4>_0 (MainMem/Mcompar_next_state_cmp_lt0001_cy<4>1)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcompar_next_state_cmp_lt0001_cy<5>_0 (MainMem/Mcompar_next_state_cmp_lt0001_cy<5>1)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcompar_next_state_cmp_lt0001_cy<6>_0 (MainMem/Mcompar_next_state_cmp_lt0001_cy<6>1)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcompar_next_state_cmp_lt0001_cy<7>_0 (MainMem/Mcompar_next_state_cmp_lt0001_cy<7>1)
+     MUXCY:CI->O          10   0.459   0.886  MainMem/Mcompar_next_state_cmp_lt0001_cy<8>_0 (MainMem/Mcompar_next_state_cmp_lt0001_cy<8>1)
+     LUT4:I3->O            2   0.704   0.482  MainMem/next_state<4>1 (MainMem/next_state<4>)
+     LUT4:I2->O            1   0.704   0.000  MainMem/Mcompar_latency_cnt_cmp_ne0000_lut<2> (MainMem/Mcompar_latency_cnt_cmp_ne0000_lut<2>)
+     MUXCY:S->O            1   0.464   0.000  MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<2> (MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<3> (MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<4> (MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<5> (MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<6> (MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<7> (MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<8> (MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<9> (MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<10> (MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<10>)
+     MUXCY:CI->O          33   0.459   1.298  MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<11> (MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<11>)
+     LUT3:I2->O            1   0.704   0.000  MainMem/Mcount_latency_cnt_lut<0> (MainMem/Mcount_latency_cnt_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  MainMem/Mcount_latency_cnt_cy<0> (MainMem/Mcount_latency_cnt_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<1> (MainMem/Mcount_latency_cnt_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<2> (MainMem/Mcount_latency_cnt_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<3> (MainMem/Mcount_latency_cnt_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<4> (MainMem/Mcount_latency_cnt_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<5> (MainMem/Mcount_latency_cnt_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<6> (MainMem/Mcount_latency_cnt_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<7> (MainMem/Mcount_latency_cnt_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<8> (MainMem/Mcount_latency_cnt_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<9> (MainMem/Mcount_latency_cnt_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<10> (MainMem/Mcount_latency_cnt_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<11> (MainMem/Mcount_latency_cnt_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<12> (MainMem/Mcount_latency_cnt_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<13> (MainMem/Mcount_latency_cnt_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<14> (MainMem/Mcount_latency_cnt_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<15> (MainMem/Mcount_latency_cnt_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<16> (MainMem/Mcount_latency_cnt_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<17> (MainMem/Mcount_latency_cnt_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<18> (MainMem/Mcount_latency_cnt_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<19> (MainMem/Mcount_latency_cnt_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<20> (MainMem/Mcount_latency_cnt_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<21> (MainMem/Mcount_latency_cnt_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<22> (MainMem/Mcount_latency_cnt_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<23> (MainMem/Mcount_latency_cnt_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<24> (MainMem/Mcount_latency_cnt_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<25> (MainMem/Mcount_latency_cnt_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<26> (MainMem/Mcount_latency_cnt_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<27> (MainMem/Mcount_latency_cnt_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<28> (MainMem/Mcount_latency_cnt_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<29> (MainMem/Mcount_latency_cnt_cy<29>)
+     MUXCY:CI->O           0   0.059   0.000  MainMem/Mcount_latency_cnt_cy<30> (MainMem/Mcount_latency_cnt_cy<30>)
+     XORCY:CI->O           1   0.804   0.000  MainMem/Mcount_latency_cnt_xor<31> (MainMem/Mcount_latency_cnt31)
+     FDC:D                     0.308          MainMem/latency_cnt_31
+    ----------------------------------------
+    Total                     12.912ns (9.484ns logic, 3.428ns route)
+                                       (73.5% logic, 26.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'mclk'
+  Clock period: 2.443ns (frequency: 409.333MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               2.443ns (Levels of Logic = 1)
+  Source:            count_0_0 (FF)
+  Destination:       count_0_0 (FF)
+  Source Clock:      mclk rising
+  Destination Clock: mclk rising
+
+  Data Path: count_0_0 to count_0_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              1   0.591   0.420  count_0_0 (count_0_0)
+     INV:I->O              1   0.704   0.420  count_0_0_not00001_INV_0 (count_0_0_not0000)
+     FDC:D                     0.308          count_0_0
+    ----------------------------------------
+    Total                      2.443ns (1.603ns logic, 0.840ns route)
+                                       (65.6% logic, 34.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'count_0_0'
+  Total number of paths / destination ports: 3368 / 40
+-------------------------------------------------------------------------
+Offset:              10.638ns (Levels of Logic = 44)
+  Source:            RAM_wait (PAD)
+  Destination:       MainMem/latency_cnt_31 (FF)
+  Destination Clock: count_0_0 rising 4.0X
+
+  Data Path: RAM_wait to MainMem/latency_cnt_31
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             8   1.218   0.932  RAM_wait_IBUF (RAM_wait_IBUF)
+     LUT3:I0->O            1   0.704   0.455  MainMem/next_state<7>1_SW0 (N43)
+     LUT4:I2->O            1   0.704   0.000  MainMem/Mcompar_latency_cnt_cmp_ne0000_lut<4> (MainMem/Mcompar_latency_cnt_cmp_ne0000_lut<4>)
+     MUXCY:S->O            1   0.464   0.000  MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<4> (MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<5> (MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<6> (MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<7> (MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<8> (MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<9> (MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<10> (MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<10>)
+     MUXCY:CI->O          33   0.459   1.298  MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<11> (MainMem/Mcompar_latency_cnt_cmp_ne0000_cy<11>)
+     LUT3:I2->O            1   0.704   0.000  MainMem/Mcount_latency_cnt_lut<0> (MainMem/Mcount_latency_cnt_lut<0>)
+     MUXCY:S->O            1   0.464   0.000  MainMem/Mcount_latency_cnt_cy<0> (MainMem/Mcount_latency_cnt_cy<0>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<1> (MainMem/Mcount_latency_cnt_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<2> (MainMem/Mcount_latency_cnt_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<3> (MainMem/Mcount_latency_cnt_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<4> (MainMem/Mcount_latency_cnt_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<5> (MainMem/Mcount_latency_cnt_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<6> (MainMem/Mcount_latency_cnt_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<7> (MainMem/Mcount_latency_cnt_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<8> (MainMem/Mcount_latency_cnt_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<9> (MainMem/Mcount_latency_cnt_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<10> (MainMem/Mcount_latency_cnt_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<11> (MainMem/Mcount_latency_cnt_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<12> (MainMem/Mcount_latency_cnt_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<13> (MainMem/Mcount_latency_cnt_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<14> (MainMem/Mcount_latency_cnt_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<15> (MainMem/Mcount_latency_cnt_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<16> (MainMem/Mcount_latency_cnt_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<17> (MainMem/Mcount_latency_cnt_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<18> (MainMem/Mcount_latency_cnt_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<19> (MainMem/Mcount_latency_cnt_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<20> (MainMem/Mcount_latency_cnt_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<21> (MainMem/Mcount_latency_cnt_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<22> (MainMem/Mcount_latency_cnt_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<23> (MainMem/Mcount_latency_cnt_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<24> (MainMem/Mcount_latency_cnt_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<25> (MainMem/Mcount_latency_cnt_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<26> (MainMem/Mcount_latency_cnt_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<27> (MainMem/Mcount_latency_cnt_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<28> (MainMem/Mcount_latency_cnt_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  MainMem/Mcount_latency_cnt_cy<29> (MainMem/Mcount_latency_cnt_cy<29>)
+     MUXCY:CI->O           0   0.059   0.000  MainMem/Mcount_latency_cnt_cy<30> (MainMem/Mcount_latency_cnt_cy<30>)
+     XORCY:CI->O           1   0.804   0.000  MainMem/Mcount_latency_cnt_xor<31> (MainMem/Mcount_latency_cnt31)
+     FDC:D                     0.308          MainMem/latency_cnt_31
+    ----------------------------------------
+    Total                     10.638ns (7.953ns logic, 2.685ns route)
+                                       (74.8% logic, 25.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'count_0_0'
+  Total number of paths / destination ports: 43 / 41
+-------------------------------------------------------------------------
+Offset:              6.048ns (Levels of Logic = 2)
+  Source:            RAM_oe_reg (FF)
+  Destination:       RAM_data<15> (PAD)
+  Source Clock:      count_0_0 falling 4.0X
+
+  Data Path: RAM_oe_reg to RAM_data<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDP_1:C->Q            2   0.591   0.447  RAM_oe_reg (RAM_oe_reg)
+     INV:I->O             16   0.704   1.034  RAM_oe_inv1_INV_0 (RAM_oe_inv)
+     OBUFT:T->O                3.272          RAM_data_13_OBUFT (RAM_data<13>)
+    ----------------------------------------
+    Total                      6.048ns (4.567ns logic, 1.481ns route)
+                                       (75.5% logic, 24.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 6.13 secs
+ 
+--> 
+
+Total memory usage is 178044 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   85 (   0 filtered)
+Number of infos    :    3 (   0 filtered)
+

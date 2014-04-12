@@ -1,0 +1,4 @@
+set -tmpdir "./xst/projnav.tmp"
+elaborate
+-ifn Subsys_LCDDriver.prj
+-ifmt mixed

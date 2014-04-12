@@ -1,0 +1,389 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\Ben\Desktop\Folders\FPGA\Projects\Current Projects\Systems\TestCPU1
+Emrom
+Z1 w1256405773
+Z2 DPx4 ieee 18 std_logic_unsigned 0 22 hEMVMlaNCR^<OOoVNV;m90
+Z3 DPx4 ieee 15 std_logic_arith 0 22 GJbAT?7@hRQU9IQ702DT]2
+Z4 DPx4 ieee 14 std_logic_1164 0 22 GH1=`jDDBJ=`LM;:Ak`kf2
+Z5 8mROM.vhd
+Z6 FmROM.vhd
+l0
+L30
+VU:KFYRmmHeXWMBlkeIZ>@3
+Z7 OX;C;6.4b;39
+31
+Z8 o-explicit -93 -O0
+Z9 tExplicit 1
+!s100 [[2H;O8>eHzz4;I=U_[@S1
+Abehavioral
+R2
+R3
+R4
+DEx4 work 4 mrom 0 22 U:KFYRmmHeXWMBlkeIZ>@3
+l38
+L36
+VZeM<OZ^]X13M>[<6Gn>7@3
+R7
+31
+Z10 Mx3 4 ieee 14 std_logic_1164
+Z11 Mx2 4 ieee 15 std_logic_arith
+Z12 Mx1 4 ieee 18 std_logic_unsigned
+R8
+R9
+!s100 1XhCDVj3m1gZD9^bOfboY3
+Etestcpu1
+Z13 w1256441494
+R2
+R3
+R4
+Z14 8TestCPU1.vhd
+Z15 FTestCPU1.vhd
+l0
+L37
+V2mVI3VzcGRf=TQ7]A;leY1
+R7
+31
+R8
+R9
+!s100 7@0>@:BUM5R2Ui8HU?X:h1
+Astructural
+R2
+R3
+R4
+DEx4 work 8 testcpu1 0 22 2mVI3VzcGRf=TQ7]A;leY1
+l151
+L46
+VZKoULZ>DbI2bT:>3b<2?g2
+R7
+31
+R10
+R11
+R12
+R8
+R9
+!s100 [eXk7V=VE1GYXd[7d@19@2
+Etestcpu1_alu
+Z16 w1255919908
+R2
+R3
+R4
+Z17 8TestCPU1_ALU.vhd
+Z18 FTestCPU1_ALU.vhd
+l0
+L30
+VZ4TFk<LL8Q7?^;RVJ<=K13
+R7
+31
+R8
+R9
+!s100 9:mCZ:DCj9VNGh4NTVQ]H0
+Abehavioral
+R2
+R3
+R4
+DEx4 work 12 testcpu1_alu 0 22 Z4TFk<LL8Q7?^;RVJ<=K13
+l44
+L40
+VRbJL_FW3c5ED^BHi[m@QJ1
+R7
+31
+R10
+R11
+R12
+R8
+R9
+!s100 8gF5XIJYLdD3eiMOO8PD83
+Etestcpu1_cntl
+Z19 w1255925949
+R2
+R3
+R4
+Z20 8TestCPU1_Cntl.vhd
+Z21 FTestCPU1_Cntl.vhd
+l0
+L30
+V^FWhnPcj45Hza:S@ojIm<0
+R7
+31
+R8
+R9
+!s100 ;O7X;lz=jJo=C<L5gaReG3
+Abehavioral
+R2
+R3
+R4
+DEx4 work 13 testcpu1_cntl 0 22 ^FWhnPcj45Hza:S@ojIm<0
+l57
+L50
+V20DTm47[[CW6gA8<BVe:A3
+R7
+31
+R10
+R11
+R12
+R8
+R9
+!s100 h1SzeZWdS8b8g[i7PRNmf2
+Etestcpu1_dram
+Z22 w1255290281
+R2
+R3
+R4
+Z23 8TestCPU1_dRAM.vhd
+Z24 FTestCPU1_dRAM.vhd
+l0
+L30
+V[PLin]=iAgWJJ88:CPI;V1
+R7
+31
+R8
+R9
+!s100 aV:cHk```YNfFB:_[UzR72
+Abehavioral
+R2
+R3
+R4
+DEx4 work 13 testcpu1_dram 0 22 [PLin]=iAgWJJ88:CPI;V1
+l42
+L40
+V:]CCk^TGRRBY8R]W?;>4G3
+R7
+31
+R10
+R11
+R12
+R8
+R9
+!s100 =k`KognKWaFcWj[g>T19?0
+Etestcpu1_irom
+Z25 w1256448668
+R2
+R3
+R4
+Z26 8TestCPU1_iRAM.vhd
+Z27 FTestCPU1_iRAM.vhd
+l0
+L30
+Vzni@bRKPmh<e3j5@kEA<^0
+R7
+31
+R8
+R9
+!s100 hfONJjTjhCPXNQVHegTC_0
+Abehavioral
+R2
+R3
+R4
+DEx4 work 13 testcpu1_irom 0 22 zni@bRKPmh<e3j5@kEA<^0
+l37
+L35
+V@3A[g4FR_UoU=3SaeNT6R3
+R7
+31
+R10
+R11
+R12
+R8
+R9
+!s100 ?cCNYYXgc7a4>>@1m0l7J2
+Etestcpu1_irom_tb
+Z28 w1254636554
+Z29 DPx4 ieee 11 numeric_std 0 22 =NSdli^?T5OD8;4F<blj<3
+R3
+R2
+R4
+Z30 8TestCPU1_iROM_TB.vhd
+Z31 FTestCPU1_iROM_TB.vhd
+l0
+L33
+V>m_YG52>1[FZK2HhERHfg0
+R7
+31
+R8
+R9
+!s100 biU8D5jnP]ELN@L5_SWjI2
+Abehavior
+R29
+R3
+R2
+R4
+DEx4 work 16 testcpu1_irom_tb 0 22 >m_YG52>1[FZK2HhERHfg0
+l54
+L36
+VMNOXUXf:=C;Jd9dR8RhSF1
+R7
+31
+Z32 Mx4 4 ieee 14 std_logic_1164
+Z33 Mx3 4 ieee 18 std_logic_unsigned
+R11
+Z34 Mx1 4 ieee 11 numeric_std
+R8
+R9
+!s100 S_o15[_ZBHgnMc=]M:CCG1
+Etestcpu1_outpins
+Z35 w1255289631
+R2
+R3
+R4
+Z36 8TestCPU1_OutPins.vhd
+Z37 FTestCPU1_OutPins.vhd
+l0
+L30
+VoRX?ITfQHi]DUXWZk4Jm=1
+R7
+31
+R8
+R9
+!s100 <]Jb3i[i02?cPT3UmljaF1
+Abehavioral
+R2
+R3
+R4
+DEx4 work 16 testcpu1_outpins 0 22 oRX?ITfQHi]DUXWZk4Jm=1
+l40
+L38
+VAia1nNo[@GU38zj>Z0_:U0
+R7
+31
+R10
+R11
+R12
+R8
+R9
+!s100 7hAO??Jg]078eM0^C[97n0
+Etestcpu1_regfile
+Z38 w1256441503
+R2
+R3
+R4
+Z39 8TestCPU1_RegFile.vhd
+Z40 FTestCPU1_RegFile.vhd
+l0
+L30
+VVdPU_GBnBMM^=QM;;Z`DM3
+R7
+31
+R8
+R9
+!s100 ImWDHNNYDP?D7ZRR3fYPc1
+Abehavioral
+R2
+R3
+R4
+DEx4 work 16 testcpu1_regfile 0 22 VdPU_GBnBMM^=QM;;Z`DM3
+l48
+L46
+V1ZRCFOQ5@aIIHMl<QF=9L3
+R7
+31
+R10
+R11
+R12
+R8
+R9
+!s100 DeUiV[`X@97Pd]T2V[?3E0
+Etestcpu1_synthbench
+Z41 w1256449460
+Z42 DPx6 unisim 11 vcomponents 0 22 6Bno5d?=9BlFAj[lAHJHA1
+R2
+R3
+R4
+Z43 8TestCPU1_SynthBench.vhd
+Z44 FTestCPU1_SynthBench.vhd
+l0
+L30
+V>jLB7_HjRM>b=]2cKAJd^1
+R7
+31
+R8
+R9
+!s100 Gi7^MV?4:?bOVm6PcWIoU3
+Abehavioral
+R42
+R2
+R3
+R4
+DEx4 work 19 testcpu1_synthbench 0 22 >jLB7_HjRM>b=]2cKAJd^1
+l74
+L40
+V0K_YROIFl;k:2HP6eJEOY3
+R7
+31
+R32
+Mx3 4 ieee 15 std_logic_arith
+Mx2 4 ieee 18 std_logic_unsigned
+Mx1 6 unisim 11 vcomponents
+R8
+R9
+!s100 j9OK0?aKE9b^b9:jZf72D0
+Etestcpu1_synthbench_tb
+Z45 w1256441844
+R29
+R3
+R2
+R4
+Z46 8TestCPU1_SynthBench_TB.vhd
+Z47 FTestCPU1_SynthBench_TB.vhd
+l0
+L33
+V]AW5@Z_G>NVNba`aYD?_A2
+!s100 :cGYSZgjEGW8azfcYEgC13
+R7
+31
+R8
+R9
+Abehavior
+R29
+R3
+R2
+R4
+Z48 DEx4 work 22 testcpu1_synthbench_tb 0 22 ]AW5@Z_G>NVNba`aYD?_A2
+l64
+L36
+Z49 VHUXM^FoS7GA:G5X3^j@iz1
+Z50 !s100 :0gW[CWM8IIkaOLVF6Aoo3
+R7
+31
+R32
+R33
+R11
+R34
+R8
+R9
+Etestcpu1_tb
+Z51 w1255926695
+R29
+R3
+R2
+R4
+Z52 8TestCPU1_TB.vhd
+Z53 FTestCPU1_TB.vhd
+l0
+L33
+V3FO5m_mD?LVl2j2]zMNPB0
+R7
+31
+R8
+R9
+!s100 >SKFocl``jJ]6EZGUIFi<1
+Abehavior
+R29
+R3
+R2
+R4
+DEx4 work 11 testcpu1_tb 0 22 3FO5m_mD?LVl2j2]zMNPB0
+l65
+L36
+VRPCbE@Q8XYadT5lzV>X_K3
+R7
+31
+R32
+R33
+R11
+R34
+R8
+R9
+!s100 9c43adZ`z>djz@[=68^Yc2

@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="1780" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">data_stor&lt;9&gt;</arg>&gt; is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="646" delta="unknown" >Signal &lt;<arg fmt="%s" index="1">Dummy</arg>&gt; is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">Anodes_2</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">Sys_KeyboardTest</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="warning" file="Xst" num="1710" delta="unknown" >FF/Latch &lt;<arg fmt="%s" index="1">Anodes_3</arg>&gt; (without init value) has a constant value of <arg fmt="%d" index="2">1</arg> in block &lt;<arg fmt="%s" index="3">Sys_KeyboardTest</arg>&gt;. This FF/Latch will be trimmed during the optimization process.
+</msg>
+
+<msg type="info" file="Xst" num="2261" delta="unknown" >The FF/Latch &lt;<arg fmt="%s" index="1">digit</arg>&gt; in Unit &lt;<arg fmt="%s" index="2">Sys_KeyboardTest</arg>&gt; is equivalent to the following <arg fmt="%s" index="3">FF/Latch</arg>, which will be removed : <arg fmt="%s" index="4">&lt;Anodes_1&gt; </arg>
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">out1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">DispCLK</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DispCLK/cntr_25</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Sys_KeyboardTest</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DispCLK/cntr_24</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Sys_KeyboardTest</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DispCLK/cntr_23</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Sys_KeyboardTest</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DispCLK/cntr_22</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Sys_KeyboardTest</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DispCLK/cntr_21</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Sys_KeyboardTest</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DispCLK/cntr_20</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Sys_KeyboardTest</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DispCLK/cntr_19</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Sys_KeyboardTest</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DispCLK/cntr_18</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Sys_KeyboardTest</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DispCLK/cntr_17</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Sys_KeyboardTest</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DispCLK/cntr_16</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Sys_KeyboardTest</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DispCLK/cntr_15</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Sys_KeyboardTest</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DispCLK/cntr_14</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Sys_KeyboardTest</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DispCLK/cntr_13</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Sys_KeyboardTest</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DispCLK/cntr_12</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Sys_KeyboardTest</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DispCLK/cntr_11</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Sys_KeyboardTest</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DispCLK/cntr_10</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Sys_KeyboardTest</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DispCLK/cntr_9</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Sys_KeyboardTest</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DispCLK/cntr_8</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Sys_KeyboardTest</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DispCLK/cntr_7</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Sys_KeyboardTest</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DispCLK/cntr_6</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Sys_KeyboardTest</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DispCLK/cntr_5</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Sys_KeyboardTest</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DispCLK/cntr_4</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Sys_KeyboardTest</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DispCLK/cntr_3</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Sys_KeyboardTest</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DispCLK/cntr_2</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Sys_KeyboardTest</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DispCLK/cntr_1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Sys_KeyboardTest</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DispCLK/cntr_0</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Sys_KeyboardTest</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="2677" delta="unknown" >Node &lt;<arg fmt="%s" index="1">DispCLK/out1</arg>&gt; of sequential type is unconnected in block &lt;<arg fmt="%s" index="2">Sys_KeyboardTest</arg>&gt;.
+</msg>
+
+</messages>
+

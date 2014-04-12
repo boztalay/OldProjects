@@ -1,0 +1,84 @@
+Running : C:\Xilinx\10.1\ISE\bin\nt\unwrapped\fuse.exe -ise
+C:/Users/Ben/Desktop/FPGA/Projects/Current
+Projects/Systems/Sys_SecondTimer/Sys_SecondTimer.ise -intstyle ise -incremental
+-o Sys_SecondTimer_isim_beh.exe -prj Sys_SecondTimer_beh.prj -top
+Sys_SecondTimer
+Determining compilation order of HDL files
+Analyzing VHDL file Comp_ValChk9.vhd
+Restoring VHDL parse-tree ieee.std_logic_1164 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_1164.vdb
+Restoring VHDL parse-tree std.standard from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/std/standard.vdb
+Restoring VHDL parse-tree ieee.std_logic_arith from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_arith.vdb
+Restoring VHDL parse-tree ieee.std_logic_unsigned from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_unsigned.vdb
+Analyzing VHDL file Comp_DecadeCnt4bit.vhd
+Analyzing VHDL file Comp_DataMUX4x4.vhd
+Analyzing VHDL file Comp_Counter4bit.vhd
+Analyzing VHDL file Comp_Counter2bit.vhd
+Analyzing VHDL file Comp_ClockGen400Hz.vhd
+Analyzing VHDL file Comp_ClockGen1Hz.vhd
+Analyzing VHDL file Comp_7segDecode.vhd
+Analyzing VHDL file Sys_SecondTimer.vhd
+Restoring VHDL parse-tree unisim.vcomponents from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Saving VHDL parse-tree work.comp_valchk9 into
+c:/users/ben/desktop/fpga/projects/current
+projects/systems/sys_secondtimer/isim/work/comp_valchk9.vdb
+Saving VHDL parse-tree work.comp_decadecnt4bit into
+c:/users/ben/desktop/fpga/projects/current
+projects/systems/sys_secondtimer/isim/work/comp_decadecnt4bit.vdb
+Saving VHDL parse-tree work.comp_datamux4x4 into
+c:/users/ben/desktop/fpga/projects/current
+projects/systems/sys_secondtimer/isim/work/comp_datamux4x4.vdb
+Saving VHDL parse-tree work.comp_counter4bit into
+c:/users/ben/desktop/fpga/projects/current
+projects/systems/sys_secondtimer/isim/work/comp_counter4bit.vdb
+Saving VHDL parse-tree work.comp_counter2bit into
+c:/users/ben/desktop/fpga/projects/current
+projects/systems/sys_secondtimer/isim/work/comp_counter2bit.vdb
+Saving VHDL parse-tree work.comp_clockgen400hz into
+c:/users/ben/desktop/fpga/projects/current
+projects/systems/sys_secondtimer/isim/work/comp_clockgen400hz.vdb
+Saving VHDL parse-tree work.comp_clockgen1hz into
+c:/users/ben/desktop/fpga/projects/current
+projects/systems/sys_secondtimer/isim/work/comp_clockgen1hz.vdb
+Saving VHDL parse-tree work.comp_7segdecode into
+c:/users/ben/desktop/fpga/projects/current
+projects/systems/sys_secondtimer/isim/work/comp_7segdecode.vdb
+Saving VHDL parse-tree work.sys_secondtimer into
+c:/users/ben/desktop/fpga/projects/current
+projects/systems/sys_secondtimer/isim/work/sys_secondtimer.vdb
+Starting static elaboration
+Restoring VHDL parse-tree unisim.bufg from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Completed static elaboration
+Fuse Memory Usage: 113372 Kb
+Fuse CPU Usage: 342 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package std_logic_arith from library ieee
+Using precompiled package std_logic_unsigned from library ieee
+Compiling package vcomponents
+Compiling architecture bufg_v of entity bufg [bufg_default]
+Compiling architecture behavioral of entity comp_clockgen1hz
+[comp_clockgen1hz_default]
+Compiling architecture behavioral of entity comp_clockgen400hz
+[comp_clockgen400hz_default]
+Compiling architecture behavioral of entity comp_counter4bit
+[comp_counter4bit_default]
+Compiling architecture behavioral of entity comp_valchk9 [comp_valchk9_default]
+Compiling architecture behavioral of entity comp_datamux4x4
+[comp_datamux4x4_default]
+Compiling architecture behavioral of entity comp_counter2bit
+[comp_counter2bit_default]
+Compiling architecture behavioral of entity comp_decadecnt4bit
+[comp_decadecnt4bit_default]
+Compiling architecture behavioral of entity comp_7segdecode
+[comp_7segdecode_default]
+Compiling architecture structural of entity sys_secondtimer
+Compiled 24 VHDL Units
+Built simulation executable Sys_SecondTimer_isim_beh.exe
+Fuse Memory Usage: 114460 Kb
+Fuse CPU Usage: 498 ms

@@ -1,0 +1,5 @@
+set -tmpdir "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Tests/xst/projnav.tmp"
+set -xsthdpdir "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Tests/xst"
+elaborate
+-ifn SM_mem_init_test.prj
+-ifmt mixed

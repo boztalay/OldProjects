@@ -1,0 +1,10 @@
+AR top_level behavioral C:/Users/georgecuris/Desktop/top_level.vhd sub00/vhpl09 1279746825
+EN memory_interface NULL C:/Users/georgecuris/Desktop/memory_interface.vhd sub00/vhpl06 1279746822
+AR memory_interface behavioral C:/Users/georgecuris/Desktop/memory_interface.vhd sub00/vhpl07 1279746823
+AR dcmi_80 behavioral C:/Users/georgecuris/Desktop/DCMi_80.vhd sub00/vhpl05 1279746821
+EN four_dig_7seg NULL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/OZ-3_System/four_dig_7seg.vhd" sub00/vhpl00 1278697681
+AR sm_mem_init_test behavioral "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_memory_test2/SM_mem_init_test.vhd" sub00/vhpl03 1278697684
+AR four_dig_7seg behavioral "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/OZ-3_System/four_dig_7seg.vhd" sub00/vhpl01 1278697682
+EN dcmi_80 NULL C:/Users/georgecuris/Desktop/DCMi_80.vhd sub00/vhpl04 1279746820
+EN sm_mem_init_test NULL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_memory_test2/SM_mem_init_test.vhd" sub00/vhpl02 1278697683
+EN top_level NULL C:/Users/georgecuris/Desktop/top_level.vhd sub00/vhpl08 1279746824

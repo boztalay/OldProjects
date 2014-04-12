@@ -1,0 +1,58 @@
+V3 27
+FL C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_4bitSyncCounter/Comp_4bitSyncCounter.vhd 2009/04/10.23:47:11 K.31
+EN work/Comp_4bitSyncCounter 1239421649 \
+      FL C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_4bitSyncCounter/Comp_4bitSyncCounter.vhd \
+      PB ieee/std_logic_1164 1200023565 PB ieee/std_logic_arith 1200023566 \
+      PB ieee/STD_LOGIC_UNSIGNED 1200023567
+AR work/Comp_4bitSyncCounter/Behavioral 1239421650 \
+      FL C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_4bitSyncCounter/Comp_4bitSyncCounter.vhd \
+      EN work/Comp_4bitSyncCounter 1239421649 CP Gate_Inv CP Gate_Xor CP Gate_And \
+      CP Comp_Dflipflop CP Gate_Buf
+FL C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_Dflipflop/Comp_Dflipflop.vhd 2009/04/10.02:35:28 K.31
+EN work/Comp_Dflipflop 1239421647 \
+      FL C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_Dflipflop/Comp_Dflipflop.vhd \
+      PB ieee/std_logic_1164 1200023565 PB ieee/std_logic_arith 1200023566 \
+      PB ieee/STD_LOGIC_UNSIGNED 1200023567
+AR work/Comp_Dflipflop/Behavioral 1239421648 \
+      FL C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_Dflipflop/Comp_Dflipflop.vhd \
+      EN work/Comp_Dflipflop 1239421647 CP Gate_Inv CP Gate_Nand CP Gate_Buf
+FL C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_And/Gate_And.vhd 2009/04/10.00:49:40 K.31
+EN work/Gate_And 1239421645 \
+      FL C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_And/Gate_And.vhd \
+      PB ieee/std_logic_1164 1200023565 PB ieee/std_logic_arith 1200023566 \
+      PB ieee/STD_LOGIC_UNSIGNED 1200023567
+AR work/Gate_And/Behavioral 1239421646 \
+      FL C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_And/Gate_And.vhd \
+      EN work/Gate_And 1239421645
+FL C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Buf/Gate_Buf.vhd 2009/04/10.00:57:00 K.31
+EN work/Gate_Buf 1239421641 \
+      FL C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Buf/Gate_Buf.vhd \
+      PB ieee/std_logic_1164 1200023565 PB ieee/std_logic_arith 1200023566 \
+      PB ieee/STD_LOGIC_UNSIGNED 1200023567
+AR work/Gate_Buf/Behavioral 1239421642 \
+      FL C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Buf/Gate_Buf.vhd \
+      EN work/Gate_Buf 1239421641
+FL C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Inv/Gate_Inv.vhd 2009/04/10.00:54:54 K.31
+EN work/Gate_Inv 1239421637 \
+      FL C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Inv/Gate_Inv.vhd \
+      PB ieee/std_logic_1164 1200023565 PB ieee/std_logic_arith 1200023566 \
+      PB ieee/STD_LOGIC_UNSIGNED 1200023567
+AR work/Gate_Inv/Behavioral 1239421638 \
+      FL C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Inv/Gate_Inv.vhd \
+      EN work/Gate_Inv 1239421637
+FL C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Nand/Gate_Nand.vhd 2009/04/10.01:03:06 K.31
+EN work/Gate_Nand 1239421639 \
+      FL C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Nand/Gate_Nand.vhd \
+      PB ieee/std_logic_1164 1200023565 PB ieee/std_logic_arith 1200023566 \
+      PB ieee/STD_LOGIC_UNSIGNED 1200023567
+AR work/Gate_Nand/Behavioral 1239421640 \
+      FL C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Nand/Gate_Nand.vhd \
+      EN work/Gate_Nand 1239421639
+FL C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Xor/Gate_Xor.vhd 2009/04/10.00:53:05 K.31
+EN work/Gate_Xor 1239421643 \
+      FL C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Xor/Gate_Xor.vhd \
+      PB ieee/std_logic_1164 1200023565 PB ieee/std_logic_arith 1200023566 \
+      PB ieee/STD_LOGIC_UNSIGNED 1200023567
+AR work/Gate_Xor/Behavioral 1239421644 \
+      FL C:/Users/Ben/Desktop/FPGAprojects/Gates/Gate_Xor/Gate_Xor.vhd \
+      EN work/Gate_Xor 1239421643

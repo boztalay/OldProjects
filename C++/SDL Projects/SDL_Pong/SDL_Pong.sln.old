@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "SDL_Pong", "SDL_Pong\SDL_Pong.vcproj", "{F7E62999-0442-4D47-832C-8492C7C8D4DF}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Pong", "Pong\Pong.vdproj", "{6BDB6CB4-E479-4CDA-AF3A-761B5A632686}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{F7E62999-0442-4D47-832C-8492C7C8D4DF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{F7E62999-0442-4D47-832C-8492C7C8D4DF}.Debug|Win32.Build.0 = Debug|Win32
+		{F7E62999-0442-4D47-832C-8492C7C8D4DF}.Release|Win32.ActiveCfg = Release|Win32
+		{F7E62999-0442-4D47-832C-8492C7C8D4DF}.Release|Win32.Build.0 = Release|Win32
+		{6BDB6CB4-E479-4CDA-AF3A-761B5A632686}.Debug|Win32.ActiveCfg = Debug
+		{6BDB6CB4-E479-4CDA-AF3A-761B5A632686}.Release|Win32.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

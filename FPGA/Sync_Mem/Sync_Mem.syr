@@ -1,0 +1,514 @@
+Release 11.1 - xst L.33 (nt)
+Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.19 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.20 secs
+ 
+--> Reading design: Sync_Mem.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Sync_Mem.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Sync_Mem"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : Sync_Mem
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : Sync_Mem.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_Mem/four_dig_7seg.vhd" in Library work.
+Architecture behavioral of Entity four_dig_7seg is up to date.
+Compiling vhdl file "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_Mem/Sync_Mem.vhd" in Library work.
+Entity <sync_mem> compiled.
+Entity <sync_mem> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Sync_Mem> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <four_dig_7seg> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Sync_Mem> in library <work> (Architecture <behavioral>).
+    Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <DCM_1> in unit <Sync_Mem>.
+    Set user-defined property "CLKFX_DIVIDE =  2" for instance <DCM_1> in unit <Sync_Mem>.
+    Set user-defined property "CLKFX_MULTIPLY =  8" for instance <DCM_1> in unit <Sync_Mem>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <DCM_1> in unit <Sync_Mem>.
+    Set user-defined property "CLKIN_PERIOD =  20.0000000000000000" for instance <DCM_1> in unit <Sync_Mem>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <DCM_1> in unit <Sync_Mem>.
+    Set user-defined property "CLK_FEEDBACK =  NONE" for instance <DCM_1> in unit <Sync_Mem>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <DCM_1> in unit <Sync_Mem>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  HIGH" for instance <DCM_1> in unit <Sync_Mem>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <DCM_1> in unit <Sync_Mem>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <DCM_1> in unit <Sync_Mem>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM_1> in unit <Sync_Mem>.
+    Set user-defined property "FACTORY_JF =  C080" for instance <DCM_1> in unit <Sync_Mem>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <DCM_1> in unit <Sync_Mem>.
+    Set user-defined property "SIM_MODE =  SAFE" for instance <DCM_1> in unit <Sync_Mem>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_1> in unit <Sync_Mem>.
+INFO:Xst:2679 - Register <memory_address_bus> in unit <Sync_Mem> has a constant value of 00000000000000000000001 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <flash_ce> in unit <Sync_Mem> has a constant value of 1 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <RAM_lb> in unit <Sync_Mem> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <RAM_ub> in unit <Sync_Mem> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <RAM_cre> in unit <Sync_Mem> has a constant value of 0 during circuit operation. The register is replaced by logic.
+INFO:Xst:2679 - Register <data_out> in unit <Sync_Mem> has a constant value of 1001100011011010 during circuit operation. The register is replaced by logic.
+Entity <Sync_Mem> analyzed. Unit <Sync_Mem> generated.
+
+Analyzing Entity <four_dig_7seg> in library <work> (Architecture <behavioral>).
+Entity <four_dig_7seg> analyzed. Unit <four_dig_7seg> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <four_dig_7seg>.
+    Related source file is "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_Mem/four_dig_7seg.vhd".
+WARNING:Xst:737 - Found 4-bit latch for signal <to_decoder>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+WARNING:Xst:737 - Found 4-bit latch for signal <anodes>. Latches may be generated from incomplete case or if statements. We do not recommend the use of latches in FPGA/CPLD designs, as they may lead to timing problems.
+    Found 16x7-bit ROM for signal <to_display>.
+    Found 32-bit up counter for signal <clk_count>.
+    Found 32-bit up counter for signal <disp_count>.
+    Found 32-bit adder for signal <disp_count$add0000> created at line 49.
+    Found 32-bit adder for signal <disp_count$addsub0000> created at line 51.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   2 Counter(s).
+	inferred   2 Adder/Subtractor(s).
+Unit <four_dig_7seg> synthesized.
+
+
+Synthesizing Unit <Sync_Mem>.
+    Related source file is "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_Mem/Sync_Mem.vhd".
+    Found finite state machine <FSM_0> for signal <state>.
+    -----------------------------------------------------------------------
+    | States             | 7                                              |
+    | Transitions        | 9                                              |
+    | Inputs             | 1                                              |
+    | Outputs            | 7                                              |
+    | Clock              | clk_200MHz (falling_edge)                      |
+    | Reset              | reset (positive)                               |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | 0000                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 16-bit tristate buffer for signal <memory_data_bus>.
+    Found 1-bit register for signal <RAM_ce>.
+    Found 1-bit register for signal <RAM_adv>.
+    Found 1-bit register for signal <RAM_oe>.
+    Found 1-bit register for signal <RAM_we>.
+    Found 16-bit register for signal <read_data>.
+    Found 1-bit register for signal <write_enable>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  21 D-type flip-flop(s).
+	inferred  16 Tristate(s).
+Unit <Sync_Mem> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
+# Counters                                             : 2
+ 32-bit up counter                                     : 2
+# Registers                                            : 6
+ 1-bit register                                        : 5
+ 16-bit register                                       : 1
+# Latches                                              : 2
+ 4-bit latch                                           : 2
+# Tristates                                            : 1
+ 16-bit tristate buffer                                : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Choose code 1 with characteristics nb_luts=4,nb_literals=10,nb_ffs=7,depth=1 ...
+Optimizing FSM <state/FSM> on signal <state[1:7]> with one-hot encoding.
+-------------------
+ State | Encoding
+-------------------
+ 0000  | 0000001
+ 0001  | 0000010
+ 0010  | 0000100
+ 0110  | 0001000
+ 0111  | 0010000
+ 1001  | 0100000
+ 1100  | 1000000
+-------------------
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# FSMs                                                 : 1
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 2
+ 32-bit adder                                          : 2
+# Counters                                             : 2
+ 32-bit up counter                                     : 2
+# Registers                                            : 21
+ Flip-Flops                                            : 21
+# Latches                                              : 2
+ 4-bit latch                                           : 2
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+INFO:Xst:1901 - Instance DCM_1 in unit Sync_Mem of type DCM has been replaced by DCM_SP
+
+Optimizing unit <Sync_Mem> ...
+
+Optimizing unit <four_dig_7seg> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Sync_Mem, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 91
+ Flip-Flops                                            : 91
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Sync_Mem.ngr
+Top Level Output File Name         : Sync_Mem
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 62
+
+Cell Usage :
+# BELS                             : 491
+#      GND                         : 1
+#      INV                         : 7
+#      LUT1                        : 124
+#      LUT2                        : 8
+#      LUT3                        : 21
+#      LUT4                        : 45
+#      MUXCY                       : 149
+#      MUXF5                       : 7
+#      VCC                         : 1
+#      XORCY                       : 128
+# FlipFlops/Latches                : 99
+#      FDC_1                       : 5
+#      FDE_1                       : 21
+#      FDP_1                       : 1
+#      FDR                         : 32
+#      FDRE                        : 32
+#      LDCP                        : 8
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 62
+#      IBUF                        : 2
+#      IBUFG                       : 1
+#      IOBUF                       : 16
+#      OBUF                        : 43
+# DCMs                             : 1
+#      DCM_SP                      : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                      122  out of   4656     2%  
+ Number of Slice Flip Flops:             79  out of   9312     0%  
+ Number of 4 input LUTs:                205  out of   9312     2%  
+ Number of IOs:                          62
+ Number of bonded IOBs:                  62  out of    232    26%  
+    IOB Flip Flops:                      20
+ Number of GCLKs:                         2  out of     24     8%  
+ Number of DCMs:                          1  out of      4    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+---------------------------------------------------------------+------------------------------+-------+
+Clock Signal                                                   | Clock buffer(FF name)        | Load  |
+---------------------------------------------------------------+------------------------------+-------+
+clock                                                          | DCM_1:CLKFX                  | 27    |
+clock                                                          | IBUFG+BUFG                   | 64    |
+display/to_decoder_cmp_eq0000(display/to_decoder_cmp_eq00001:O)| NONE(*)(display/to_decoder_3)| 8     |
+---------------------------------------------------------------+------------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+---------------------------------------------------------------+---------------------------+-------+
+Control Signal                                                 | Buffer(FF name)           | Load  |
+---------------------------------------------------------------+---------------------------+-------+
+reset                                                          | IBUF                      | 6     |
+display/anodes_0__and0000(display/anodes_or00001:O)            | NONE(display/anodes_0)    | 1     |
+display/anodes_0__or0000(display/mux0000_cmp_eq00001:O)        | NONE(display/anodes_0)    | 1     |
+display/anodes_1__and0000(display/anodes_1__and00001:O)        | NONE(display/anodes_1)    | 1     |
+display/anodes_1__or0000(display/anodes_1__or00001:O)          | NONE(display/anodes_1)    | 1     |
+display/anodes_2__and0000(display/anodes_2__and00001:O)        | NONE(display/anodes_2)    | 1     |
+display/anodes_2__or0000(display/anodes_2__or00001:O)          | NONE(display/anodes_2)    | 1     |
+display/anodes_3__or0000(display/anodes_3__or00001:O)          | NONE(display/anodes_3)    | 1     |
+display/to_decoder_0__and0000(display/to_decoder_0__and00001:O)| NONE(display/to_decoder_0)| 1     |
+display/to_decoder_0__and0001(display/to_decoder_0__and00011:O)| NONE(display/to_decoder_0)| 1     |
+display/to_decoder_1__and0000(display/to_decoder_1__and00001:O)| NONE(display/to_decoder_1)| 1     |
+display/to_decoder_1__and0001(display/to_decoder_1__and00011:O)| NONE(display/to_decoder_1)| 1     |
+display/to_decoder_2__and0000(display/to_decoder_2__and00001:O)| NONE(display/to_decoder_2)| 1     |
+display/to_decoder_2__and0001(display/to_decoder_2__and00011:O)| NONE(display/to_decoder_2)| 1     |
+display/to_decoder_3__and0000(display/to_decoder_3__and00001:O)| NONE(display/to_decoder_3)| 1     |
+display/to_decoder_3__and0001(display/to_decoder_3__and00011:O)| NONE(display/to_decoder_3)| 1     |
+memory_address_bus_1_OBUF(XST_GND:G)                           | NONE(display/anodes_3)    | 1     |
+---------------------------------------------------------------+---------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 14.208ns (Maximum Frequency: 70.383MHz)
+   Minimum input arrival time before clock: 4.355ns
+   Maximum output required time after clock: 6.048ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clock'
+  Clock period: 14.208ns (frequency: 70.383MHz)
+  Total number of paths / destination ports: 68688 / 186
+-------------------------------------------------------------------------
+Delay:               3.552ns (Levels of Logic = 1)
+  Source:            state_FSM_FFd3 (FF)
+  Destination:       read_data_0 (FF)
+  Source Clock:      clock falling 4.0X
+  Destination Clock: clock falling 4.0X
+
+  Data Path: state_FSM_FFd3 to read_data_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC_1:C->Q            5   0.591   0.668  state_FSM_FFd3 (state_FSM_FFd3)
+     LUT3:I2->O           16   0.704   1.034  read_data_and00001 (read_data_and0000)
+     FDE_1:CE                  0.555          read_data_0
+    ----------------------------------------
+    Total                      3.552ns (1.850ns logic, 1.702ns route)
+                                       (52.1% logic, 47.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clock'
+  Total number of paths / destination ports: 58 / 42
+-------------------------------------------------------------------------
+Offset:              4.355ns (Levels of Logic = 2)
+  Source:            RAM_wait (PAD)
+  Destination:       read_data_0 (FF)
+  Destination Clock: clock falling 4.0X
+
+  Data Path: RAM_wait to read_data_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             6   1.218   0.844  RAM_wait_IBUF (RAM_wait_IBUF)
+     LUT3:I0->O           16   0.704   1.034  read_data_and00001 (read_data_and0000)
+     FDE_1:CE                  0.555          read_data_0
+    ----------------------------------------
+    Total                      4.355ns (2.477ns logic, 1.878ns route)
+                                       (56.9% logic, 43.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clock'
+  Total number of paths / destination ports: 20 / 20
+-------------------------------------------------------------------------
+Offset:              6.048ns (Levels of Logic = 2)
+  Source:            write_enable (FF)
+  Destination:       memory_data_bus<15> (PAD)
+  Source Clock:      clock falling 4.0X
+
+  Data Path: write_enable to memory_data_bus<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            2   0.591   0.447  write_enable (write_enable)
+     INV:I->O             16   0.704   1.034  write_enable_inv1_INV_0 (write_enable_inv)
+     IOBUF:T->IO               3.272          memory_data_bus_15_IOBUF (memory_data_bus<15>)
+    ----------------------------------------
+    Total                      6.048ns (4.567ns logic, 1.481ns route)
+                                       (75.5% logic, 24.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'display/to_decoder_cmp_eq0000'
+  Total number of paths / destination ports: 32 / 11
+-------------------------------------------------------------------------
+Offset:              5.955ns (Levels of Logic = 2)
+  Source:            display/to_decoder_0 (LATCH)
+  Destination:       decoder_out<6> (PAD)
+  Source Clock:      display/to_decoder_cmp_eq0000 falling
+
+  Data Path: display/to_decoder_0 to decoder_out<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     LDCP:G->Q             7   0.676   0.883  display/to_decoder_0 (display/to_decoder_0)
+     LUT4:I0->O            1   0.704   0.420  display/Mrom_to_display31 (decoder_out_3_OBUF)
+     OBUF:I->O                 3.272          decoder_out_3_OBUF (decoder_out<3>)
+    ----------------------------------------
+    Total                      5.955ns (4.652ns logic, 1.303ns route)
+                                       (78.1% logic, 21.9% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 7.21 secs
+ 
+--> 
+
+Total memory usage is 178044 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    8 (   0 filtered)
+

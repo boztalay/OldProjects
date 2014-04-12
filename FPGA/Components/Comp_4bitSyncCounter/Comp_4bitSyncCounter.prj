@@ -1,0 +1,7 @@
+vhdl work "../../Gates/Gate_Nand/Gate_Nand.vhd"
+vhdl work "../../Gates/Gate_Inv/Gate_Inv.vhd"
+vhdl work "../../Gates/Gate_Buf/Gate_Buf.vhd"
+vhdl work "../../Gates/Gate_Xor/Gate_Xor.vhd"
+vhdl work "../../Gates/Gate_And/Gate_And.vhd"
+vhdl work "../Comp_Dflipflop/Comp_Dflipflop.vhd"
+vhdl work "Comp_4bitSyncCounter.vhd"

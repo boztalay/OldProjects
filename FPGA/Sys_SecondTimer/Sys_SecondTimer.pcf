@@ -1,0 +1,21 @@
+//! **************************************************************************
+// Written by: Map K.39 on Fri Jul 31 00:18:18 2009
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Segments<1>" LOCATE = SITE "F18" LEVEL 1;
+COMP "Segments<2>" LOCATE = SITE "D17" LEVEL 1;
+COMP "Segments<3>" LOCATE = SITE "D16" LEVEL 1;
+COMP "Segments<4>" LOCATE = SITE "G14" LEVEL 1;
+COMP "Segments<5>" LOCATE = SITE "J17" LEVEL 1;
+COMP "Segments<6>" LOCATE = SITE "H14" LEVEL 1;
+COMP "Anodes<0>" LOCATE = SITE "F17" LEVEL 1;
+COMP "Anodes<1>" LOCATE = SITE "H17" LEVEL 1;
+COMP "Anodes<2>" LOCATE = SITE "C18" LEVEL 1;
+COMP "Anodes<3>" LOCATE = SITE "F15" LEVEL 1;
+COMP "BoardClock" LOCATE = SITE "B8" LEVEL 1;
+COMP "Reset" LOCATE = SITE "H13" LEVEL 1;
+COMP "Segments<0>" LOCATE = SITE "L18" LEVEL 1;
+NET "BoardClock_IBUFG" BEL "BUFG_BufBoardClock.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

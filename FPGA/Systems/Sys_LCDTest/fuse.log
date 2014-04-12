@@ -1,0 +1,43 @@
+Determining compilation order of HDL files
+Analyzing Verilog file LCDTest_tb.tfw
+Analyzing Verilog file C:/Xilinx/10.1/ISE/verilog/src/glbl.v
+Analyzing VHDL file Sys_LCDTest.vhd
+Restoring VHDL parse-tree ieee.std_logic_1164 from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_1164.vdb
+Restoring VHDL parse-tree std.standard from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/std/standard.vdb
+Restoring VHDL parse-tree ieee.std_logic_arith from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_arith.vdb
+Restoring VHDL parse-tree ieee.std_logic_unsigned from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/ieee/std_logic_unsigned.vdb
+Restoring VHDL parse-tree unisim.vcomponents from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+Saving VHDL parse-tree work.frequencydivider into
+c:/users/ben/desktop/fpgaprojects/systems/sys_lcdtest/isim/work/frequencydivider
+.vdb
+Saving VHDL parse-tree work.sys_lcdtest into
+c:/users/ben/desktop/fpgaprojects/systems/sys_lcdtest/isim/work/sys_lcdtest.vdb
+Starting static elaboration
+Restoring VHDL parse-tree unisim.bufg from
+c:/xilinx/10.1/ise/vhdl/hdp/nt/unisim/unisim.vdbl
+WARNING:HDLCompiler:919 - "LCDTest_tb.tfw" Line 43. Size mismatch in mixed
+   language port association, vhdl port sysclk
+Completed static elaboration
+Fuse Memory Usage: 97232 Kb
+Fuse CPU Usage: 389 ms
+Using precompiled package standard from library std
+Using precompiled package std_logic_1164 from library ieee
+Using precompiled package std_logic_arith from library ieee
+Using precompiled package std_logic_unsigned from library ieee
+Compiling module glbl
+Compiling module LCDTest_tb
+Compiling package vcomponents
+Compiling architecture bufg_v of entity bufg [bufg_default]
+Compiling architecture behavioral of entity frequencydivider
+[frequencydivider_default]
+Compiling architecture behavioral of entity sys_lcdtest
+Compiled 11 VHDL Units
+Compiled 2 Verilog Units
+Built simulation executable LCDTest_tb_isim_beh.exe
+Fuse Memory Usage: 98496 Kb
+Fuse CPU Usage: 483 ms

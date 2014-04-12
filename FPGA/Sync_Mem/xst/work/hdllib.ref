@@ -1,0 +1,4 @@
+EN four_dig_7seg NULL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_Mem/four_dig_7seg.vhd" sub00/vhpl02 1278125525
+AR four_dig_7seg behavioral "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_Mem/four_dig_7seg.vhd" sub00/vhpl03 1278125526
+EN sync_mem NULL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_Mem/Sync_Mem.vhd" sub00/vhpl00 1278125527
+AR sync_mem behavioral "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_Mem/Sync_Mem.vhd" sub00/vhpl01 1278125528

@@ -1,0 +1,115 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2003 Xilinx, Inc.
+// All Right Reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 10.1
+//  \   \         Application : ISE
+//  /   /         Filename : LCDTest_tb.ant
+// /___/   /\     Timestamp : Wed Apr 15 23:06:59 2009
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: 
+//Design Name: LCDTest_tb
+//Device: Xilinx
+//
+`timescale 1ns/1ps
+
+module LCDTest_tb;
+    reg SysCLK = 1'b0;
+    wire RS;
+    wire RW;
+    wire [7:0] databus;
+    wire E;
+
+    parameter PERIOD = 2000;
+    parameter real DUTY_CYCLE = 0.5;
+    parameter OFFSET = 100;
+
+    initial    // Clock process for SysCLK
+    begin
+        #OFFSET;
+        forever
+        begin
+            SysCLK = 1'b0;
+            #(PERIOD-(PERIOD*DUTY_CYCLE)) SysCLK = 1'b1;
+            #(PERIOD*DUTY_CYCLE);
+        end
+    end
+
+    Sys_LCDTest UUT (
+        .SysCLK(SysCLK),
+        .RS(RS),
+        .RW(RW),
+        .databus(databus),
+        .E(E));
+
+    integer TX_FILE = 0;
+    integer TX_ERROR = 0;
+    
+    initial begin    // Annotation process for clock SysCLK
+        #0;
+        ANNOTATE_RS;
+        ANNOTATE_RW;
+        ANNOTATE_databus;
+        ANNOTATE_E;
+        #OFFSET;
+        forever begin
+            #1100;
+            ANNOTATE_RS;
+            ANNOTATE_RW;
+            ANNOTATE_databus;
+            ANNOTATE_E;
+            #900;
+        end
+    end
+
+    initial begin  // Open the annotations file...
+        TX_FILE = $fopen("C:\\Users\\Ben\\Desktop\\FPGAprojects\\Systems\\Sys_LCDTest\\LCDTest_tb.ano");
+        #1.002e+006 // Final time:  1.002e+006 ns
+        $display("Success! Annotation Simulation Complete.");
+        $fdisplay(TX_FILE, "Total[%d]", TX_ERROR);
+        $fclose(TX_FILE);
+        $finish;
+    end
+
+    initial begin
+    end
+
+    task ANNOTATE_RS;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,RS,%b]", $time, RS);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+    task ANNOTATE_RW;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,RW,%b]", $time, RW);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+    task ANNOTATE_databus;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,databus,%b]", $time, databus);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+    task ANNOTATE_E;
+        #0 begin
+            $fdisplay(TX_FILE, "Annotate[%d,E,%b]", $time, E);
+            $fflush(TX_FILE);
+            TX_ERROR = TX_ERROR + 1;
+        end
+    endtask
+
+endmodule
+

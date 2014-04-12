@@ -1,0 +1,62 @@
+xst -ise "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.xst" -ofn "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.syr" 
+ngdbuild -ise "FlashReadTest.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "FlashReadTest.ngc" FlashReadTest.ngd  
+map -ise "FlashReadTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlashReadTest_map.ncd FlashReadTest.ngd FlashReadTest.pcf 
+par -ise "FlashReadTest.ise" -w -intstyle ise -ol std -t 1 FlashReadTest_map.ncd FlashReadTest.ncd FlashReadTest.pcf 
+trce -ise "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml FlashReadTest.twx FlashReadTest.ncd -o FlashReadTest.twr FlashReadTest.pcf -ucf FlashReadTest.ucf 
+bitgen -ise "FlashReadTest.ise" -intstyle ise -f FlashReadTest.ut FlashReadTest.ncd 
+xst -ise "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.xst" -ofn "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.syr" 
+ngdbuild -ise "FlashReadTest.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "FlashReadTest.ngc" FlashReadTest.ngd  
+map -ise "FlashReadTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlashReadTest_map.ncd FlashReadTest.ngd FlashReadTest.pcf 
+par -ise "FlashReadTest.ise" -w -intstyle ise -ol std -t 1 FlashReadTest_map.ncd FlashReadTest.ncd FlashReadTest.pcf 
+trce -ise "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml FlashReadTest.twx FlashReadTest.ncd -o FlashReadTest.twr FlashReadTest.pcf -ucf FlashReadTest.ucf 
+bitgen -ise "FlashReadTest.ise" -intstyle ise -f FlashReadTest.ut FlashReadTest.ncd 
+xst -ise "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.xst" -ofn "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.syr" 
+ngdbuild -ise "FlashReadTest.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "FlashReadTest.ngc" FlashReadTest.ngd  
+map -ise "FlashReadTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlashReadTest_map.ncd FlashReadTest.ngd FlashReadTest.pcf 
+par -ise "FlashReadTest.ise" -w -intstyle ise -ol std -t 1 FlashReadTest_map.ncd FlashReadTest.ncd FlashReadTest.pcf 
+trce -ise "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml FlashReadTest.twx FlashReadTest.ncd -o FlashReadTest.twr FlashReadTest.pcf -ucf FlashReadTest.ucf 
+bitgen -ise "FlashReadTest.ise" -intstyle ise -f FlashReadTest.ut FlashReadTest.ncd 
+xst -ise "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.xst" -ofn "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.syr" 
+xst -ise "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.xst" -ofn "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.syr" 
+ngdbuild -ise "FlashReadTest.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "FlashReadTest.ngc" FlashReadTest.ngd  
+map -ise "FlashReadTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlashReadTest_map.ncd FlashReadTest.ngd FlashReadTest.pcf 
+par -ise "FlashReadTest.ise" -w -intstyle ise -ol std -t 1 FlashReadTest_map.ncd FlashReadTest.ncd FlashReadTest.pcf 
+trce -ise "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml FlashReadTest.twx FlashReadTest.ncd -o FlashReadTest.twr FlashReadTest.pcf -ucf FlashReadTest.ucf 
+bitgen -ise "FlashReadTest.ise" -intstyle ise -f FlashReadTest.ut FlashReadTest.ncd 
+xst -ise "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.xst" -ofn "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.syr" 
+ngdbuild -ise "FlashReadTest.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "FlashReadTest.ngc" FlashReadTest.ngd  
+map -ise "FlashReadTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlashReadTest_map.ncd FlashReadTest.ngd FlashReadTest.pcf 
+par -ise "FlashReadTest.ise" -w -intstyle ise -ol std -t 1 FlashReadTest_map.ncd FlashReadTest.ncd FlashReadTest.pcf 
+trce -ise "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml FlashReadTest.twx FlashReadTest.ncd -o FlashReadTest.twr FlashReadTest.pcf -ucf FlashReadTest.ucf 
+bitgen -ise "FlashReadTest.ise" -intstyle ise -f FlashReadTest.ut FlashReadTest.ncd 
+xst -ise "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.xst" -ofn "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.syr" 
+ngdbuild -ise "FlashReadTest.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "FlashReadTest.ngc" FlashReadTest.ngd  
+map -ise "FlashReadTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlashReadTest_map.ncd FlashReadTest.ngd FlashReadTest.pcf 
+par -ise "FlashReadTest.ise" -w -intstyle ise -ol std -t 1 FlashReadTest_map.ncd FlashReadTest.ncd FlashReadTest.pcf 
+trce -ise "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml FlashReadTest.twx FlashReadTest.ncd -o FlashReadTest.twr FlashReadTest.pcf -ucf FlashReadTest.ucf 
+bitgen -ise "FlashReadTest.ise" -intstyle ise -f FlashReadTest.ut FlashReadTest.ncd 
+xst -ise "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.xst" -ofn "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.syr" 
+xst -ise "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.xst" -ofn "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.syr" 
+ngdbuild -ise "FlashReadTest.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "FlashReadTest.ngc" FlashReadTest.ngd  
+map -ise "FlashReadTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlashReadTest_map.ncd FlashReadTest.ngd FlashReadTest.pcf 
+par -ise "FlashReadTest.ise" -w -intstyle ise -ol std -t 1 FlashReadTest_map.ncd FlashReadTest.ncd FlashReadTest.pcf 
+trce -ise "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml FlashReadTest.twx FlashReadTest.ncd -o FlashReadTest.twr FlashReadTest.pcf -ucf FlashReadTest.ucf 
+bitgen -ise "FlashReadTest.ise" -intstyle ise -f FlashReadTest.ut FlashReadTest.ncd 
+xst -ise "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.xst" -ofn "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.syr" 
+ngdbuild -ise "FlashReadTest.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "FlashReadTest.ngc" FlashReadTest.ngd  
+map -ise "FlashReadTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlashReadTest_map.ncd FlashReadTest.ngd FlashReadTest.pcf 
+par -ise "FlashReadTest.ise" -w -intstyle ise -ol std -t 1 FlashReadTest_map.ncd FlashReadTest.ncd FlashReadTest.pcf 
+trce -ise "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml FlashReadTest.twx FlashReadTest.ncd -o FlashReadTest.twr FlashReadTest.pcf -ucf FlashReadTest.ucf 
+bitgen -ise "FlashReadTest.ise" -intstyle ise -f FlashReadTest.ut FlashReadTest.ncd 
+xst -ise "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.xst" -ofn "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.syr" 
+ngdbuild -ise "FlashReadTest.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "FlashReadTest.ngc" FlashReadTest.ngd  
+map -ise "FlashReadTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlashReadTest_map.ncd FlashReadTest.ngd FlashReadTest.pcf 
+par -ise "FlashReadTest.ise" -w -intstyle ise -ol std -t 1 FlashReadTest_map.ncd FlashReadTest.ncd FlashReadTest.pcf 
+trce -ise "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml FlashReadTest.twx FlashReadTest.ncd -o FlashReadTest.twr FlashReadTest.pcf -ucf FlashReadTest.ucf 
+bitgen -ise "FlashReadTest.ise" -intstyle ise -f FlashReadTest.ut FlashReadTest.ncd 
+xst -ise "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.xst" -ofn "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.syr" 
+ngdbuild -ise "FlashReadTest.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "FlashReadTest.ngc" FlashReadTest.ngd  
+map -ise "FlashReadTest.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o FlashReadTest_map.ncd FlashReadTest.ngd FlashReadTest.pcf 
+par -ise "FlashReadTest.ise" -w -intstyle ise -ol std -t 1 FlashReadTest_map.ncd FlashReadTest.ncd FlashReadTest.pcf 
+trce -ise "C:/Users/Ben/Desktop/Folders/FPGA/Projects/Current Projects/Systems/FlashProgrammer/FlashReadTest/FlashReadTest.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml FlashReadTest.twx FlashReadTest.ncd -o FlashReadTest.twr FlashReadTest.pcf -ucf FlashReadTest.ucf 
+bitgen -ise "FlashReadTest.ise" -intstyle ise -f FlashReadTest.ut FlashReadTest.ncd 

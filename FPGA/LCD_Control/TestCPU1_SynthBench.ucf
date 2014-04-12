@@ -1,0 +1,21 @@
+NET "board_clk" LOC = "B8";
+
+NET "out_pins<1>" LOC = "P17";
+NET "out_pins<2>" LOC = "R16";
+NET "out_pins<0>"  LOC = "T18";
+
+NET "LCD_DB<0>" LOC = "L15";
+NET "LCD_DB<1>" LOC = "K12";
+NET "LCD_DB<2>" LOC = "L17";
+NET "LCD_DB<3>" LOC = "M15";
+NET "LCD_DB<4>" LOC = "K13";
+NET "LCD_DB<5>" LOC = "L16";
+NET "LCD_DB<6>" LOC = "M14";
+NET "LCD_DB<7>" LOC = "M16";
+
+NET "anodes<0>" LOC = "F17";
+NET "anodes<1>" LOC = "H17";
+NET "anodes<2>" LOC = "C18";
+NET "anodes<3>" LOC = "F15";
+
+NET "board_clk" CLOCK_DEDICATED_ROUTE = FALSE;

@@ -1,0 +1,20 @@
+NET "key_clock" LOC = "R12";
+NET "key_data" LOC = "P11";
+NET "acknowledge" LOC = "H13";
+NET "code_ready" LOC = "J14";
+NET "clock" LOC = "B8";
+
+NET "decoder_out<6>"  LOC = "L18";
+NET "decoder_out<5>"  LOC = "F18";
+NET "decoder_out<4>"  LOC = "D17";
+NET "decoder_out<3>"  LOC = "D16";
+NET "decoder_out<2>"  LOC = "G14";
+NET "decoder_out<1>"  LOC = "J17";
+NET "decoder_out<0>"  LOC = "H14";
+
+NET "anodes<0>" LOC = "F17";
+NET "anodes<1>" LOC = "H17";
+NET "anodes<2>" LOC = "C18";
+NET "anodes<3>" LOC = "F15";
+
+NET "key_clock" CLOCK_DEDICATED_ROUTE = FALSE;

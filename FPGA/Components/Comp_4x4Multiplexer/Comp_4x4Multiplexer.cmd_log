@@ -1,0 +1,6 @@
+xst -ise "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_4x4Multiplexer/Comp_4x4Multiplexer.ise" -intstyle ise -ifn "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_4x4Multiplexer/Comp_4x4Multiplexer.xst" -ofn "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_4x4Multiplexer/Comp_4x4Multiplexer.syr"
+ngdbuild -ise "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_4x4Multiplexer/Comp_4x4Multiplexer.ise" -intstyle ise -dd _ngo  -nt timestamp -i -p xc3s500e-fg320-4 "Comp_4x4Multiplexer.ngc" Comp_4x4Multiplexer.ngd
+map -ise "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_4x4Multiplexer/Comp_4x4Multiplexer.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -pr off -k 4 -c 100 -o Comp_4x4Multiplexer_map.ncd Comp_4x4Multiplexer.ngd Comp_4x4Multiplexer.pcf
+par -ise "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_4x4Multiplexer/Comp_4x4Multiplexer.ise" -w -intstyle ise -ol std -t 1 Comp_4x4Multiplexer_map.ncd Comp_4x4Multiplexer.ncd Comp_4x4Multiplexer.pcf
+trce -ise "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_4x4Multiplexer/Comp_4x4Multiplexer.ise" -intstyle ise -e 3 -s 4 -xml Comp_4x4Multiplexer Comp_4x4Multiplexer.ncd -o Comp_4x4Multiplexer.twr Comp_4x4Multiplexer.pcf
+bitgen -ise "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_4x4Multiplexer/Comp_4x4Multiplexer.ise" -intstyle ise -f Comp_4x4Multiplexer.ut Comp_4x4Multiplexer.ncd

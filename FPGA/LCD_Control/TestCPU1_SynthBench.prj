@@ -1,0 +1,8 @@
+vhdl work "TestCPU1_RegFile.vhd"
+vhdl work "TestCPU1_OutPins.vhd"
+vhdl work "TestCPU1_iRAM.vhd"
+vhdl work "TestCPU1_Cntl.vhd"
+vhdl work "TestCPU1_ALU.vhd"
+vhdl work "TestCPU1.vhd"
+vhdl work "mROM.vhd"
+vhdl work "TestCPU1_SynthBench.vhd"

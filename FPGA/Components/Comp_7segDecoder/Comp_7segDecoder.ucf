@@ -1,0 +1,12 @@
+NET "A<0>" LOC = "G18";
+NET "A<1>" LOC = "H18";
+NET "A<2>" LOC = "K18";
+NET "A<3>" LOC = "K17";
+
+NET "seg<0>" LOC = "L18";
+NET "seg<1>" LOC = "F18";
+NET "seg<2>" LOC = "D17";
+NET "seg<3>" LOC = "D16";
+NET "seg<4>" LOC = "G14";
+NET "seg<5>" LOC = "J17";
+NET "seg<6>" LOC = "H14";

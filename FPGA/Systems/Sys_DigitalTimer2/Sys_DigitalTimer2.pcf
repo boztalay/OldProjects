@@ -1,0 +1,21 @@
+//! **************************************************************************
+// Written by: Map K.31 on Sun Apr 12 19:41:56 2009
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "segs<0>" LOCATE = SITE "L18" LEVEL 1;
+COMP "segs<1>" LOCATE = SITE "F18" LEVEL 1;
+COMP "segs<2>" LOCATE = SITE "D17" LEVEL 1;
+COMP "segs<3>" LOCATE = SITE "D16" LEVEL 1;
+COMP "segs<4>" LOCATE = SITE "G14" LEVEL 1;
+COMP "segs<5>" LOCATE = SITE "J17" LEVEL 1;
+COMP "anodes<0>" LOCATE = SITE "F17" LEVEL 1;
+COMP "segs<6>" LOCATE = SITE "H14" LEVEL 1;
+COMP "anodes<1>" LOCATE = SITE "H17" LEVEL 1;
+COMP "anodes<2>" LOCATE = SITE "C18" LEVEL 1;
+COMP "anodes<3>" LOCATE = SITE "F15" LEVEL 1;
+COMP "SysCLK" LOCATE = SITE "B8" LEVEL 1;
+COMP "Reset" LOCATE = SITE "H13" LEVEL 1;
+NET "SysCLK_IBUFG" BEL "BUFG_BufCLK.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

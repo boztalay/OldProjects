@@ -1,0 +1,18 @@
+xst -ise "E:/FPGA/Projects/Current Projects/Systems/LCD_Control/TestCPU1.ise" -intstyle ise -ifn "E:/FPGA/Projects/Current Projects/Systems/LCD_Control/TestCPU1_SynthBench.xst" -ofn "E:/FPGA/Projects/Current Projects/Systems/LCD_Control/TestCPU1_SynthBench.syr" 
+ngdbuild -ise "TestCPU1.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 TestCPU1_SynthBench.ngc TestCPU1_SynthBench.ngd  
+map -ise "TestCPU1.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o TestCPU1_SynthBench_map.ncd TestCPU1_SynthBench.ngd TestCPU1_SynthBench.pcf 
+par -ise "TestCPU1.ise" -w -intstyle ise -ol std -t 1 TestCPU1_SynthBench_map.ncd TestCPU1_SynthBench.ncd TestCPU1_SynthBench.pcf 
+trce -ise "E:/FPGA/Projects/Current Projects/Systems/LCD_Control/TestCPU1.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml TestCPU1_SynthBench.twx TestCPU1_SynthBench.ncd -o TestCPU1_SynthBench.twr TestCPU1_SynthBench.pcf -ucf TestCPU1_SynthBench.ucf 
+bitgen -ise "TestCPU1.ise" -intstyle ise -f TestCPU1_SynthBench.ut TestCPU1_SynthBench.ncd 
+xst -ise "E:/FPGA/Projects/Current Projects/Systems/LCD_Control/TestCPU1.ise" -intstyle ise -ifn "E:/FPGA/Projects/Current Projects/Systems/LCD_Control/TestCPU1_SynthBench.xst" -ofn "E:/FPGA/Projects/Current Projects/Systems/LCD_Control/TestCPU1_SynthBench.syr" 
+ngdbuild -ise "TestCPU1.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 TestCPU1_SynthBench.ngc TestCPU1_SynthBench.ngd  
+map -ise "TestCPU1.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o TestCPU1_SynthBench_map.ncd TestCPU1_SynthBench.ngd TestCPU1_SynthBench.pcf 
+par -ise "TestCPU1.ise" -w -intstyle ise -ol std -t 1 TestCPU1_SynthBench_map.ncd TestCPU1_SynthBench.ncd TestCPU1_SynthBench.pcf 
+trce -ise "E:/FPGA/Projects/Current Projects/Systems/LCD_Control/TestCPU1.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml TestCPU1_SynthBench.twx TestCPU1_SynthBench.ncd -o TestCPU1_SynthBench.twr TestCPU1_SynthBench.pcf -ucf TestCPU1_SynthBench.ucf 
+bitgen -ise "TestCPU1.ise" -intstyle ise -f TestCPU1_SynthBench.ut TestCPU1_SynthBench.ncd 
+xst -ise "E:/FPGA/Projects/Current Projects/Systems/LCD_Control/TestCPU1.ise" -intstyle ise -ifn "E:/FPGA/Projects/Current Projects/Systems/LCD_Control/TestCPU1_SynthBench.xst" -ofn "E:/FPGA/Projects/Current Projects/Systems/LCD_Control/TestCPU1_SynthBench.syr" 
+ngdbuild -ise "TestCPU1.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 TestCPU1_SynthBench.ngc TestCPU1_SynthBench.ngd  
+map -ise "TestCPU1.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o TestCPU1_SynthBench_map.ncd TestCPU1_SynthBench.ngd TestCPU1_SynthBench.pcf 
+par -ise "TestCPU1.ise" -w -intstyle ise -ol std -t 1 TestCPU1_SynthBench_map.ncd TestCPU1_SynthBench.ncd TestCPU1_SynthBench.pcf 
+trce -ise "E:/FPGA/Projects/Current Projects/Systems/LCD_Control/TestCPU1.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml TestCPU1_SynthBench.twx TestCPU1_SynthBench.ncd -o TestCPU1_SynthBench.twr TestCPU1_SynthBench.pcf -ucf TestCPU1_SynthBench.ucf 
+bitgen -ise "TestCPU1.ise" -intstyle ise -f TestCPU1_SynthBench.ut TestCPU1_SynthBench.ncd 

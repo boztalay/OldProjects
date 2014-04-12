@@ -1,0 +1,7 @@
+xst -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Tests/Tests.ise" -intstyle ise -ifn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Tests/tests.xst" -ofn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Tests/tests.syr" 
+xst -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Tests/Tests.ise" -intstyle ise -ifn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Tests/tests.xst" -ofn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Tests/tests.syr" 
+ngdbuild -ise "Tests.ise" -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -i -p xc3s500e-fg320-4 tests.ngc tests.ngd  
+map -ise "Tests.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o tests_map.ncd tests.ngd tests.pcf 
+par -ise "Tests.ise" -w -intstyle ise -ol std -t 1 tests_map.ncd tests.ncd tests.pcf 
+trce -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Tests/Tests.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml tests.twx tests.ncd -o tests.twr tests.pcf -ucf tests.ucf 
+bitgen -ise "Tests.ise" -intstyle ise -f tests.ut tests.ncd 

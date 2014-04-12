@@ -1,0 +1,38 @@
+V3 22
+FL C:/Users/georgecuris/Desktop/DCMi_80.vhd 2010/07/21.17:13:28 L.33
+EN work/DCMi_80 1279746820 FL C:/Users/georgecuris/Desktop/DCMi_80.vhd \
+      PB ieee/std_logic_1164 1236108447 PB ieee/NUMERIC_STD 1236108448 LB UNISIM \
+      PH unisim/VCOMPONENTS 1236108447
+AR work/DCMi_80/BEHAVIORAL 1279746821 \
+      FL C:/Users/georgecuris/Desktop/DCMi_80.vhd EN work/DCMi_80 1279746820 \
+      CP BUFG CP DCM_SP
+FL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/OZ-3_System/four_dig_7seg.vhd" 2010/05/16.17:43:09 L.33
+EN work/four_dig_7seg 1278697681 \
+      FL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/OZ-3_System/four_dig_7seg.vhd" \
+      PB ieee/std_logic_1164 1236108447 PB ieee/std_logic_arith 1236108448 \
+      PB ieee/STD_LOGIC_UNSIGNED 1236108449
+AR work/four_dig_7seg/Behavioral 1278697682 \
+      FL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/OZ-3_System/four_dig_7seg.vhd" \
+      EN work/four_dig_7seg 1278697681
+FL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_memory_test2/SM_mem_init_test.vhd" 2010/07/09.13:47:56 L.33
+EN work/SM_mem_init_test 1278697683 \
+      FL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_memory_test2/SM_mem_init_test.vhd" \
+      PB ieee/std_logic_1164 1236108447 PB ieee/std_logic_arith 1236108448 \
+      PB ieee/STD_LOGIC_UNSIGNED 1236108449 LB UNISIM PH unisim/VCOMPONENTS 1236108447
+AR work/SM_mem_init_test/Behavioral 1278697684 \
+      FL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_memory_test2/SM_mem_init_test.vhd" \
+      EN work/SM_mem_init_test 1278697683 CP DCM CP four_dig_7seg
+FL C:/Users/georgecuris/Desktop/memory_interface.vhd 2010/07/19.10:34:34 L.33
+EN work/memory_interface 1279746822 \
+      FL C:/Users/georgecuris/Desktop/memory_interface.vhd PB ieee/std_logic_1164 1236108447 \
+      PB ieee/std_logic_arith 1236108448 PB ieee/STD_LOGIC_UNSIGNED 1236108449
+AR work/memory_interface/Behavioral 1279746823 \
+      FL C:/Users/georgecuris/Desktop/memory_interface.vhd \
+      EN work/memory_interface 1279746822
+FL C:/Users/georgecuris/Desktop/top_level.vhd 2010/07/21.17:03:48 L.33
+EN work/top_level 1279746824 FL C:/Users/georgecuris/Desktop/top_level.vhd \
+      PB ieee/std_logic_1164 1236108447 PB ieee/std_logic_arith 1236108448 \
+      PB ieee/STD_LOGIC_UNSIGNED 1236108449
+AR work/top_level/Behavioral 1279746825 \
+      FL C:/Users/georgecuris/Desktop/top_level.vhd EN work/top_level 1279746824 \
+      CP DCMi_80 CP memory_interface

@@ -1,0 +1,12 @@
+xst -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_memory_test2/Sync_memory_test2.ise" -intstyle ise -ifn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_memory_test2/top_level.xst" -ofn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_memory_test2/top_level.syr" 
+ngdbuild -ise "Sync_memory_test2.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 top_level.ngc top_level.ngd  
+map -ise "Sync_memory_test2.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o top_level_map.ncd top_level.ngd top_level.pcf 
+par -ise "Sync_memory_test2.ise" -w -intstyle ise -ol std -t 1 top_level_map.ncd top_level.ncd top_level.pcf 
+trce -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_memory_test2/Sync_memory_test2.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top_level.twx top_level.ncd -o top_level.twr top_level.pcf 
+bitgen -ise "Sync_memory_test2.ise" -intstyle ise -f top_level.ut top_level.ncd 
+xst -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_memory_test2/Sync_memory_test2.ise" -intstyle ise -ifn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_memory_test2/top_level.xst" -ofn "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_memory_test2/top_level.syr" 
+ngdbuild -ise "Sync_memory_test2.ise" -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 top_level.ngc top_level.ngd  
+map -ise "Sync_memory_test2.ise" -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o top_level_map.ncd top_level.ngd top_level.pcf 
+par -ise "Sync_memory_test2.ise" -w -intstyle ise -ol std -t 1 top_level_map.ncd top_level.ncd top_level.pcf 
+trce -ise "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Sync_memory_test2/Sync_memory_test2.ise" -intstyle ise -v 3 -s 4 -fastpaths -xml top_level.twx top_level.ncd -o top_level.twr top_level.pcf 
+bitgen -ise "Sync_memory_test2.ise" -intstyle ise -f top_level.ut top_level.ncd 

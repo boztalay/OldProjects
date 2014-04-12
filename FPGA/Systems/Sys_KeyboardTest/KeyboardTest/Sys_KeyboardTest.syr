@@ -1,0 +1,570 @@
+Release 10.1 - xst K.31 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_KeyboardTest/KeyboardTest/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_KeyboardTest/KeyboardTest/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: Sys_KeyboardTest.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Sys_KeyboardTest.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Sys_KeyboardTest"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : Sys_KeyboardTest
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : Sys_KeyboardTest.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_FrequencyDivider/Comp_FrequencyDivider.vhd" in Library work.
+Architecture behavioral of Entity comp_frequencydivider is up to date.
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_7segDecoder/Comp_7segDecoder.vhd" in Library work.
+Architecture behavioral of Entity comp_7segdecoder is up to date.
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_KeyboardTest/KeyboardTest/Sys_KeyboardTest.vhd" in Library work.
+Entity <sys_keyboardtest> compiled.
+Entity <sys_keyboardtest> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Sys_KeyboardTest> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Comp_FrequencyDivider> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Comp_7segDecoder> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Sys_KeyboardTest> in library <work> (Architecture <behavioral>).
+Entity <Sys_KeyboardTest> analyzed. Unit <Sys_KeyboardTest> generated.
+
+Analyzing Entity <Comp_FrequencyDivider> in library <work> (Architecture <behavioral>).
+Entity <Comp_FrequencyDivider> analyzed. Unit <Comp_FrequencyDivider> generated.
+
+Analyzing Entity <Comp_7segDecoder> in library <work> (Architecture <behavioral>).
+Entity <Comp_7segDecoder> analyzed. Unit <Comp_7segDecoder> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Comp_FrequencyDivider>.
+    Related source file is "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_FrequencyDivider/Comp_FrequencyDivider.vhd".
+    Found 1-bit register for signal <out1>.
+    Found 1-bit register for signal <out2>.
+    Found 26-bit up counter for signal <cntr>.
+    Found 17-bit up counter for signal <cntr2>.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   2 D-type flip-flop(s).
+Unit <Comp_FrequencyDivider> synthesized.
+
+
+Synthesizing Unit <Comp_7segDecoder>.
+    Related source file is "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_7segDecoder/Comp_7segDecoder.vhd".
+    Found 16x7-bit ROM for signal <seg>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <Comp_7segDecoder> synthesized.
+
+
+Synthesizing Unit <Sys_KeyboardTest>.
+    Related source file is "C:/Users/Ben/Desktop/FPGAprojects/Systems/Sys_KeyboardTest/KeyboardTest/Sys_KeyboardTest.vhd".
+WARNING:Xst:1780 - Signal <data_stor<9>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:646 - Signal <Dummy> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+    Found 4-bit register for signal <Anodes>.
+    Found 32-bit up counter for signal <bit_count>.
+    Found 32-bit comparator greater for signal <bit_count$and0000>.
+    Found 1-bit register for signal <data_stor<10>>.
+    Found 9-bit register for signal <data_stor<8:0>>.
+    Found 32-bit adder for signal <data_stor_1$add0000> created at line 138.
+    Found 32-bit comparator lessequal for signal <data_stor_1$cmp_le0000> created at line 139.
+    Found 4-bit register for signal <DecoderNum>.
+    Found 1-bit register for signal <digit>.
+    Found 8-bit register for signal <ScanCode>.
+    Found 1-bit register for signal <started<0>>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  28 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <Sys_KeyboardTest> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Counters                                             : 3
+ 17-bit up counter                                     : 1
+ 26-bit up counter                                     : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 16
+ 1-bit register                                        : 13
+ 4-bit register                                        : 2
+ 8-bit register                                        : 1
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 1
+ 32-bit comparator lessequal                           : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Loading device for application Rf_Device from file '3s500e.nph' in environment C:\Xilinx\10.1\ISE.
+WARNING:Xst:1710 - FF/Latch <Anodes_2> (without init value) has a constant value of 1 in block <Sys_KeyboardTest>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <Anodes_3> (without init value) has a constant value of 1 in block <Sys_KeyboardTest>. This FF/Latch will be trimmed during the optimization process.
+INFO:Xst:2261 - The FF/Latch <digit> in Unit <Sys_KeyboardTest> is equivalent to the following FF/Latch, which will be removed : <Anodes_1> 
+WARNING:Xst:2677 - Node <out1> of sequential type is unconnected in block <DispCLK>.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x7-bit ROM                                          : 1
+# Adders/Subtractors                                   : 1
+ 32-bit adder                                          : 1
+# Counters                                             : 3
+ 17-bit up counter                                     : 1
+ 26-bit up counter                                     : 1
+ 32-bit up counter                                     : 1
+# Registers                                            : 26
+ Flip-Flops                                            : 26
+# Comparators                                          : 2
+ 32-bit comparator greater                             : 1
+ 32-bit comparator lessequal                           : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Sys_KeyboardTest> ...
+
+Optimizing unit <Comp_FrequencyDivider> ...
+WARNING:Xst:2677 - Node <DispCLK/cntr_25> of sequential type is unconnected in block <Sys_KeyboardTest>.
+WARNING:Xst:2677 - Node <DispCLK/cntr_24> of sequential type is unconnected in block <Sys_KeyboardTest>.
+WARNING:Xst:2677 - Node <DispCLK/cntr_23> of sequential type is unconnected in block <Sys_KeyboardTest>.
+WARNING:Xst:2677 - Node <DispCLK/cntr_22> of sequential type is unconnected in block <Sys_KeyboardTest>.
+WARNING:Xst:2677 - Node <DispCLK/cntr_21> of sequential type is unconnected in block <Sys_KeyboardTest>.
+WARNING:Xst:2677 - Node <DispCLK/cntr_20> of sequential type is unconnected in block <Sys_KeyboardTest>.
+WARNING:Xst:2677 - Node <DispCLK/cntr_19> of sequential type is unconnected in block <Sys_KeyboardTest>.
+WARNING:Xst:2677 - Node <DispCLK/cntr_18> of sequential type is unconnected in block <Sys_KeyboardTest>.
+WARNING:Xst:2677 - Node <DispCLK/cntr_17> of sequential type is unconnected in block <Sys_KeyboardTest>.
+WARNING:Xst:2677 - Node <DispCLK/cntr_16> of sequential type is unconnected in block <Sys_KeyboardTest>.
+WARNING:Xst:2677 - Node <DispCLK/cntr_15> of sequential type is unconnected in block <Sys_KeyboardTest>.
+WARNING:Xst:2677 - Node <DispCLK/cntr_14> of sequential type is unconnected in block <Sys_KeyboardTest>.
+WARNING:Xst:2677 - Node <DispCLK/cntr_13> of sequential type is unconnected in block <Sys_KeyboardTest>.
+WARNING:Xst:2677 - Node <DispCLK/cntr_12> of sequential type is unconnected in block <Sys_KeyboardTest>.
+WARNING:Xst:2677 - Node <DispCLK/cntr_11> of sequential type is unconnected in block <Sys_KeyboardTest>.
+WARNING:Xst:2677 - Node <DispCLK/cntr_10> of sequential type is unconnected in block <Sys_KeyboardTest>.
+WARNING:Xst:2677 - Node <DispCLK/cntr_9> of sequential type is unconnected in block <Sys_KeyboardTest>.
+WARNING:Xst:2677 - Node <DispCLK/cntr_8> of sequential type is unconnected in block <Sys_KeyboardTest>.
+WARNING:Xst:2677 - Node <DispCLK/cntr_7> of sequential type is unconnected in block <Sys_KeyboardTest>.
+WARNING:Xst:2677 - Node <DispCLK/cntr_6> of sequential type is unconnected in block <Sys_KeyboardTest>.
+WARNING:Xst:2677 - Node <DispCLK/cntr_5> of sequential type is unconnected in block <Sys_KeyboardTest>.
+WARNING:Xst:2677 - Node <DispCLK/cntr_4> of sequential type is unconnected in block <Sys_KeyboardTest>.
+WARNING:Xst:2677 - Node <DispCLK/cntr_3> of sequential type is unconnected in block <Sys_KeyboardTest>.
+WARNING:Xst:2677 - Node <DispCLK/cntr_2> of sequential type is unconnected in block <Sys_KeyboardTest>.
+WARNING:Xst:2677 - Node <DispCLK/cntr_1> of sequential type is unconnected in block <Sys_KeyboardTest>.
+WARNING:Xst:2677 - Node <DispCLK/cntr_0> of sequential type is unconnected in block <Sys_KeyboardTest>.
+WARNING:Xst:2677 - Node <DispCLK/out1> of sequential type is unconnected in block <Sys_KeyboardTest>.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Sys_KeyboardTest, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 74
+ Flip-Flops                                            : 74
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Sys_KeyboardTest.ngr
+Top Level Output File Name         : Sys_KeyboardTest
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 22
+
+Cell Usage :
+# BELS                             : 327
+#      GND                         : 1
+#      INV                         : 8
+#      LUT1                        : 81
+#      LUT2                        : 4
+#      LUT2_D                      : 1
+#      LUT3                        : 14
+#      LUT4                        : 39
+#      LUT4_D                      : 2
+#      LUT4_L                      : 1
+#      MUXCY                       : 97
+#      VCC                         : 1
+#      XORCY                       : 78
+# FlipFlops/Latches                : 74
+#      FD                          : 5
+#      FD_1                        : 1
+#      FDE_1                       : 18
+#      FDR                         : 18
+#      FDRE                        : 32
+# Clock Buffers                    : 4
+#      BUFG                        : 4
+# IO Buffers                       : 22
+#      IBUFG                       : 3
+#      OBUF                        : 19
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                       86  out of   4656     1%  
+ Number of Slice Flip Flops:             74  out of   9312     0%  
+ Number of 4 input LUTs:                150  out of   9312     1%  
+ Number of IOs:                          22
+ Number of bonded IOBs:                  22  out of    232     9%  
+ Number of GCLKs:                         4  out of     24    16%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+KeyCLK                             | IBUFG+BUFG             | 50    |
+DispCLK/out2                       | BUFG                   | 6     |
+MainCLK                            | IBUFG+BUFG             | 18    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 10.801ns (Maximum Frequency: 92.582MHz)
+   Minimum input arrival time before clock: 9.004ns
+   Maximum output required time after clock: 5.870ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'KeyCLK'
+  Clock period: 10.801ns (frequency: 92.582MHz)
+  Total number of paths / destination ports: 24560 / 90
+-------------------------------------------------------------------------
+Delay:               10.801ns (Levels of Logic = 33)
+  Source:            bit_count_1 (FF)
+  Destination:       bit_count_0 (FF)
+  Source Clock:      KeyCLK falling
+  Destination Clock: KeyCLK falling
+
+  Data Path: bit_count_1 to bit_count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            13   0.591   1.158  bit_count_1 (bit_count_1)
+     LUT1:I0->O            1   0.704   0.000  Madd_data_stor_1_add0000_cy<1>_rt (Madd_data_stor_1_add0000_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  Madd_data_stor_1_add0000_cy<1> (Madd_data_stor_1_add0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_data_stor_1_add0000_cy<2> (Madd_data_stor_1_add0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_data_stor_1_add0000_cy<3> (Madd_data_stor_1_add0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_data_stor_1_add0000_cy<4> (Madd_data_stor_1_add0000_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_data_stor_1_add0000_cy<5> (Madd_data_stor_1_add0000_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_data_stor_1_add0000_cy<6> (Madd_data_stor_1_add0000_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_data_stor_1_add0000_cy<7> (Madd_data_stor_1_add0000_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_data_stor_1_add0000_cy<8> (Madd_data_stor_1_add0000_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_data_stor_1_add0000_cy<9> (Madd_data_stor_1_add0000_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_data_stor_1_add0000_cy<10> (Madd_data_stor_1_add0000_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_data_stor_1_add0000_cy<11> (Madd_data_stor_1_add0000_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_data_stor_1_add0000_cy<12> (Madd_data_stor_1_add0000_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_data_stor_1_add0000_cy<13> (Madd_data_stor_1_add0000_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_data_stor_1_add0000_cy<14> (Madd_data_stor_1_add0000_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_data_stor_1_add0000_cy<15> (Madd_data_stor_1_add0000_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_data_stor_1_add0000_cy<16> (Madd_data_stor_1_add0000_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_data_stor_1_add0000_cy<17> (Madd_data_stor_1_add0000_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_data_stor_1_add0000_cy<18> (Madd_data_stor_1_add0000_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_data_stor_1_add0000_cy<19> (Madd_data_stor_1_add0000_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_data_stor_1_add0000_cy<20> (Madd_data_stor_1_add0000_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_data_stor_1_add0000_cy<21> (Madd_data_stor_1_add0000_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_data_stor_1_add0000_cy<22> (Madd_data_stor_1_add0000_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_data_stor_1_add0000_cy<23> (Madd_data_stor_1_add0000_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_data_stor_1_add0000_cy<24> (Madd_data_stor_1_add0000_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_data_stor_1_add0000_cy<25> (Madd_data_stor_1_add0000_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_data_stor_1_add0000_cy<26> (Madd_data_stor_1_add0000_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  Madd_data_stor_1_add0000_cy<27> (Madd_data_stor_1_add0000_cy<27>)
+     XORCY:CI->O           1   0.804   0.595  Madd_data_stor_1_add0000_xor<28> (data_stor_1_add0000<28>)
+     LUT3:I0->O            1   0.704   0.000  Mcompar_bit_count_and0000_lut<10> (Mcompar_bit_count_and0000_lut<10>)
+     MUXCY:S->O            1   0.464   0.000  Mcompar_bit_count_and0000_cy<10> (Mcompar_bit_count_and0000_cy<10>)
+     MUXCY:CI->O           2   0.459   0.447  Mcompar_bit_count_and0000_cy<11> (Mcompar_bit_count_and0000_cy<11>)
+     INV:I->O             32   0.704   1.262  Mcompar_bit_count_and0000_cy<11>_inv_INV_0 (bit_count_and0000)
+     FDRE:R                    0.911          bit_count_0
+    ----------------------------------------
+    Total                     10.801ns (7.339ns logic, 3.462ns route)
+                                       (67.9% logic, 32.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'DispCLK/out2'
+  Clock period: 2.486ns (frequency: 402.253MHz)
+  Total number of paths / destination ports: 6 / 6
+-------------------------------------------------------------------------
+Delay:               2.486ns (Levels of Logic = 1)
+  Source:            digit (FF)
+  Destination:       DecoderNum_0 (FF)
+  Source Clock:      DispCLK/out2 rising
+  Destination Clock: DispCLK/out2 rising
+
+  Data Path: digit to DecoderNum_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              7   0.591   0.883  digit (digit)
+     LUT3:I0->O            1   0.704   0.000  DecoderNum_mux0001<7>1 (DecoderNum_mux0001<7>)
+     FD:D                      0.308          DecoderNum_3
+    ----------------------------------------
+    Total                      2.486ns (1.603ns logic, 0.883ns route)
+                                       (64.5% logic, 35.5% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'MainCLK'
+  Clock period: 6.017ns (frequency: 166.196MHz)
+  Total number of paths / destination ports: 468 / 35
+-------------------------------------------------------------------------
+Delay:               6.017ns (Levels of Logic = 3)
+  Source:            DispCLK/cntr2_3 (FF)
+  Destination:       DispCLK/cntr2_16 (FF)
+  Source Clock:      MainCLK falling
+  Destination Clock: MainCLK falling
+
+  Data Path: DispCLK/cntr2_3 to DispCLK/cntr2_16
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q              2   0.591   0.622  DispCLK/cntr2_3 (DispCLK/cntr2_3)
+     LUT4:I0->O            1   0.704   0.455  DispCLK/cntr2_cmp_eq00001111 (DispCLK/cntr2_cmp_eq00001111)
+     LUT4_D:I2->LO         1   0.704   0.275  DispCLK/cntr2_cmp_eq0000132 (N24)
+     LUT3:I0->O           17   0.704   1.051  DispCLK/cntr2_cmp_eq000034 (DispCLK/cntr2_cmp_eq0000)
+     FDR:R                     0.911          DispCLK/cntr2_0
+    ----------------------------------------
+    Total                      6.017ns (3.614ns logic, 2.403ns route)
+                                       (60.1% logic, 39.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'KeyCLK'
+  Total number of paths / destination ports: 34 / 26
+-------------------------------------------------------------------------
+Offset:              9.004ns (Levels of Logic = 4)
+  Source:            KeyData (PAD)
+  Destination:       ScanCode_0 (FF)
+  Destination Clock: KeyCLK falling
+
+  Data Path: KeyData to ScanCode_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUFG:I->O            1   2.675   0.420  KeyData_IBUFG (KeyData_IBUFG)
+     BUFG:I->O            20   1.457   1.277  BUFG_BufKeyData (Buf_KeyData)
+     LUT4:I0->O            1   0.704   0.455  ScanCode_not0001_SW1 (N20)
+     LUT4:I2->O            8   0.704   0.757  ScanCode_not0001 (ScanCode_not0001)
+     FDE_1:CE                  0.555          ScanCode_0
+    ----------------------------------------
+    Total                      9.004ns (6.095ns logic, 2.909ns route)
+                                       (67.7% logic, 32.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'DispCLK/out2'
+  Total number of paths / destination ports: 30 / 9
+-------------------------------------------------------------------------
+Offset:              5.870ns (Levels of Logic = 2)
+  Source:            DecoderNum_1 (FF)
+  Destination:       Segments<6> (PAD)
+  Source Clock:      DispCLK/out2 rising
+
+  Data Path: DecoderNum_1 to Segments<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               7   0.591   0.883  DecoderNum_1 (DecoderNum_1)
+     LUT4:I0->O            1   0.704   0.420  Decoder/Mrom_seg21 (Decoder/Mrom_seg2)
+     OBUF:I->O                 3.272          Segments_2_OBUF (Segments<2>)
+    ----------------------------------------
+    Total                      5.870ns (4.567ns logic, 1.303ns route)
+                                       (77.8% logic, 22.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'KeyCLK'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.310ns (Levels of Logic = 1)
+  Source:            ScanCode_7 (FF)
+  Destination:       Lights<7> (PAD)
+  Source Clock:      KeyCLK falling
+
+  Data Path: ScanCode_7 to Lights<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE_1:C->Q            2   0.591   0.447  ScanCode_7 (ScanCode_7)
+     OBUF:I->O                 3.272          Lights_7_OBUF (Lights<7>)
+    ----------------------------------------
+    Total                      4.310ns (3.863ns logic, 0.447ns route)
+                                       (89.6% logic, 10.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 7.00 secs
+Total CPU time to Xst completion: 6.65 secs
+ 
+--> 
+
+Total memory usage is 205196 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   32 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

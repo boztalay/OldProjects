@@ -1,0 +1,377 @@
+Release 10.1 - xst K.31 (nt)
+Copyright (c) 1995-2008 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_16bitShiftReg/Comp_16bitShiftReg/xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_16bitShiftReg/Comp_16bitShiftReg/xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.12 secs
+ 
+--> Reading design: Comp_16bitShiftReg.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+     9.1) Device utilization summary
+     9.2) Partition Resource Summary
+     9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Comp_16bitShiftReg.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Comp_16bitShiftReg"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : Comp_16bitShiftReg
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Library Search Order               : Comp_16bitShiftReg.lso
+Keep Hierarchy                     : NO
+Netlist Hierarchy                  : as_optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_16bitShiftReg/Comp_16bitShiftReg/Comp_16bitShiftReg.vhd" in Library work.
+Entity <comp_16bitshiftreg> compiled.
+Entity <comp_16bitshiftreg> (Architecture <behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Comp_16bitShiftReg> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Comp_16bitShiftReg> in library <work> (Architecture <behavioral>).
+Entity <Comp_16bitShiftReg> analyzed. Unit <Comp_16bitShiftReg> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Comp_16bitShiftReg>.
+    Related source file is "C:/Users/Ben/Desktop/FPGAprojects/Components/Comp_16bitShiftReg/Comp_16bitShiftReg/Comp_16bitShiftReg.vhd".
+    Found 16-bit register for signal <Parallel>.
+    Found 1-bit register for signal <Carry>.
+    Found 16-bit register for signal <storage>.
+    Summary:
+	inferred  33 D-type flip-flop(s).
+Unit <Comp_16bitShiftReg> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 3
+ 1-bit register                                        : 1
+ 16-bit register                                       : 2
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Loading device for application Rf_Device from file '3s500e.nph' in environment C:\Xilinx\10.1\ISE.
+INFO:Xst:2261 - The FF/Latch <storage_0> in Unit <Comp_16bitShiftReg> is equivalent to the following FF/Latch, which will be removed : <Parallel_0> 
+INFO:Xst:2261 - The FF/Latch <storage_11> in Unit <Comp_16bitShiftReg> is equivalent to the following FF/Latch, which will be removed : <Parallel_11> 
+INFO:Xst:2261 - The FF/Latch <storage_1> in Unit <Comp_16bitShiftReg> is equivalent to the following FF/Latch, which will be removed : <Parallel_1> 
+INFO:Xst:2261 - The FF/Latch <storage_12> in Unit <Comp_16bitShiftReg> is equivalent to the following FF/Latch, which will be removed : <Parallel_12> 
+INFO:Xst:2261 - The FF/Latch <storage_2> in Unit <Comp_16bitShiftReg> is equivalent to the following FF/Latch, which will be removed : <Parallel_2> 
+INFO:Xst:2261 - The FF/Latch <storage_13> in Unit <Comp_16bitShiftReg> is equivalent to the following FF/Latch, which will be removed : <Parallel_13> 
+INFO:Xst:2261 - The FF/Latch <storage_3> in Unit <Comp_16bitShiftReg> is equivalent to the following FF/Latch, which will be removed : <Parallel_3> 
+INFO:Xst:2261 - The FF/Latch <storage_14> in Unit <Comp_16bitShiftReg> is equivalent to the following FF/Latch, which will be removed : <Parallel_14> 
+INFO:Xst:2261 - The FF/Latch <storage_4> in Unit <Comp_16bitShiftReg> is equivalent to the following FF/Latch, which will be removed : <Parallel_4> 
+INFO:Xst:2261 - The FF/Latch <storage_15> in Unit <Comp_16bitShiftReg> is equivalent to the following FF/Latch, which will be removed : <Parallel_15> 
+INFO:Xst:2261 - The FF/Latch <storage_5> in Unit <Comp_16bitShiftReg> is equivalent to the following FF/Latch, which will be removed : <Parallel_5> 
+INFO:Xst:2261 - The FF/Latch <storage_6> in Unit <Comp_16bitShiftReg> is equivalent to the following FF/Latch, which will be removed : <Parallel_6> 
+INFO:Xst:2261 - The FF/Latch <storage_7> in Unit <Comp_16bitShiftReg> is equivalent to the following FF/Latch, which will be removed : <Parallel_7> 
+INFO:Xst:2261 - The FF/Latch <storage_8> in Unit <Comp_16bitShiftReg> is equivalent to the following FF/Latch, which will be removed : <Parallel_8> 
+INFO:Xst:2261 - The FF/Latch <storage_9> in Unit <Comp_16bitShiftReg> is equivalent to the following FF/Latch, which will be removed : <Parallel_9> 
+INFO:Xst:2261 - The FF/Latch <storage_10> in Unit <Comp_16bitShiftReg> is equivalent to the following FF/Latch, which will be removed : <Parallel_10> 
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 17
+ Flip-Flops                                            : 17
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Comp_16bitShiftReg> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Comp_16bitShiftReg, actual ratio is 0.
+FlipFlop storage_0 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+Processing Unit <Comp_16bitShiftReg> :
+	Found 2-bit shift register for signal <storage_1>.
+Unit <Comp_16bitShiftReg> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 16
+ Flip-Flops                                            : 16
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                             *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Comp_16bitShiftReg.ngr
+Top Level Output File Name         : Comp_16bitShiftReg
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 19
+
+Cell Usage :
+# BELS                             : 1
+#      GND                         : 1
+# FlipFlops/Latches                : 17
+#      FD_1                        : 17
+# Shift Registers                  : 1
+#      SRL16_1                     : 1
+# Clock Buffers                    : 2
+#      BUFG                        : 2
+# IO Buffers                       : 19
+#      IBUFG                       : 2
+#      OBUF                        : 17
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                        9  out of   4656     0%  
+ Number of Slice Flip Flops:             16  out of   9312     0%  
+ Number of 4 input LUTs:                  1  out of   9312     0%  
+    Number used as logic:                 0
+    Number used as Shift registers:       1
+ Number of IOs:                          19
+ Number of bonded IOBs:                  19  out of    232     8%  
+    IOB Flip Flops:                       1
+ Number of GCLKs:                         2  out of     24     8%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+CLK                                | IBUFG+BUFG             | 18    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 4.014ns (Maximum Frequency: 249.128MHz)
+   Minimum input arrival time before clock: 5.420ns
+   Maximum output required time after clock: 4.310ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 4.014ns (frequency: 249.128MHz)
+  Total number of paths / destination ports: 16 / 16
+-------------------------------------------------------------------------
+Delay:               4.014ns (Levels of Logic = 0)
+  Source:            Mshreg_storage_1 (FF)
+  Destination:       storage_1 (FF)
+  Source Clock:      CLK falling
+  Destination Clock: CLK falling
+
+  Data Path: Mshreg_storage_1 to storage_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     SRL16_1:CLK->Q        1   3.706   0.000  Mshreg_storage_1 (Mshreg_storage_1)
+     FD_1:D                    0.308          storage_1
+    ----------------------------------------
+    Total                      4.014ns (4.014ns logic, 0.000ns route)
+                                       (100.0% logic, 0.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              5.420ns (Levels of Logic = 2)
+  Source:            Data (PAD)
+  Destination:       Mshreg_storage_1 (FF)
+  Destination Clock: CLK falling
+
+  Data Path: Data to Mshreg_storage_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUFG:I->O            1   2.675   0.420  Data_IBUFG (Data_IBUFG)
+     BUFG:I->O             2   1.457   0.447  BUFG_BufData (Buf_Data)
+     SRL16_1:D                 0.421          Mshreg_storage_1
+    ----------------------------------------
+    Total                      5.420ns (4.553ns logic, 0.867ns route)
+                                       (84.0% logic, 16.0% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 17 / 17
+-------------------------------------------------------------------------
+Offset:              4.310ns (Levels of Logic = 1)
+  Source:            storage_15 (FF)
+  Destination:       Parallel<15> (PAD)
+  Source Clock:      CLK falling
+
+  Data Path: storage_15 to Parallel<15>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD_1:C->Q             2   0.591   0.447  storage_15 (storage_15)
+     OBUF:I->O                 3.272          Parallel_15_OBUF (Parallel<15>)
+    ----------------------------------------
+    Total                      4.310ns (3.863ns logic, 0.447ns route)
+                                       (89.6% logic, 10.4% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 4.00 secs
+Total CPU time to Xst completion: 4.24 secs
+ 
+--> 
+
+Total memory usage is 201804 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :   16 (   0 filtered)
+

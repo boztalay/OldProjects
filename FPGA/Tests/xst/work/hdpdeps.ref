@@ -1,0 +1,40 @@
+V3 19
+FL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/OZ-3_System/Debouncer.vhd" 2010/06/03.22:12:39 L.33
+EN work/Debouncer 1278606759 \
+      FL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/OZ-3_System/Debouncer.vhd" \
+      PB ieee/std_logic_1164 1236108447 PB ieee/std_logic_arith 1236108448 \
+      PB ieee/STD_LOGIC_UNSIGNED 1236108449
+AR work/Debouncer/Behavioral 1278606760 \
+      FL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/OZ-3_System/Debouncer.vhd" \
+      EN work/Debouncer 1278606759
+FL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/OZ-3_System/four_dig_7seg.vhd" 2010/05/16.17:43:09 L.33
+EN work/four_dig_7seg 1278606761 \
+      FL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/OZ-3_System/four_dig_7seg.vhd" \
+      PB ieee/std_logic_1164 1236108447 PB ieee/std_logic_arith 1236108448 \
+      PB ieee/STD_LOGIC_UNSIGNED 1236108449
+AR work/four_dig_7seg/Behavioral 1278606762 \
+      FL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/OZ-3_System/four_dig_7seg.vhd" \
+      EN work/four_dig_7seg 1278606761
+FL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Tests/ipcore_dir/FIFO.vhd" 2010/07/08.01:21:32 L.33
+EN work/FIFO 1278606757 \
+      FL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Tests/ipcore_dir/FIFO.vhd" \
+      PB ieee/std_logic_1164 1236108447
+AR work/FIFO/FIFO_a 1278606758 \
+      FL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Tests/ipcore_dir/FIFO.vhd" \
+      EN work/FIFO 1278606757
+FL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Tests/SM_mem_init_test.vhd" 2010/07/09.13:24:50 L.33
+EN work/SM_mem_init_test 1278696294 \
+      FL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Tests/SM_mem_init_test.vhd" \
+      PB ieee/std_logic_1164 1236108447 PB ieee/std_logic_arith 1236108448 \
+      PB ieee/STD_LOGIC_UNSIGNED 1236108449
+AR work/SM_mem_init_test/Behavioral 1278696295 \
+      FL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Tests/SM_mem_init_test.vhd" \
+      EN work/SM_mem_init_test 1278696294
+FL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Tests/tests.vhd" 2010/07/08.12:32:33 L.33
+EN work/tests 1278606763 \
+      FL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Tests/tests.vhd" \
+      PB ieee/std_logic_1164 1236108447 PB ieee/std_logic_arith 1236108448 \
+      PB ieee/STD_LOGIC_UNSIGNED 1236108449 LB UNISIM PH unisim/VCOMPONENTS 1236108447
+AR work/tests/Behavioral 1278606764 \
+      FL "C:/Users/georgecuris/Desktop/Folders/FPGA/Projects/Current Projects/Systems/Tests/tests.vhd" \
+      EN work/tests 1278606763 CP FIFO CP Debouncer CP four_dig_7seg

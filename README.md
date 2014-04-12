@@ -5,7 +5,7 @@ These are most of my old projects (high school and earlier) from when I was firs
 
 Some of the more interesting projects include:
 
-Pong, written in C++ using SDL
-Various physics simulators, written in C++ using OpenGL
-An assembler for the OZ-3
-Lots of VHDL stuff that's likely reusable
+-Pong, written in C++ using SDL
+-Various physics simulators, written in C++ using OpenGL
+-An assembler for the OZ-3
+-Lots of VHDL stuff that's likely reusable
